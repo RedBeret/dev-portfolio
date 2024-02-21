@@ -1,0 +1,156 @@
+{
+  "basic_info": {
+    "description_header": "Hola, soy Steven Espinoza",
+    "description": "👋 Soy un Ingeniero de Software con una amplia experiencia en Ingeniería de Sistemas, hábil en JavaScript, Python, React y metodologías ágiles. Mi trayectoria profesional se distingue por liderar la integración de sistemas IT en más de 50 barcos de la Marina de EE.UU., demostrando mi capacidad para gestionar proyectos complejos y esfuerzos de ingeniería colaborativa. En mi transición de la ingeniería de sistemas a la ingeniería de software, me he centrado en el desarrollo, prueba y optimización de soluciones, validadas por certificaciones reconocidas en la industria como SEC+, CCNA, DASM y AWS. Mi elegibilidad para trabajar en proyectos sensibles y clasificados ha sido evaluada y aprobada, reflejando mi compromiso con la integridad y altos estándares de seguridad. Fuera de mis objetivos profesionales, soy un ávido viajero mundial y aventurero en solitario, inspirándome en culturas y paisajes diversos, desde las históricas calles de Berlín y Roma hasta las increíbles vistas del Lago Como y los Alpes suizos. Estas experiencias no solo han ampliado mi perspectiva sino que también han infundido mi enfoque de desarrollo de software con creatividad, adaptabilidad y una visión global. Actualmente, canalizo mi pasión por la tecnología y la exploración desde mi base en San Diego, California, ansioso por enfrentar nuevos desafíos e innovar dentro del dinámico campo de la ingeniería de software.",
+    "section_name": {
+      "about": "Sobre mí",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "experience": "Experiencia"
+    }
+  },
+  "projects": [
+    {
+      "title": "AIChatPoweredEcommerce",
+      "startDate": "2024",
+      "description": "AIChatPoweredEcommerce mezcla IA con comercio electrónico a través de una plataforma desarrollada con Flask y React, incorporando un chatbot de IA personalizado para soporte al cliente instantáneo. El proyecto subraya mi experiencia en la construcción de entornos de compras en línea seguros, receptivos y centrados en el usuario. Las tecnologías clave incluyen React para el frontend para asegurar una experiencia de usuario dinámica, Python para operaciones de backend robustas y Flask para la gestión eficiente del servidor web y API. Las características notables incluyen soporte de chat impulsado por IA usando GPT de OpenAI para interacciones técnicas con clientes, un compromiso con el diseño seguro y receptivo para una experiencia de compra óptima, y una gestión avanzada de bases de datos con SQLite para garantizar la integridad de los datos y un acceso rápido a los datos y PostgreSQL para la implementación.",
+      "images": [
+        "images/portfolio/aichatpoweredstore/AiStoreHome.png",
+        "images/portfolio/aichatpoweredstore/AiStoreOpenai.png",
+        "images/portfolio/aichatpoweredstore/AiStoreProductdetail.png",
+        "images/portfolio/aichatpoweredstore/AiStoreCheckedOut.png"
+      ],
+      "url": "https://aichatpowereddeployment.onrender.com/",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-flask-original",
+          "name": "Flask"
+        },
+        {
+          "class": "devicon-sqlite-plain",
+          "name": "SQLite3"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        }
+      ]
+    },
+    {
+      "title": "Mont Luxe Watch Company",
+      "startDate": "2024",
+      "description": "El proyecto Mont Luxe Watch Company fue una plataforma de comercio electrónico dedicada a exhibir relojes de lujo. Este empeño fue crucial en mi comprensión de técnicas eficientes de gestión de bases de datos, particularmente la importancia de separar tablas y emplear la normalización SQL para mantener la integridad de los datos, especialmente al recopilar información del usuario en diferentes áreas de la aplicación. Utilizando Flask y React, el proyecto sirvió como un ejercicio completo de desarrollo de pila completa, donde apliqué mis habilidades en desarrollo frontend y backend, gestión de bases de datos e integración de API. La experiencia subrayó el papel crítico del diseño estructurado de bases de datos en el soporte de entornos de compras en línea seguros, escalables y receptivos, mejorando mi competencia en la creación de aplicaciones web centradas en el usuario.",
+      "images": [
+        "images/portfolio/montluxewatchstore/montluxehomep1.png",
+        "images/portfolio/montluxewatchstore/montluxehomep2.png",
+        "images/portfolio/montluxewatchstore/montluxehomep3.png",
+        "images/portfolio/montluxewatchstore/montluxeaboutp1.png",
+        "images/portfolio/montluxewatchstore/montluxeaddtocart.png",
+        "images/portfolio/montluxewatchstore/montluxeaddtocart2.png",
+        "images/portfolio/montluxewatchstore/montluxecheckout.png",
+        "images/portfolio/montluxewatchstore/montluxesignin.png"
+      ],
+      "url": "https://github.com/RedBeret/MontLuxeWatch-ReactFlaskEcommerce",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-flask-original",
+          "name": "Flask"
+        }
+      ]
+    },
+    {
+      "title": "Python CLI Bodyweight Fitness",
+      "startDate": "2023",
+      "description": "Una aplicación de interfaz de línea de comandos para generar planes de entrenamiento personalizados, utilizando Python y SQLite3 para la gestión de datos y la lógica de la aplicación. Este proyecto destaca mi competencia en backend y mi interés en la tecnología de fitness.",
+      "images": [
+        "images/portfolio/pythonclibodyweightfitness/fitnessCoachPythonSQL-p1.png",
+        "images/portfolio/pythonclibodyweightfitness/fitnessCoachPythonSQL-p2.png",
+        "images/portfolio/pythonclibodyweightfitness/fitnessCoachPythonSQL-p3.png"
+      ],
+      "url": "https://github.com/RedBeret/Fitness-Coach-Python-SQL-CLI",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-sqlite-plain",
+          "name": "SQLite3"
+        }
+      ]
+    },
+    {
+      "title": "Weather App",
+      "startDate": "2023",
+      "description": "Como esfuerzo colaborativo, mi equipo de dos desarrolló una aplicación web que aprovecha los datos meteorológicos en tiempo real a nivel global mediante una clave de API. Este proyecto, arraigado en metodologías ágiles, ofrece un diseño centrado en el usuario con funcionalidad de búsqueda de ciudades, la capacidad de alternar unidades de temperatura y un sistema para comentarios persistentes de usuarios. Nuestra solución enfatiza la interacción fluida del usuario y la predicción meteorológica precisa, convirtiéndola en una plataforma de referencia para información meteorológica.",
+      "images": [
+        "images/portfolio/weatherapp/weather-app-final.png"
+      ],
+      "url": "https://redberet.github.io/WeatherApp/",
+      "technologies": [
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML5"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS3"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Noblis MSD",
+      "title": "Ingeniero de Sistemas Senior",
+      "years": "11.2022 - Presente",
+      "description": "Lideré proyectos de integración de sistemas clave para más de 50 buques de la Marina de EE.UU., optimizando el rendimiento a través de plataformas tecnológicas. Encabezé la creación de una base de conocimientos integral para la capacitación y el soporte, con un análisis de datos profundo que mejoró la eficiencia del flujo de trabajo.",
+      "mainTech": ["Integración de Sistemas", "Análisis de Datos"],
+      "technologies": ["Desarrollo de Software", "Metodologías Ágiles", "Gestión de Proyectos", "Ciberseguridad", "Arquitectura de Redes"]
+    },
+    {
+      "company": "KES, Inc.",
+      "title": "Ingeniero de Sistemas Senior",
+      "years": "11.2021 - 11.2022",
+      "description": "Pionero en el desarrollo y seguimiento avanzado de sistemas, mejorando la eficiencia y la experiencia del usuario. Personalicé soluciones para los objetivos comerciales de los clientes, mejorando las asociaciones a largo plazo y el crecimiento de ingresos.",
+      "mainTech": ["Desarrollo de Sistemas", "Soluciones para Clientes"],
+      "technologies": ["Ingeniería Inversa", "Monitoreo de Proyectos", "Arquitectura de Sistemas", "Eficiencia Operativa"]
+    },
+    {
+      "company": "Apex Systems",
+      "title": "Gerente de Proyecto de TI",
+      "years": "12.2016 - 06.2017",
+      "description": "Dirigí la consolidación de redes regionales, mejorando la infraestructura de TI del gobierno. Gestioné planes de trabajo de control de TI, integrando las mejores prácticas para la entrega eficiente de proyectos.",
+      "mainTech": ["Consolidación de Redes", "Planificación Estratégica"],
+      "technologies": ["Planes de Trabajo de Control de TI", "Servicios de TI Gubernamentales", "Compromiso con los Stakeholders"]
+    },
+    {
+      "company": "Cisco",
+      "title": "Líder de Equipo de Proyecto, Ingeniero de Pruebas, Analista de Negocios",
+      "years": "08.2015 - 12.2016",
+      "description": "Lideré proyectos de ingeniería para mejorar la eficiencia del sistema. Realicé pruebas rigurosas para la calidad del producto. Impulsé actualizaciones de firmware y hardware, reduciendo los costos operativos.",
+      "mainTech": ["Liderazgo Técnico", "Aseguramiento de la Calidad"],
+      "technologies": ["Pruebas de Hardware/Software", "Análisis de Datos", "Mejora de Procesos", "Integración de Sistemas"]
+    }
+  ]
+}
