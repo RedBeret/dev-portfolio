@@ -1,0 +1,156 @@
+{
+  "basic_info": {
+    "description_header": "Hi, I'm Steven Espinoza",
+  "description": "👋 I'm a Software Engineer with a rich Systems Engineering background, adept in JavaScript, Python, React, and Agile methodologies. My professional journey is distinguished by leading over 50 US Navy ship IT system integrations, demonstrating my capability in managing complex projects and collaborative engineering efforts. Transitioning from systems to software engineering, I've focused on development, testing, and optimizing solutions, validated by industry-recognized certifications in SEC+, CCNA, DASM, and AWS. My eligibility to work on sensitive and classified projects has been assessed and approved, reflecting my commitment to integrity and high standards of security. Outside of my professional pursuits, I'm an avid world traveler and solo adventurer, drawing inspiration from diverse cultures and landscapes—from the historic streets of Berlin and Rome to the amazing views of Lake Como and the Swiss Alps. These experiences have not only broadened my perspective but also infused my software development approach with creativity, adaptability, and a global outlook. Currently, I'm channeling my passion for technology and exploration from my base in San Diego, California, eager to tackle new challenges and innovate within the dynamic field of software engineering.",
+    "section_name": {
+      "about": "About Me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experience": "Experience"
+    }
+  },
+  "projects": [
+    {
+      "title": "AIChatPoweredEcommerce",
+      "startDate": "2024",
+      "description": "AIChatPoweredEcommerce mixes AI with e-commerce through a Flask and React-developed platform, embedding a custom AI chatbot for instant customer support. The project underscores my expertise in building secure, responsive, and user-centered online shopping environments. Key technologies include React for the frontend to ensure a dynamic user experience, Python for robust backend operations, and Flask for efficient web server and API management. Notable features include AI-driven chat support using OpenAI's GPT for engaging technical customer interactions, a commitment to secure and responsive design for an optimal shopping experience, and advanced database management with SQLite to guarantee data integrity and swift data access and Postgresql for deployment.",
+      "images": [
+        "images/portfolio/aichatpoweredstore/AiStoreHome.png",
+        "images/portfolio/aichatpoweredstore/AiStoreOpenai.png",
+        "images/portfolio/aichatpoweredstore/AiStoreProductdetail.png",
+        "images/portfolio/aichatpoweredstore/AiStoreCheckedOut.png"
+      ],
+      "url": "https://aichatpowereddeployment.onrender.com/",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-flask-original",
+          "name": "Flask"
+        },
+        {
+          "class": "devicon-sqlite-plain",
+          "name": "SQLite3"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        }
+      ]
+    },
+        {
+      "title": "Mont Luxe Watch Company",
+      "startDate": "2024",
+      "description": "The Mont Luxe Watch Company project was an e-commerce platform dedicated to showcasing luxury timepieces. This endeavor was pivotal in my understanding of efficient database management techniques, particularly the significance of separating tables and employing SQL normalization to maintain data integrity, especially when collecting user information in different areas of the application. Utilizing Flask and React, the project served as a comprehensive exercise in full-stack development, where I applied my skills in front-end and back-end development, database management, and API integration. The experience underscored the critical role of structured database design in supporting secure, scalable, and responsive online shopping environments, enhancing my proficiency in creating user-centric web applications.",
+      "images": [
+        "images/portfolio/montluxewatchstore/montluxehomep1.png",
+        "images/portfolio/montluxewatchstore/montluxehomep2.png",
+        "images/portfolio/montluxewatchstore/montluxehomep3.png",
+        "images/portfolio/montluxewatchstore/montluxeaboutp1.png",
+        "images/portfolio/montluxewatchstore/montluxeaddtocart.png",
+        "images/portfolio/montluxewatchstore/montluxeaddtocart2.png",
+        "images/portfolio/montluxewatchstore/montluxecheckout.png",
+        "images/portfolio/montluxewatchstore/montluxesignin.png"
+      ],
+      "url": "https://github.com/RedBeret/MontLuxeWatch-ReactFlaskEcommerce",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-flask-original",
+          "name": "Flask"
+        }
+      ]
+    },
+    {
+      "title": "Python CLI Bodyweight Fitness",
+      "startDate": "2023",
+      "description": "A command-line interface application for generating personalized workout plans, utilizing Python and SQLite3 for data management and application logic. This project highlights my backend proficiency and my interest in fitness technology.",
+      "images": [
+        "images/portfolio/pythonclibodyweightfitness/fitnessCoachPythonSQL-p1.png",
+        "images/portfolio/pythonclibodyweightfitness/fitnessCoachPythonSQL-p2.png",
+        "images/portfolio/pythonclibodyweightfitness/fitnessCoachPythonSQL-p3.png"
+      ],
+      "url": "https://github.com/RedBeret/Fitness-Coach-Python-SQL-CLI",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-sqlite-plain",
+          "name": "SQLite3"
+        }
+      ]
+    },
+    {
+      "title": "Weather App",
+      "startDate": "2023",
+      "description": "As a collaborative effort, my team of two developed a web application that harnesses real-time weather data globally via an API key. This project, rooted in Agile methodologies, offers a user-centric design featuring city search functionality, the ability to toggle temperature units, and a system for persistent user comments. Our solution emphasizes seamless user interaction and accurate weather forecasting, making it a go-to platform for weather information.",
+      "images": [
+        "images/portfolio/weatherapp/weather-app-final.png"
+      ],
+      "url": "https://redberet.github.io/WeatherApp/",
+      "technologies": [
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML5"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS3"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Noblis MSD",
+      "title": "Senior System Engineer",
+      "years": "11.2022 - Present",
+      "description": "Led pivotal system integration projects for over 50 US Navy ships, optimizing performance across technological platforms. Spearheaded a comprehensive knowledge base for training and support, with in-depth data analysis improving workflow efficiency.",
+      "mainTech": ["System Integration", "Data Analysis"],
+      "technologies": ["Software Development", "Agile Methodologies", "Project Management", "Cybersecurity", "Network Architecture"]
+    },
+    {
+      "company": "KES, Inc.",
+      "title": "Senior System Engineer",
+      "years": "11.2021 - 11.2022",
+      "description": "Pioneered advanced tracking and system development, improving efficiency and user experience. Customized client solutions for business goals, enhancing long-term partnerships and revenue growth.",
+      "mainTech": ["System Development", "Client Solutions"],
+      "technologies": ["Reverse Engineering", "Project Monitoring", "System Architecture", "Operational Efficiency"]
+    },
+    {
+      "company": "Apex Systems",
+      "title": "IT Project Manager",
+      "years": "12.2016 - 06.2017",
+      "description": "Directed regional network consolidation, enhancing government IT infrastructure. Managed IT control workplans, integrating best practices for streamlined project delivery.",
+      "mainTech": ["Network Consolidation", "Strategic Planning"],
+      "technologies": ["IT Control Workplans", "Government IT Services", "Stakeholder Engagement"]
+    },
+    {
+      "company": "Cisco",
+      "title": "Project Team Lead, Test Engineer, Business Analyst",
+      "years": "08.2015 - 12.2016",
+      "description": "Led engineering projects to enhance system efficiency. Conducted rigorous testing for product quality. Spearheaded firmware and hardware upgrades, driving operational cost reductions.",
+      "mainTech": ["Technical Leadership", "Quality Assurance"],
+      "technologies": ["Hardware/Software Testing", "Data Analysis", "Process Improvement", "Systems Integration"]
+    }
+  ]
+}

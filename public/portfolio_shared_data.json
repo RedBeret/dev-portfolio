@@ -1,0 +1,119 @@
+{
+  "basic_info": {
+    "name": "Steven Espinoza",
+    "titles-front": [
+      "Frontend Developer",
+      "JavaScript Engineer",
+      "React Engineer",
+      "UI/UX Designer"
+    ],
+    "titles-back": [
+      "Backend Developer",
+      "Python Programmer",
+      "Flask API Developer",
+      "Cloud Developer"
+    ],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/RedBeret",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/steven-espinoza",
+        "class": "fab fa-linkedin"
+      }
+    ],
+    "image": "profileStevenE.jpg"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "Python",
+        "class": "devicon-python-plain",
+        "level": "85"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain",
+        "level": "90"
+      },
+      {
+        "name": "React",
+        "class": "devicon-react-original",
+        "level": "80"
+      },
+      {
+        "name": "Flask",
+        "class": "devicon-flask-original",
+        "level": "75"
+      },
+      {
+        "name": "HTML5",
+        "class": "devicon-html5-plain",
+        "level": "95"
+      },
+      {
+        "name": "CSS3",
+        "class": "devicon-css3-plain",
+        "level": "95"
+      },
+      {
+        "name": "SQLite",
+        "class": "devicon-sqlite-plain",
+        "level": "70"
+      },
+      {
+        "name": "Tailwind CSS",
+        "class": "devicon-tailwindcss-original",
+        "level": "80"
+      },
+      {
+        "name": "Redux",
+        "class": "devicon-redux-original",
+        "level": "75"
+      },
+      {
+        "name": "PostgreSQL",
+        "class": "devicon-postgresql-plain",
+        "level": "70"
+      },
+      {
+        "name": "Postman",
+        "class": "devicon-postman-plain",
+        "level": "75"
+      },
+      {
+        "name": "PowerShell",
+        "class": "devicon-powershell-plain",
+        "level": "65"
+      },
+      {
+        "name": "Node.js",
+        "class": "devicon-nodejs-plain",
+        "level": "80"
+      },
+      {
+        "name": "Linux",
+        "class": "devicon-linux-plain",
+        "level": "85"
+      },
+      {
+        "name": "Figma",
+        "class": "devicon-figma-plain",
+        "level": "65"
+      },
+      {
+        "name": "Bootstrap",
+        "class": "devicon-bootstrap-plain",
+        "level": "85"
+      },
+      {
+        "name": "Amazon Web Services",
+        "class": "devicon-amazonwebservices-plain-wordmark",
+        "level": "75"
+      }
+    ]
+  }
+}
