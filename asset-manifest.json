@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/RedBeret/steven-espi-portfolio/static/css/main.bf855bc4.css",
-    "main.js": "/RedBeret/steven-espi-portfolio/static/js/main.9472637f.js",
-    "index.html": "/RedBeret/steven-espi-portfolio/index.html",
-    "main.bf855bc4.css.map": "/RedBeret/steven-espi-portfolio/static/css/main.bf855bc4.css.map",
-    "main.9472637f.js.map": "/RedBeret/steven-espi-portfolio/static/js/main.9472637f.js.map"
+    "main.css": "/RedBeret/steven-dev-portfolio/static/css/main.bf855bc4.css",
+    "main.js": "/RedBeret/steven-dev-portfolio/static/js/main.fea4ac88.js",
+    "index.html": "/RedBeret/steven-dev-portfolio/index.html",
+    "main.bf855bc4.css.map": "/RedBeret/steven-dev-portfolio/static/css/main.bf855bc4.css.map",
+    "main.fea4ac88.js.map": "/RedBeret/steven-dev-portfolio/static/js/main.fea4ac88.js.map"
   },
   "entrypoints": [
     "static/css/main.bf855bc4.css",
-    "static/js/main.9472637f.js"
+    "static/js/main.fea4ac88.js"
   ]
 }
