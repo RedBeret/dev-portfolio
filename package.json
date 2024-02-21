@@ -1,7 +1,7 @@
 {
   "name": "steven-dev-portfolio",
-  "homepage": "https://github.com/RedBeret/steven-dev-portfolio",
-  "version": "0.1.1",
+  "homepage": "https://github.com/RedBeret/dev-portfolio",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
