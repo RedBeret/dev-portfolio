@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/RedBeret/dev-portfolio/static/css/main.bf855bc4.css",
-    "main.js": "/RedBeret/dev-portfolio/static/js/main.249bf662.js",
-    "index.html": "/RedBeret/dev-portfolio/index.html",
-    "main.bf855bc4.css.map": "/RedBeret/dev-portfolio/static/css/main.bf855bc4.css.map",
-    "main.249bf662.js.map": "/RedBeret/dev-portfolio/static/js/main.249bf662.js.map"
+    "main.css": "/dev-portfolio/static/css/main.bf855bc4.css",
+    "main.js": "/dev-portfolio/static/js/main.a9d43446.js",
+    "index.html": "/dev-portfolio/index.html",
+    "main.bf855bc4.css.map": "/dev-portfolio/static/css/main.bf855bc4.css.map",
+    "main.a9d43446.js.map": "/dev-portfolio/static/js/main.a9d43446.js.map"
   },
   "entrypoints": [
     "static/css/main.bf855bc4.css",
-    "static/js/main.249bf662.js"
+    "static/js/main.a9d43446.js"
   ]
 }
