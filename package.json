@@ -1,6 +1,6 @@
 {
-  "name": "steven-dev-portfolio",
-  "homepage": "https://github.com/RedBeret/dev-portfolio",
+  "name": "dev-portfolio",
+  "homepage": "https://redberet.github.io/dev-portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,8 +26,7 @@
     "@iconify/react": "^4.1.1",
     "gh-pages": "^4.0.0",
     "sass": "^1.49.7",
-    "nth-check": ">=2.0.1",
-    "postcss": ">=8.4.31"
+    "nth-check": ">=2.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
