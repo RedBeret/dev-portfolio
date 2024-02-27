@@ -71,22 +71,31 @@ class App extends Component {
     }
 
     loadSharedData() {
-        $.ajax({
-            url: `portfolio_shared_data.json`,
-            dataType: "json",
-            cache: false,
-            success: function (data) {
-                this.setState({ sharedData: data }, () => {
-                    if (this.state.sharedData.basic_info) {
-                        document.title = `${this.state.sharedData.basic_info.name}`;
-                    }
-                });
-            }.bind(this),
-            error: function (xhr, status, err) {
-                console.error(err);
-            },
-        });
+        fetch("portfolio_shared_data.json")
+            .then((response) => response.json())
+            .then((data) => this.setState({ sharedData: data }))
+            .catch((error) =>
+                console.error("Error loading shared data:", error)
+            );
     }
+
+    // loadSharedData() {
+    //     $.ajax({
+    //         url: `portfolio_shared_data.json`,
+    //         dataType: "json",
+    //         cache: false,
+    //         success: function (data) {
+    //             this.setState({ sharedData: data }, () => {
+    //                 if (this.state.sharedData.basic_info) {
+    //                     document.title = `${this.state.sharedData.basic_info.name}`;
+    //                 }
+    //             });
+    //         }.bind(this),
+    //         error: function (xhr, status, err) {
+    //             console.error(err);
+    //         },
+    //     });
+    // }
 
     render() {
         const { theme } = this.state;
