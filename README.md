@@ -1,6 +1,6 @@
 # Dev Portfolio
 
-This portfolio is built upon a fantastic template provided by [Dorota1997](https://github.com/Dorota1997/react-frontend-dev-portfolio). As a dev had to standup a portfolio within a day so used this and made some personal touch improvements. Planning on adding blog api to it as well then when it is up and running customize my own and transfer components to that. The template offers a sleek, responsive design that's easy to customize and deploy, making it an ideal starting point for showcasing software development projects and skills.
+This portfolio is built upon a great template provided by [Dorota1997](https://github.com/Dorota1997/react-frontend-dev-portfolio). As a dev had to standup a portfolio within a day so used this and made some personal touch improvements. Planning on adding blog api to it as well then when it is up and running customize my own and transfer components to that. The template offers a sleek, responsive design that's easy to customize and deploy, making it an ideal starting point for showcasing software development projects and skills.
 
 ## Features
 
