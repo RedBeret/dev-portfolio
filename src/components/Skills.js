@@ -1,27 +1,32 @@
 import React, { Component } from "react";
 
 class Skills extends Component {
+  renderSkills(skillsArray) {
+    return skillsArray.map((skill, i) => (
+      <li className="list-inline-item mx-3" key={i}>
+        <span>
+          <div className="text-center skills-tile">
+            <i className={skill.class} style={{ fontSize: "220%" }}>
+              <p className="text-center" style={{ fontSize: "30%", marginTop: "4px" }}>
+                {skill.name}
+              </p>
+            </i>
+          </div>
+        </span>
+      </li>
+    ));
+  }
+
   render() {
+    let frontendSkills, backendSkills, sectionName;
     if (this.props.sharedSkills && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.skills;
-      var skills = this.props.sharedSkills.icons.map(function (skills, i) {
-        return (
-          <li className="list-inline-item mx-3" key={i}>
-            <span>
-              <div className="text-center skills-tile">
-                <i className={skills.class} style={{ fontSize: "220%" }}>
-                  <p
-                    className="text-center"
-                    style={{ fontSize: "30%", marginTop: "4px" }}
-                  >
-                    {skills.name}
-                  </p>
-                </i>
-              </div>
-            </span>
-          </li>
-        );
-      });
+      sectionName = this.props.resumeBasicInfo.section_name.skills;
+      if (this.props.sharedSkills.frontend) {
+        frontendSkills = this.renderSkills(this.props.sharedSkills.frontend);
+      }
+      if (this.props.sharedSkills.backend) {
+        backendSkills = this.renderSkills(this.props.sharedSkills.backend);
+      }
     }
 
     return (
@@ -33,7 +38,10 @@ class Skills extends Component {
             </h1>
           </div>
           <div className="col-md-12 text-center">
-            <ul className="list-inline mx-auto skill-icon">{skills}</ul>
+            <h2>Frontend Skills</h2>
+            <ul className="list-inline mx-auto skill-icon">{frontendSkills}</ul>
+            <h2>Backend Skills</h2>
+            <ul className="list-inline mx-auto skill-icon">{backendSkills}</ul>
           </div>
         </div>
       </section>
