@@ -18,14 +18,16 @@ class Skills extends Component {
   }
 
   render() {
-    let frontendSkills, backendSkills, sectionName;
+    let skills, sectionName;
+    const { theme } = this.props;
+    
     if (this.props.sharedSkills && this.props.resumeBasicInfo) {
       sectionName = this.props.resumeBasicInfo.section_name.skills;
-      if (this.props.sharedSkills.frontend) {
-        frontendSkills = this.renderSkills(this.props.sharedSkills.frontend);
-      }
-      if (this.props.sharedSkills.backend) {
-        backendSkills = this.renderSkills(this.props.sharedSkills.backend);
+      
+      if (theme === "light" && this.props.sharedSkills.frontend) {
+        skills = this.renderSkills(this.props.sharedSkills.frontend);
+      } else if (theme === "dark" && this.props.sharedSkills.backend) {
+        skills = this.renderSkills(this.props.sharedSkills.backend);
       }
     }
 
@@ -38,10 +40,7 @@ class Skills extends Component {
             </h1>
           </div>
           <div className="col-md-12 text-center">
-            <h2>Frontend Skills</h2>
-            <ul className="list-inline mx-auto skill-icon">{frontendSkills}</ul>
-            <h2>Backend Skills</h2>
-            <ul className="list-inline mx-auto skill-icon">{backendSkills}</ul>
+            <ul className="list-inline mx-auto skill-icon">{skills}</ul>
           </div>
         </div>
       </section>
