@@ -9,6 +9,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Blog from "./components/Blog";
+import Recommendations from "./components/Recommendations";
 
 class App extends Component {
     constructor(props) {
@@ -166,6 +167,12 @@ class App extends Component {
                 <Blog 
                     theme={theme} 
                     />
+
+                <Recommendations
+                    theme={theme}
+                    resumeRecommendations={this.state.resumeData.recommendations}
+                    resumeBasicInfo={this.state.resumeData.basic_info}
+                />
 
                 <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
             </div>

@@ -18,6 +18,7 @@ While the original template laid a solid foundation, I've introduced several enh
 - **Second Language Addition:** Expanded the multilingual functionality to include [your language], broadening the portfolio's accessibility.
 - **Security and Code Upgrades:** Updated software dependencies to reduce vulnerabilities and refine the codebase for better performance and security.
 - **Blog Integration**: Added a section to dynamically display the latest blog posts, keeping the portfolio updated with current thought leadership and insights.
+- **Leadership Focused Recommendation**: Incorporated feedback highlighting my leadership approach, emphasizing my capability to elevate team performance and project efficiency through proactive mentorship and leveraging individual strengths.
 
 ## Getting Started
 
