@@ -1,27 +1,34 @@
 import React, { Component } from "react";
 
 class Skills extends Component {
+  renderSkills(skillsArray) {
+    return skillsArray.map((skill, i) => (
+      <li className="list-inline-item mx-3" key={i}>
+        <span>
+          <div className="text-center skills-tile">
+            <i className={skill.class} style={{ fontSize: "220%" }}>
+              <p className="text-center" style={{ fontSize: "30%", marginTop: "4px" }}>
+                {skill.name}
+              </p>
+            </i>
+          </div>
+        </span>
+      </li>
+    ));
+  }
+
   render() {
+    let skills, sectionName;
+    const { theme } = this.props;
+    
     if (this.props.sharedSkills && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.skills;
-      var skills = this.props.sharedSkills.icons.map(function (skills, i) {
-        return (
-          <li className="list-inline-item mx-3" key={i}>
-            <span>
-              <div className="text-center skills-tile">
-                <i className={skills.class} style={{ fontSize: "220%" }}>
-                  <p
-                    className="text-center"
-                    style={{ fontSize: "30%", marginTop: "4px" }}
-                  >
-                    {skills.name}
-                  </p>
-                </i>
-              </div>
-            </span>
-          </li>
-        );
-      });
+      sectionName = this.props.resumeBasicInfo.section_name.skills;
+      
+      if (theme === "light" && this.props.sharedSkills.frontend) {
+        skills = this.renderSkills(this.props.sharedSkills.frontend);
+      } else if (theme === "dark" && this.props.sharedSkills.backend) {
+        skills = this.renderSkills(this.props.sharedSkills.backend);
+      }
     }
 
     return (

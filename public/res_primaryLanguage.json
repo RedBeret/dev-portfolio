@@ -152,5 +152,33 @@
       "mainTech": ["Technical Leadership", "Quality Assurance"],
       "technologies": ["Hardware/Software Testing", "Data Analysis", "Process Improvement", "Systems Integration"]
     }
+  ],
+  "recommendations": [
+    {
+      "author": "David W., CTO at LP3",
+      "date": "November 26, 2022",
+      "text": "In two transformative years working alongside Steven, his exemplary leadership as an IT Project Manager and Sr. Systems Engineer stood out. Steven possesses a rare talent for unifying diverse teams, guiding them towards a common vision with ease and conviction. His mastery in facilitating productive SCRUM meetings ensured every team member felt heard and valued, transforming potential conflicts into creative solutions. Steven's unwavering commitment extended beyond regular hours, always ready to address challenges with a solution-focused mindset. Whether leading from the front or supporting as a team member, Steven's contribution was pivotal in our projects' success. His exceptional blend of technical acumen, leadership, and empathy makes him an invaluable asset to any team."
+    },
+    {
+      "author": "Polo M., Sr. Information System Engineering",
+      "date": "July 19, 2018",
+      "text": "Steven distinguishes himself through an exceptional work ethic and outstanding engineering expertise. During our collaboration on critical system development projects at SPAWAR, his relentless drive and superior organizational skills were pivotal to our success. Beyond technical prowess, Steven's strategic management ensured our teams remained focused and cohesive, effectively navigating complexities to maintain project momentum. His contributions were not just valuable; they were transformative, setting new standards for excellence and team synergy."
+    },
+    {
+      "author": "Sneha N., While At Cisco Systems",
+      "date": "March 2, 2016",
+      "text": "At Cisco, Steven was not just a manager but a mentor who offered me a leadership role on a crucial project as an intern. His innovative approach and readiness to share insights not only propelled our project forward but also significantly influenced my professional growth. Steven's ability to mentor amidst a demanding schedule showcased his dedication to nurturing emerging talent."
+    },
+    {
+      "author": "Kavya P., While At Cisco Systems",
+      "date": "February 26, 2016",
+      "text": "Steven's unique approach to leadership, characterized by a genuine interest in team development and leveraging individual strengths, has significantly contributed to project efficiency and team cohesion."
+    },
+    {
+      "author": "Anmmar A., MBA",
+      "date": "February 19, 2015",
+      "text": "Known for his trustworthiness and exceptional team collaboration skills, Steven's intellectual prowess and passion for teaching have greatly contributed to his team's growth and project success, marking him as an outstanding leader."
+    }
   ]
+  
 }

@@ -28,12 +28,7 @@
     "image": "profileStevenE.jpg"
   },
   "skills": {
-    "icons": [
-      {
-        "name": "Python",
-        "class": "devicon-python-plain",
-        "level": "85"
-      },
+    "frontend": [
       {
         "name": "JavaScript",
         "class": "devicon-javascript-plain",
@@ -43,11 +38,6 @@
         "name": "React",
         "class": "devicon-react-original",
         "level": "80"
-      },
-      {
-        "name": "Flask",
-        "class": "devicon-flask-original",
-        "level": "75"
       },
       {
         "name": "HTML5",
@@ -60,11 +50,6 @@
         "level": "95"
       },
       {
-        "name": "SQLite",
-        "class": "devicon-sqlite-plain",
-        "level": "70"
-      },
-      {
         "name": "Tailwind CSS",
         "class": "devicon-tailwindcss-original",
         "level": "80"
@@ -73,6 +58,33 @@
         "name": "Redux",
         "class": "devicon-redux-original",
         "level": "75"
+      },
+      {
+        "name": "Figma",
+        "class": "devicon-figma-plain",
+        "level": "65"
+      },
+      {
+        "name": "Bootstrap",
+        "class": "devicon-bootstrap-plain",
+        "level": "85"
+      }
+    ],
+    "backend": [
+      {
+        "name": "Python",
+        "class": "devicon-python-plain",
+        "level": "85"
+      },
+      {
+        "name": "Flask",
+        "class": "devicon-flask-original",
+        "level": "75"
+      },
+      {
+        "name": "SQLite",
+        "class": "devicon-sqlite-plain",
+        "level": "70"
       },
       {
         "name": "PostgreSQL",
@@ -97,16 +109,6 @@
       {
         "name": "Linux",
         "class": "devicon-linux-plain",
-        "level": "85"
-      },
-      {
-        "name": "Figma",
-        "class": "devicon-figma-plain",
-        "level": "65"
-      },
-      {
-        "name": "Bootstrap",
-        "class": "devicon-bootstrap-plain",
         "level": "85"
       },
       {
