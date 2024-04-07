@@ -152,33 +152,5 @@
       "mainTech": ["Liderazgo Técnico", "Aseguramiento de la Calidad"],
       "technologies": ["Pruebas de Hardware/Software", "Análisis de Datos", "Mejora de Procesos", "Integración de Sistemas"]
     }
-  ],
-  "recommendations": [
-    {
-      "author": "David W., CTO en LP3",
-      "date": "26 de noviembre de 2022",
-      "text": "En dos años transformadores trabajando junto a Steven, su liderazgo ejemplar como Gerente de Proyectos de TI y Ingeniero de Sistemas Sénior destacó. Steven posee un talento único para unificar equipos diversos, guiándolos hacia una visión común con facilidad y convicción. Su maestría en facilitar reuniones SCRUM productivas aseguró que cada miembro del equipo se sintiera escuchado y valorado, transformando posibles conflictos en soluciones creativas. El compromiso inquebrantable de Steven se extendió más allá de las horas regulares, siempre listo para enfrentar desafíos con una mentalidad enfocada en soluciones. Ya sea liderando desde el frente o apoyando como miembro del equipo, la contribución de Steven fue fundamental para el éxito de nuestros proyectos. Su excepcional combinación de acumen técnico, liderazgo y empatía lo convierte en un activo invaluable para cualquier equipo."
-    },
-    {
-      "author": "Polo M., Ingeniero de Sistemas de Información Sénior",
-      "date": "19 de julio de 2018",
-      "text": "Steven se distingue por una ética de trabajo excepcional y una experiencia en ingeniería sobresaliente. Durante nuestra colaboración en proyectos críticos de desarrollo de sistemas en SPAWAR, su impulso implacable y habilidades organizativas superiores fueron fundamentales para nuestro éxito. Más allá del dominio técnico, la gestión estratégica de Steven aseguró que nuestros equipos permanecieran enfocados y cohesionados, navegando efectivamente por las complejidades para mantener el impulso del proyecto. Sus contribuciones no fueron solo valiosas; fueron transformadoras, estableciendo nuevos estándares de excelencia y sinergia de equipo."
-    },
-    {
-      "author": "Sneha N., Mientras estuvo en Cisco Systems",
-      "date": "2 de marzo de 2016",
-      "text": "En Cisco, Steven no fue solo un gerente, sino un mentor que me ofreció un papel de liderazgo en un proyecto crucial como pasante. Su enfoque innovador y su disposición para compartir percepciones no solo impulsaron nuestro proyecto hacia adelante, sino que también influyeron significativamente en mi crecimiento profesional. La capacidad de Steven para mentorizar a pesar de un horario exigente demostró su dedicación a fomentar el talento emergente."
-    },
-    {
-      "author": "Kavya P., Mientras estuvo en Cisco Systems",
-      "date": "26 de febrero de 2016",
-      "text": "El enfoque único de Steven hacia el liderazgo, caracterizado por un interés genuino en el desarrollo del equipo y en aprovechar las fortalezas individuales, ha contribuido significativamente a la eficiencia del proyecto y la cohesión del equipo."
-    },
-    {
-      "author": "Anmmar A., MBA",
-      "date": "19 de febrero de 2015",
-      "text": "Conocido por su confiabilidad y excepcionales habilidades de colaboración en equipo, el ingenio intelectual de Steven y su pasión por enseñar han contribuido enormemente al crecimiento de su equipo y al éxito del proyecto, marcándolo como un líder sobresaliente."
-    }
   ]
-  
 }
