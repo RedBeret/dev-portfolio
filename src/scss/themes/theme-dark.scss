@@ -123,3 +123,25 @@ body[data-theme="dark"] {
       color: rgb(0, 0, 0); 
     }
   }
+
+  #credentials {
+   .section-title {
+     color: white;
+   }
+   .polaroid {
+     background: #6d6d6d;
+     color: white;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); 
+   }
+   .credential-details {
+     background: transparent;
+     h3, p {
+       color: white;
+     }
+   }
+   .card-header {
+     background: #494949; // Matching the header background in #about
+     color: white;
+   }
+ 
+ }
