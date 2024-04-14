@@ -169,8 +169,6 @@ class App extends Component {
                     resumeCredentials={this.state.resumeData.credentials}
                     resumeBasicInfo={this.state.resumeData.basic_info}
                 />
-
-
                 <Recommendations
                     theme={theme}
                     resumeRecommendations={this.state.resumeData.recommendations}
