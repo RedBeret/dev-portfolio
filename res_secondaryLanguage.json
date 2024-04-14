@@ -119,6 +119,58 @@
       ]
     }
   ],
+  "credentials": {
+    "education": [
+      {
+        "degree": "Licenciatura en Administración de Empresas",
+        "school": "Enfoque: Sistemas de Información Computacional, Universidad Estatal de California, Fresno",
+        "year": "2013"
+      },
+      {
+        "degree": "Certificado en Ingeniería de Software, Escuela Flatiron",
+        "year": "2024"
+      },
+      {
+        "degree": "Especialista TI 25B Calificado, Centro de Excelencia Cibernética del Ejército de EE. UU.",
+        "year": "2016"
+      }
+    ],
+    "certifications": [
+      {
+        "title": "Arquitecto de Soluciones Certificado AWS",
+        "issuer": "Servicios Web de Amazon",
+        "year": "2021"
+      },
+      {
+        "title": "CompTIA Security+ (Sec+)",
+        "issuer": "CompTIA",
+        "year": "2022"
+      },
+      {
+        "title": "ScrumMaster Certificado (CSM), Scrum Alliance D-A-CH e.V.",
+        "year": "2023"
+      },
+      {
+        "title": "Practicante de Nube Certificado AWS",
+        "issuer": "Servicios Web de Amazon",
+        "year": "2024"
+      },
+      {
+        "title": "CCNA, Cisco",
+        "year": "2022"
+      },
+      {
+        "title": "Certificación CompTIA Security+ ce",
+        "issuer": "CompTIA",
+        "year": "2016"
+      },
+      {
+        "title": "Maestro Scrum Ágil Disciplinado (DASM), Instituto de Gestión de Proyectos",
+        "year": "2022"
+      }
+    ]
+  },
+
   "experience": [
     {
       "company": "Noblis MSD",
@@ -154,6 +206,11 @@
     }
   ],
   "recommendations": [
+    {
+      "author": "Karen H., Ingeniera de Software",
+      "date": "29 de marzo de 2024",
+      "text": "Colaborar con Steven en la Escuela Flatiron fue una experiencia definitoria en mi búsqueda educativa. Como la fuerza impulsora detrás de nuestro equipo, Steven nos guió en la creación de un sitio web para clientes de front-end utilizando JavaScript y React. Su experiencia en principios de codificación y diseño fue evidente en el resultado pulido de nuestro proyecto. Sin embargo, lo que realmente distingue a Steven es su compromiso con el crecimiento del equipo. Asumió el papel de mentor, equipándonos con nuevas herramientas y metodologías mientras aseguraba que todos pudieran contribuir significativamente. La capacidad de Steven para armonizar la competencia técnica con una comunicación efectiva y soporte elevó nuestra colaboración a nuevas alturas de éxito y satisfacción."
+    },    
     {
       "author": "David W., CTO en LP3",
       "date": "26 de noviembre de 2022",

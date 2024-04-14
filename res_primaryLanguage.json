@@ -119,6 +119,57 @@
       ]
     }
   ],
+  "credentials": {
+    "education": [
+      {
+        "degree": "Bachelor of Science in Business Administration",
+        "school": "Focus: Computer Information Systems, California State University, Fresno",
+        "year": "2013"
+      },
+      {
+        "degree": "Software Engineering Certificate, Flatiron School",
+        "year": "2024"
+      },
+      {
+        "degree": "25B MOS Qualified, IT Specialist, U.S. Army Cyber Center of Excellence",
+        "year": "2016"
+      }
+    ],
+    "certifications": [
+      {
+        "title": "AWS Certified Solutions Architect",
+        "issuer": "Amazon Web Services",
+        "year": "2021"
+      },
+      {
+        "title": "CompTIA Security+ (Sec+)",
+        "issuer": "CompTIA",
+        "year": "2022"
+      },
+      {
+        "title": "Certified ScrumMaster (CSM), Scrum Alliance D-A-CH e.V.",
+        "year": "2023"
+      },
+      {
+        "title": "AWS Certified Cloud Practitioner",
+        "issuer": "Amazon Web Services",
+        "year": "2024"
+      },
+      {
+        "title": "CCNA, Cisco",
+        "year": "2022"
+      },
+      {
+        "title": "CompTIA Security+ ce Certification",
+        "issuer": "CompTIA",
+        "year": "2016"
+      },
+      {
+        "title": "Disciplined Agile Scrum Master (DASM), Project Management Institute",
+        "year": "2022"
+      }
+    ]
+  },
   "experience": [
     {
       "company": "Noblis MSD",
@@ -153,14 +204,20 @@
       "technologies": ["Hardware/Software Testing", "Data Analysis", "Process Improvement", "Systems Integration"]
     }
   ],
+
   "recommendations": [
+    {
+      "author": "Karen H., Software Engineer",
+      "date": "March 29, 2024",
+      "text": "Collaborating with Steven at Flatiron School was a defining experience in my educational pursuit. As the driving force behind our team, Steven guided us through creating a front-end client website utilizing JavaScript and React. His expertise in coding and design principles was evident in the polished outcome of our project. What truly set Steven apart, however, was his commitment to nurturing the team's growth. He took on the role of mentor, equipping us with new tools and methodologies while ensuring everyone could contribute meaningfully. Steven's ability to harmonize technical proficiency with effective communication and support elevated our collaboration to new heights of success and fulfillment."
+    },
     {
       "author": "David W., CTO at LP3",
       "date": "November 26, 2022",
       "text": "In two transformative years working alongside Steven, his exemplary leadership as an IT Project Manager and Sr. Systems Engineer stood out. Steven possesses a rare talent for unifying diverse teams, guiding them towards a common vision with ease and conviction. His mastery in facilitating productive SCRUM meetings ensured every team member felt heard and valued, transforming potential conflicts into creative solutions. Steven's unwavering commitment extended beyond regular hours, always ready to address challenges with a solution-focused mindset. Whether leading from the front or supporting as a team member, Steven's contribution was pivotal in our projects' success. His exceptional blend of technical acumen, leadership, and empathy makes him an invaluable asset to any team."
     },
     {
-      "author": "Polo M., Sr. Information System Engineering",
+      "author": "Polo M., Sr. Systems Engineer",
       "date": "July 19, 2018",
       "text": "Steven distinguishes himself through an exceptional work ethic and outstanding engineering expertise. During our collaboration on critical system development projects at SPAWAR, his relentless drive and superior organizational skills were pivotal to our success. Beyond technical prowess, Steven's strategic management ensured our teams remained focused and cohesive, effectively navigating complexities to maintain project momentum. His contributions were not just valuable; they were transformative, setting new standards for excellence and team synergy."
     },
