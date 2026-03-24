@@ -29,7 +29,7 @@
     "@iconify/icons-logos": "^1.2.36",
     "@iconify/react": "^4.1.1",
     "gh-pages": "^5.0.0",
-    "nth-check": ">=2.0.1",
+    "nth-check": ">=3.0.0",
     "sass": "^1.49.7"
   },
   "scripts": {
