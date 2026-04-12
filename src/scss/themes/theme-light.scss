@@ -1,9 +1,28 @@
 body[data-theme="light"] {
-    @import '../light-slider.scss';
- 
-    .slider-tab {
-       background-color: #47a1ce;
-    }
-   
-
+    --color-bg: #f4efe7;
+    --color-bg-secondary: #fffdf8;
+    --color-surface: rgba(255, 255, 255, 0.68);
+    --color-surface-strong: #ffffff;
+    --color-text: #172332;
+    --color-text-muted: #5c6877;
+    --color-accent: #0f8b8d;
+    --color-accent-strong: #0c6d77;
+    --color-highlight: #f3b562;
+    --color-border: rgba(23, 35, 50, 0.08);
+    --color-border-strong: rgba(15, 139, 141, 0.18);
+    --color-shadow: 0 24px 80px rgba(23, 35, 50, 0.12);
+    --color-shadow-soft: 0 16px 40px rgba(23, 35, 50, 0.08);
+    --color-hero-start: #fff8eb;
+    --color-hero-mid: #dff4f1;
+    --color-hero-end: #eef5ff;
+    --color-hero-blur-a: rgba(15, 139, 141, 0.18);
+    --color-hero-blur-b: rgba(243, 181, 98, 0.22);
+    --color-portfolio-bg: #eef7f7;
+    --color-skills-bg: #122533;
+    --color-credentials-bg: #fbf4ea;
+    --color-blog-bg: #f7fbff;
+    --color-footer-bg: #0f1d2a;
+    --color-footer-text: #eef8f8;
+    --color-contrast: #ffffff;
+    color-scheme: light;
 }

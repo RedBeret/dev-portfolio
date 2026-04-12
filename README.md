@@ -2,42 +2,29 @@
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=black) ![GitHub stars](https://img.shields.io/github/stars/RedBeret/dev-portfolio?style=social)
 
+This repository powers my public portfolio site. It is built to present the public side of my work clearly: thoughtful software, practical automation, technical leadership, writing, and selected projects that show how I build.
 
-This portfolio is built upon a great template provided by [Dorota1997](https://github.com/Dorota1997/react-frontend-dev-portfolio). As a dev had to standup a portfolio within a day so used this and made some personal touch improvements. Planning on adding blog api to it as well then when it is up and running customize my own and transfer components to that. The template offers a sleek, responsive design that's easy to customize and deploy, making it an ideal starting point for showcasing software development projects and skills.
+## What It Includes
 
-## Features
+- **Two portfolio views:** A frontend/product view and a backend/systems view that change the emphasis across the page.
+- **English and Spanish content:** Both language options are supported through JSON-driven content.
+- **Responsive design:** Layout holds up across desktop, tablet, and mobile.
+- **Project storytelling:** Featured work includes richer context, project focus, and what each build is meant to show.
+- **Blog integration:** Recent writing is pulled in to keep the site current.
+- **Modern frontend tooling:** The app runs on React, Vite, and Sass.
 
-- **Multilingual Support:** Allows showcasing my portfolio in different languages.
-- **Mobile-Friendly Design:** Ensures a seamless experience across various devices.
-- **Light/Dark Mode:** Gives visitors the flexibility to choose their preferred theme.
-- **Dynamically Fetched Data:** Content is loaded from JSON files, enabling easy updates.
-- **Minimalistic and Expandable:** Clean design with room to grow.
+## Local Development
 
-## Custom Enhancements
+1. Clone the repo.
+2. Run `npm install`.
+3. Start the local dev server with `npm run dev`.
+4. Build the production bundle with `npm run build`.
 
-While the original template laid a solid foundation, I've introduced several enhancements to tailor the portfolio to my professional identity and personal taste:
+This repo is standardized on `npm`, and `package-lock.json` is the source of truth for dependency updates.
 
-- **Theme-Dependent Slider and Typewriter:** Replaced React Typical with React Simple Typewriter for a more dynamic presentation of my roles and skills. Integrated a theme-dependent slider that toggles between frontend and backend technologies based on the selected theme (light or dark), visually representing my diverse skill set with appropriate icons.
-- **Second Language Addition:** Expanded the multilingual functionality to include [your language], broadening the portfolio's accessibility.
-- **Security and Code Upgrades:** Updated software dependencies to reduce vulnerabilities and refine the codebase for better performance and security.
-- **Blog Integration**: Added a section to dynamically display the latest blog posts, keeping the portfolio updated with current thought leadership and insights.
-- **Leadership Focused Recommendation**: Incorporated feedback highlighting my leadership approach, emphasizing my capability to elevate team performance and project efficiency through proactive mentorship and leveraging individual strengths.
+## Maintenance Notes
 
-## Getting Started
-
-To use this template for your portfolio:
-
-1. Clone or fork this project.
-2. Run `npm install` to install the required dependencies.
-3. Customize the `package.json` as per your deployment preference.
-4. Start the project locally with `npm start`.
-5. Deploy your version using `npm run deploy`.
-
-## Contribution
-
-Feedback and contributions are always welcome! Feel free to fork this project and adapt it to your needs. Let's make it even better together.
-
-## Credits
-
-Special thanks to [Dorota1997](https://github.com/Dorota1997) for creating the original portfolio template and to all the contributors who have made it what it is today.
+- Portfolio content lives primarily in `public/res_primaryLanguage.json`, `public/res_secondaryLanguage.json`, and `public/portfolio_shared_data.json`.
+- GitHub automation for dependency updates, CI, and CodeQL lives in `.github/`.
+- `npm run ci:check` runs the local verification flow used in CI.
 

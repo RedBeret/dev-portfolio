@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tiny Swarm Maze cover</title>
+  <desc id="desc">Abstract project cover for Tiny Swarm Maze.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="55%" stop-color="#164e63" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <circle cx="230" cy="760" r="180" fill="#22d3ee" opacity="0.14" />
+  <circle cx="1420" cy="140" r="140" fill="#fde68a" opacity="0.12" />
+  <text x="110" y="248" fill="#f8fafc" font-family="Trebuchet MS, Arial, sans-serif" font-size="88" font-weight="700">Tiny</text>
+  <text x="110" y="336" fill="#f8fafc" font-family="Trebuchet MS, Arial, sans-serif" font-size="88" font-weight="700">Swarm</text>
+  <text x="110" y="424" fill="#f8fafc" font-family="Trebuchet MS, Arial, sans-serif" font-size="88" font-weight="700">Maze</text>
+  <text x="114" y="504" fill="#d1fae5" font-family="Trebuchet MS, Arial, sans-serif" font-size="30">Deterministic sim / real-time commands / AI parsing</text>
+  <text x="114" y="554" fill="#fde68a" font-family="Trebuchet MS, Arial, sans-serif" font-size="32">TypeScript / Python / FastAPI / SQLite</text>
+  <g stroke="#f8fafc" stroke-opacity="0.7" stroke-width="16" fill="none" stroke-linecap="round">
+    <path d="M860 180 H1460 V300 H1180 V390 H1360 V510 H980 V640 H1260 V760 H860" />
+    <path d="M930 250 H1070 V330 H980 V450 H1140 V570 H1040 V690 H1180" />
+    <path d="M1270 210 V250 H1360 V420 H1200 V470 H1310 V650 H1110" />
+  </g>
+  <g fill="#fbbf24">
+    <circle cx="902" cy="210" r="16" />
+    <circle cx="1126" cy="330" r="16" />
+    <circle cx="1358" cy="512" r="16" />
+    <circle cx="1180" cy="692" r="16" />
+  </g>
+  <g fill="#22d3ee">
+    <circle cx="930" cy="250" r="12" />
+    <circle cx="980" cy="450" r="12" />
+    <circle cx="1040" cy="690" r="12" />
+    <circle cx="1270" cy="210" r="12" />
+    <circle cx="1310" cy="470" r="12" />
+  </g>
+</svg>

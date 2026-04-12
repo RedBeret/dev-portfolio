@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">AI Ops Runbook Generator cover</title>
+  <desc id="desc">Abstract project cover for AI Ops Runbook Generator.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="55%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#dbeafe" stop-opacity="0.92" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <circle cx="1320" cy="180" r="160" fill="#67e8f9" opacity="0.18" />
+  <circle cx="1160" cy="700" r="220" fill="#f59e0b" opacity="0.12" />
+  <rect x="90" y="96" width="520" height="64" rx="18" fill="#ffffff" opacity="0.1" />
+  <text x="122" y="138" fill="#cbd5e1" font-family="Trebuchet MS, Arial, sans-serif" font-size="26">Client-side incident tooling</text>
+  <text x="112" y="282" fill="#f8fafc" font-family="Trebuchet MS, Arial, sans-serif" font-size="90" font-weight="700">AI Ops</text>
+  <text x="112" y="372" fill="#f8fafc" font-family="Trebuchet MS, Arial, sans-serif" font-size="90" font-weight="700">Runbook</text>
+  <text x="112" y="462" fill="#f8fafc" font-family="Trebuchet MS, Arial, sans-serif" font-size="90" font-weight="700">Generator</text>
+  <text x="116" y="548" fill="#dbeafe" font-family="Trebuchet MS, Arial, sans-serif" font-size="34">TypeScript / React / Vite / Tailwind</text>
+  <rect x="960" y="150" width="470" height="590" rx="38" fill="url(#card)" />
+  <rect x="1000" y="206" width="250" height="22" rx="11" fill="#0f172a" opacity="0.16" />
+  <rect x="1000" y="254" width="352" height="92" rx="24" fill="#14b8a6" opacity="0.18" />
+  <rect x="1030" y="284" width="208" height="18" rx="9" fill="#0f172a" opacity="0.22" />
+  <rect x="1030" y="316" width="280" height="14" rx="7" fill="#0f172a" opacity="0.12" />
+  <rect x="1000" y="380" width="352" height="124" rx="24" fill="#1d4ed8" opacity="0.18" />
+  <rect x="1030" y="414" width="184" height="18" rx="9" fill="#0f172a" opacity="0.22" />
+  <rect x="1030" y="446" width="258" height="14" rx="7" fill="#0f172a" opacity="0.12" />
+  <rect x="1000" y="542" width="352" height="146" rx="24" fill="#f59e0b" opacity="0.16" />
+  <rect x="1030" y="580" width="170" height="18" rx="9" fill="#0f172a" opacity="0.22" />
+  <rect x="1030" y="612" width="246" height="14" rx="7" fill="#0f172a" opacity="0.12" />
+  <rect x="1030" y="652" width="220" height="14" rx="7" fill="#0f172a" opacity="0.12" />
+</svg>
