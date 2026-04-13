@@ -2,7 +2,7 @@ body[data-theme="light"] {
     --color-bg: #f4efe7;
     --color-bg-secondary: #fffdf8;
     --color-surface: rgba(255, 255, 255, 0.68);
-    --color-surface-strong: #ffffff;
+    --color-surface-strong: #fff;
     --color-text: #172332;
     --color-text-muted: #5c6877;
     --color-accent: #0f8b8d;
@@ -23,6 +23,7 @@ body[data-theme="light"] {
     --color-blog-bg: #f7fbff;
     --color-footer-bg: #0f1d2a;
     --color-footer-text: #eef8f8;
-    --color-contrast: #ffffff;
+    --color-contrast: #fff;
+
     color-scheme: light;
 }

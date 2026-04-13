@@ -27,7 +27,7 @@ class ProjectDetailsModal extends Component {
         const imageSources = project.images || [];
         const images =
             imageSources.map((image, index) => (
-                <div key={`${project.title}-${index}`} data-src={image} />
+                <div data-src={image} key={`${project.title}-${index}`} />
             ));
         const highlights =
             project.highlights?.map((highlight) => (
@@ -53,10 +53,10 @@ class ProjectDetailsModal extends Component {
                 className="modal-inside"
             >
                 <button
-                    type="button"
-                    onClick={this.props.onHide}
-                    className="modal-close"
                     aria-label="Close project details"
+                    className="modal-close"
+                    onClick={this.props.onHide}
+                    type="button"
                 >
                     <i className="fas fa-times close-icon"></i>
                 </button>
@@ -122,10 +122,10 @@ class ProjectDetailsModal extends Component {
                             </div>
                             {url ? (
                                 <a
-                                    href={url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
                                     className="link-href"
+                                    href={url}
+                                    rel="noopener noreferrer"
+                                    target="_blank"
                                 >
                                     Open project
                                     <i className="fas fa-external-link-alt"></i>

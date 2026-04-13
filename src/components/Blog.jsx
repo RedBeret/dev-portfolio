@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../App.scss";
 
+const MEDIUM_FEED_URL = "https://medium.com/feed/@redberet";
+const API_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(MEDIUM_FEED_URL)}&count=6`;
+
 const Blog = () => {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -9,8 +12,6 @@ const Blog = () => {
     useEffect(() => {
         const fetchPosts = async () => {
             setLoading(true);
-            const API_URL =
-                "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40redberet&api_key=csw8px55sdk5vdbdt5jpfxml2xdhoa90sf5wezp9&count=6";
 
             try {
                 const response = await fetch(API_URL);
@@ -45,7 +46,7 @@ const Blog = () => {
     }, []);
 
     return (
-        <section id="blog" className="section-block section-block--blog">
+        <section className="section-block section-block--blog" id="blog">
             <div className="section-shell">
                 <div className="section-heading">
                     <p className="section-kicker">Writing</p>
@@ -65,7 +66,7 @@ const Blog = () => {
                 {!loading && !error ? (
                     <div className="blog-grid">
                         {posts.map((post) => (
-                            <article key={post.guid} className="blog-card">
+                            <article className="blog-card" key={post.guid}>
                                 <div className="blog-card__meta">
                                     <span>
                                         {new Date(post.pubDate).toLocaleDateString()}
@@ -76,10 +77,10 @@ const Blog = () => {
                                     {post.description.substring(0, 320)}...
                                 </p>
                                 <a
-                                    href={post.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
                                     className="blog-card__link"
+                                    href={post.link}
+                                    rel="noopener noreferrer"
+                                    target="_blank"
                                 >
                                     Read more
                                     <i className="fas fa-arrow-right"></i>

@@ -18,7 +18,7 @@ body {
     font-family: "IBM Plex Sans", sans-serif;
     transition: background-color 220ms ease, color 220ms ease;
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizelegibility;
 }
 
 *,
@@ -76,7 +76,7 @@ button {
     margin: 0 0 1.4rem;
     padding: 0;
     color: var(--color-text);
-    font-family: "Sora", sans-serif;
+    font-family: Sora, sans-serif;
     font-size: clamp(3.4rem, 4vw, 5rem);
     font-weight: 700;
     line-height: 1.04;
@@ -155,7 +155,7 @@ button {
     gap: 1.2rem;
     max-width: 12ch;
     color: var(--color-text);
-    font-family: "Sora", sans-serif;
+    font-family: Sora, sans-serif;
     font-size: clamp(4.8rem, 8vw, 8.8rem);
     line-height: 0.96;
     letter-spacing: -0.06em;
@@ -206,7 +206,7 @@ button {
 
 .hero-proof-card strong {
     color: var(--color-text);
-    font-family: "Sora", sans-serif;
+    font-family: Sora, sans-serif;
     font-size: 2.1rem;
     line-height: 1.1;
 }
@@ -316,7 +316,7 @@ body[data-theme="dark"] .hero-button--primary {
 .hero-panel h2,
 .site-footer__title {
     display: block;
-    font-family: "Sora", sans-serif;
+    font-family: Sora, sans-serif;
     font-size: 2rem;
     line-height: 1.35;
 }
@@ -581,7 +581,7 @@ body[data-theme="dark"] .hero-button--primary {
 .about-greeting {
     margin: 0 0 1.8rem;
     color: var(--color-accent);
-    font-family: "Sora", sans-serif;
+    font-family: Sora, sans-serif;
     font-size: 2.4rem;
     font-weight: 600;
 }
@@ -674,7 +674,7 @@ body[data-theme="dark"] .project-card__media {
 
 .project-card__title {
     margin: 0;
-    font-family: "Sora", sans-serif;
+    font-family: Sora, sans-serif;
     font-size: 2.35rem;
     line-height: 1.25;
 }
@@ -873,7 +873,7 @@ body[data-theme="dark"] .project-card__media {
 
 .experience-card__title {
     margin-top: 1rem;
-    font-family: "Sora", sans-serif;
+    font-family: Sora, sans-serif;
     font-size: 2.4rem;
 }
 
@@ -957,7 +957,7 @@ body[data-theme="dark"] .project-card__media {
 
 .credential-panel__body h3 {
     margin: 0 0 1.6rem;
-    font-family: "Sora", sans-serif;
+    font-family: Sora, sans-serif;
     font-size: 2.2rem;
 }
 
@@ -1047,7 +1047,7 @@ body[data-theme="dark"] .project-card__media {
 
 .blog-card h3 {
     margin: 0;
-    font-family: "Sora", sans-serif;
+    font-family: Sora, sans-serif;
     font-size: 2.2rem;
     line-height: 1.35;
 }
@@ -1152,7 +1152,7 @@ body[data-theme="dark"] .project-card__media {
 
 .project-modal__heading h3 {
     margin: 0;
-    font-family: "Sora", sans-serif;
+    font-family: Sora, sans-serif;
     font-size: 2.6rem;
 }
 
@@ -1183,7 +1183,7 @@ body[data-theme="dark"] .project-card__media {
 
 .project-modal__details h4 {
     margin: 0 0 1rem;
-    font-family: "Sora", sans-serif;
+    font-family: Sora, sans-serif;
     font-size: 1.8rem;
 }
 

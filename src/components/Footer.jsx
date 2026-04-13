@@ -6,19 +6,19 @@ class Footer extends Component {
         const name = this.props.sharedBasicInfo?.name || "Steven Espinoza";
         const networks = this.props.sharedBasicInfo?.social?.map((network) => (
             <a
-                key={network.name}
+                aria-label={network.name}
+                className="site-footer__social-link"
                 href={network.url}
+                key={network.name}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="site-footer__social-link"
-                aria-label={network.name}
             >
                 <i className={network.class}></i>
             </a>
         ));
 
         return (
-            <footer id="footer" className="site-footer">
+            <footer className="site-footer" id="footer">
                 <div className="section-shell site-footer__inner">
                     <div className="site-footer__copy">
                         <p className="site-footer__kicker">{name}</p>

@@ -71,8 +71,8 @@ class Experience extends Component {
 
         return (
             <section
-                id="experience"
                 className="section-block section-block--experience"
+                id="experience"
             >
                 <div className="section-shell">
                     <div className="section-heading">

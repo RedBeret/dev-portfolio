@@ -10,8 +10,8 @@ class Credentials extends Component {
 
         return (
             <section
-                id="credentials"
                 className="section-block section-block--credentials"
+                id="credentials"
             >
                 <div className="section-shell">
                     <div className="section-heading">
@@ -25,7 +25,7 @@ class Credentials extends Component {
                     </div>
                     <div className="credentials-grid">
                         <article className="credential-panel">
-                            <div className="window-dots" aria-hidden="true">
+                            <div aria-hidden="true" className="window-dots">
                                 <span className="window-dot window-dot--red"></span>
                                 <span className="window-dot window-dot--yellow"></span>
                                 <span className="window-dot window-dot--green"></span>
@@ -34,8 +34,8 @@ class Credentials extends Component {
                                 <h3>Education</h3>
                                 {resumeCredentials.education.map((education) => (
                                     <div
-                                        key={`${education.degree}-${education.year}`}
                                         className="credential-item"
+                                        key={`${education.degree}-${education.year}`}
                                     >
                                         <div>
                                             <h4>{education.degree}</h4>
@@ -48,7 +48,7 @@ class Credentials extends Component {
                         </article>
 
                         <article className="credential-panel">
-                            <div className="window-dots" aria-hidden="true">
+                            <div aria-hidden="true" className="window-dots">
                                 <span className="window-dot window-dot--red"></span>
                                 <span className="window-dot window-dot--yellow"></span>
                                 <span className="window-dot window-dot--green"></span>
@@ -57,8 +57,8 @@ class Credentials extends Component {
                                 <h3>Certifications</h3>
                                 {resumeCredentials.certifications.map((certification) => (
                                     <div
-                                        key={`${certification.title}-${certification.year}`}
                                         className="credential-item"
+                                        key={`${certification.title}-${certification.year}`}
                                     >
                                         <div>
                                             <h4>{certification.title}</h4>

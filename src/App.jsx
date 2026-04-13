@@ -108,15 +108,15 @@ class App extends Component {
                         <div className="language-bar__inner">
                             <span className="language-bar__label">Language</span>
                             <button
-                                type="button"
-                                className="language-pill"
                                 aria-label="Switch to English"
+                                className="language-pill"
                                 onClick={() =>
                                     this.applyPickedLanguage(
                                         window.$primaryLanguage,
                                         window.$secondaryLanguageIconId
                                     )
                                 }
+                                type="button"
                             >
                                 <span
                                     className="iconify language-pill__icon"
@@ -127,15 +127,15 @@ class App extends Component {
                                 <span>EN</span>
                             </button>
                             <button
-                                type="button"
-                                className="language-pill"
                                 aria-label="Switch to Spanish"
+                                className="language-pill"
                                 onClick={() =>
                                     this.applyPickedLanguage(
                                         window.$secondaryLanguage,
                                         window.$primaryLanguageIconId
                                     )
                                 }
+                                type="button"
                             >
                                 <span
                                     className="iconify language-pill__icon"
@@ -167,8 +167,8 @@ class App extends Component {
                     />
                     <Experience
                         theme={theme}
-                        resumeExperience={this.state.resumeData.experience}
                         resumeBasicInfo={this.state.resumeData.basic_info}
+                        resumeExperience={this.state.resumeData.experience}
                     />
                     <Credentials
                         theme={theme}

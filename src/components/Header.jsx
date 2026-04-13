@@ -122,19 +122,19 @@ class Header extends Component {
             social.find((network) => network.name === "linkedin")?.url || "#footer";
         const socialLinks = social.map((network) => (
             <a
-                key={network.name}
-                href={network.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hero-social-link"
                 aria-label={network.name}
+                className="hero-social-link"
+                href={network.url}
+                key={network.name}
+                rel="noopener noreferrer"
+                target="_blank"
             >
                 <i className={network.class}></i>
             </a>
         ));
 
         return (
-            <header id="home" className="hero">
+            <header className="hero" id="home">
                 <div className="section-shell hero-shell">
                     <div className="hero-copy">
                         <p className="hero-kicker">{focus.kicker}</p>
@@ -145,13 +145,13 @@ class Header extends Component {
                             </span>
                             <span className="hero-title__role">
                                 <Typewriter
-                                    words={rotatingTitles}
-                                    loop={Infinity}
                                     cursor
                                     cursorStyle="|"
-                                    typeSpeed={230}
-                                    deleteSpeed={100}
                                     delaySpeed={1150}
+                                    deleteSpeed={100}
+                                    loop={Infinity}
+                                    typeSpeed={230}
+                                    words={rotatingTitles}
                                 />
                             </span>
                         </h1>
@@ -172,14 +172,17 @@ class Header extends Component {
                             ))}
                         </div>
                         <div className="hero-actions">
-                            <a href="#portfolio" className="hero-button hero-button--primary">
+                            <a
+                                className="hero-button hero-button--primary"
+                                href="#portfolio"
+                            >
                                 View selected work
                             </a>
                             <a
-                                href={linkedin}
-                                target="_blank"
-                                rel="noopener noreferrer"
                                 className="hero-button hero-button--secondary"
+                                href={linkedin}
+                                rel="noopener noreferrer"
+                                target="_blank"
                             >
                                 Connect on LinkedIn
                             </a>
@@ -203,7 +206,7 @@ class Header extends Component {
                     </div>
 
                     <aside className="hero-panel">
-                        <div className="window-dots" aria-hidden="true">
+                        <div aria-hidden="true" className="window-dots">
                             <span className="window-dot window-dot--red"></span>
                             <span className="window-dot window-dot--yellow"></span>
                             <span className="window-dot window-dot--green"></span>
@@ -211,9 +214,9 @@ class Header extends Component {
                         <div className="hero-panel__mode">
                             <div className="hero-panel__icon-wrap">
                                 <img
-                                    src={this.state.themeIcon}
                                     alt=""
                                     className="hero-panel__icon"
+                                    src={this.state.themeIcon}
                                 />
                             </div>
                             <div>

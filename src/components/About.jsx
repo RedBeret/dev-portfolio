@@ -37,7 +37,7 @@ class About extends Component {
                 : "Automation, backend, and systems work";
 
         return (
-            <section id="about" className="section-block section-block--about">
+            <section className="section-block section-block--about" id="about">
                 <div className="section-shell">
                     <div className="section-heading">
                         <p className="section-kicker">Profile</p>
@@ -52,10 +52,7 @@ class About extends Component {
                     <div className="about-grid">
                         <div className="about-profile-card">
                             <div className="about-profile-card__photo">
-                                <img
-                                    src={profilepic}
-                                    alt="Steven Espinoza"
-                                />
+                                <img alt="Steven Espinoza" src={profilepic} />
                             </div>
                             <p className="about-profile-card__label">
                                 {focusLabel}
@@ -77,7 +74,7 @@ class About extends Component {
                         </div>
 
                         <div className="about-story-card">
-                            <div className="window-dots" aria-hidden="true">
+                            <div aria-hidden="true" className="window-dots">
                                 <span className="window-dot window-dot--red"></span>
                                 <span className="window-dot window-dot--yellow"></span>
                                 <span className="window-dot window-dot--green"></span>
