@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# local preview / automation artifacts
+.chrome-profile/
+.edge-profile/
+.playwright-cli/
+output/
+vite-preview.log
