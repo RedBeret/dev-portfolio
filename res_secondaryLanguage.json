@@ -1,89 +1,148 @@
 {
   "basic_info": {
     "description_header": "Hola, soy Steven Espinoza",
-    "description": "👋 Soy un Ingeniero de Software con una amplia experiencia en Ingeniería de Sistemas, hábil en JavaScript, Python, React y metodologías ágiles. Mi trayectoria profesional se distingue por liderar la integración de sistemas IT en más de 50 barcos de la Marina de EE.UU., demostrando mi capacidad para gestionar proyectos complejos y esfuerzos de ingeniería colaborativa. En mi transición de la ingeniería de sistemas a la ingeniería de software, me he centrado en el desarrollo, prueba y optimización de soluciones, validadas por certificaciones reconocidas en la industria como SEC+, CCNA, DASM y AWS. Mi elegibilidad para trabajar en proyectos sensibles y clasificados ha sido evaluada y aprobada, reflejando mi compromiso con la integridad y altos estándares de seguridad. Fuera de mis objetivos profesionales, soy un ávido viajero mundial y aventurero en solitario, inspirándome en culturas y paisajes diversos, desde las históricas calles de Berlín y Roma hasta las increíbles vistas del Lago Como y los Alpes suizos. Estas experiencias no solo han ampliado mi perspectiva sino que también han infundido mi enfoque de desarrollo de software con creatividad, adaptabilidad y una visión global. Actualmente, canalizo mi pasión por la tecnología y la exploración desde mi base en San Diego, California, ansioso por enfrentar nuevos desafíos e innovar dentro del dinámico campo de la ingeniería de software.",
+    "description": "Soy un technical lead e ingeniero de software con base en sistemas y afinidad por crear herramientas practicas que realmente le ahorren tiempo a la gente. Una gran parte de mi carrera ha sido trabajar en cientos de entornos empresariales aislados distribuidos en mas de 150 plataformas, entendiendo como esta construido cada uno, mejorando integraciones y haciendo que sistemas complejos sean mas repetibles. Esa experiencia practica ahora alimenta el trabajo publico que mas disfruto: productos con IA, herramientas para desarrolladores y aplicaciones full-stack con Python, React y TypeScript. Me gusta tomar problemas operativos desordenados y convertirlos en software claro, util y mantenible. Fuera del trabajo disfruto viajar, aprender cosas nuevas y construir proyectos por curiosidad. Vivo en San Diego y me interesan equipos que valoren tanto la ejecucion como la confianza.",
     "section_name": {
-      "about": "Sobre mí",
-      "projects": "Proyectos",
+      "about": "Sobre Mi",
+      "projects": "Proyectos Destacados",
       "skills": "Habilidades",
       "experience": "Experiencia"
     }
   },
   "projects": [
     {
-      "title": "AIChatPoweredEcommerce",
-      "startDate": "2024",
-      "description": "AIChatPoweredEcommerce mezcla IA con comercio electrónico a través de una plataforma desarrollada con Flask y React, incorporando un chatbot de IA personalizado para soporte al cliente instantáneo. El proyecto subraya mi experiencia en la construcción de entornos de compras en línea seguros, receptivos y centrados en el usuario. Las tecnologías clave incluyen React para el frontend para asegurar una experiencia de usuario dinámica, Python para operaciones de backend robustas y Flask para la gestión eficiente del servidor web y API. Las características notables incluyen soporte de chat impulsado por IA usando GPT de OpenAI para interacciones técnicas con clientes, un compromiso con el diseño seguro y receptivo para una experiencia de compra óptima, y una gestión avanzada de bases de datos con SQLite para garantizar la integridad de los datos y un acceso rápido a los datos y PostgreSQL para la implementación.",
-      "images": [
-        "images/portfolio/aichatpoweredstore/AiStoreHome.png",
-        "images/portfolio/aichatpoweredstore/AiStoreOpenai.png",
-        "images/portfolio/aichatpoweredstore/AiStoreProductdetail.png",
-        "images/portfolio/aichatpoweredstore/AiStoreCheckedOut.png"
+      "title": "AI Ops Runbook Generator",
+      "startDate": "2026",
+      "description": "Herramienta web que convierte alertas crudas en runbooks operativos estructurados en segundos. Me enfoque en la deteccion de formato, la orquestacion de prompts, el almacenamiento local de claves y una experiencia clara para responder incidentes sin depender de un backend.",
+      "frontDescription": "Herramienta web que convierte alertas crudas en runbooks operativos estructurados en segundos. Me enfoque en el flujo del operador, el formateo rapido y una interfaz que se mantiene clara aun cuando la entrada es desordenada.",
+      "backDescription": "Herramienta web que convierte alertas crudas en runbooks operativos estructurados en segundos. Me enfoque en la deteccion de formato, la orquestacion de prompts y el manejo local de claves para mantener la experiencia rapida sin depender de un backend.",
+      "frontLabel": "UX de producto + flujo con IA",
+      "backLabel": "Orquestacion de prompts + arquitectura cliente",
+      "impact": "Convierte alertas ruidosas en algo que un operador puede usar de inmediato.",
+      "highlights": [
+        "Flujo del lado del cliente con claves guardadas localmente",
+        "Salida estructurada a partir de entrada operativa desordenada",
+        "Demo pulida de respuesta a incidentes con baja friccion"
       ],
-      "url": "https://aichatpowereddeployment.onrender.com/",
+      "frontRank": 1,
+      "backRank": 3,
+      "images": [
+        "images/portfolio/ai-ops-runbook-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/ai-ops-runbook",
       "technologies": [
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
         {
           "class": "devicon-react-original",
           "name": "React"
         },
         {
+          "class": "devicon-vitejs-plain",
+          "name": "Vite"
+        },
+        {
+          "class": "devicon-tailwindcss-original",
+          "name": "Tailwind CSS"
+        }
+      ]
+    },
+    {
+      "title": "Tiny Swarm Maze",
+      "startDate": "2026",
+      "description": "Simulacion estilo retro que explora coordinacion de enjambres mediante comandos cortos en lenguaje natural. Construí un nucleo determinista, parsing de modelos asincrono, telemetria y un loop en tiempo real con WebSockets para que la experiencia siguiera siendo fluida.",
+      "frontDescription": "Simulacion estilo retro que hace entendible el comportamiento de un enjambre mediante visuales rapidos, comandos cortos y una interfaz mas juguetona.",
+      "backDescription": "Simulacion estilo retro que explora coordinacion de enjambres mediante un nucleo determinista, parsing asincrono, telemetria y un loop en tiempo real con WebSockets.",
+      "frontLabel": "Simulacion interactiva full-stack",
+      "backLabel": "Simulacion en tiempo real + diseno de servicios",
+      "impact": "Demuestra criterio full-stack, manejo de estado en tiempo real y experimentacion con sistemas.",
+      "highlights": [
+        "Nucleo de simulacion determinista",
+        "Actualizaciones en tiempo real con WebSockets",
+        "Arquitectura full-stack con Python y TypeScript"
+      ],
+      "frontRank": 2,
+      "backRank": 2,
+      "images": [
+        "images/portfolio/tiny-swarm-maze-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/tiny-swarm-maze",
+      "technologies": [
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
           "class": "devicon-python-plain",
           "name": "Python"
         },
         {
-          "class": "devicon-flask-original",
-          "name": "Flask"
+          "class": "devicon-fastapi-plain",
+          "name": "FastAPI"
         },
         {
           "class": "devicon-sqlite-plain",
-          "name": "SQLite3"
-        },
-        {
-          "class": "devicon-postgresql-plain",
-          "name": "PostgreSQL"
+          "name": "SQLite"
         }
       ]
     },
     {
-      "title": "Mont Luxe Watch Company",
-      "startDate": "2024",
-      "description": "El proyecto Mont Luxe Watch Company fue una plataforma de comercio electrónico dedicada a exhibir relojes de lujo. Este empeño fue crucial en mi comprensión de técnicas eficientes de gestión de bases de datos, particularmente la importancia de separar tablas y emplear la normalización SQL para mantener la integridad de los datos, especialmente al recopilar información del usuario en diferentes áreas de la aplicación. Utilizando Flask y React, el proyecto sirvió como un ejercicio completo de desarrollo de pila completa, donde apliqué mis habilidades en desarrollo frontend y backend, gestión de bases de datos e integración de API. La experiencia subrayó el papel crítico del diseño estructurado de bases de datos en el soporte de entornos de compras en línea seguros, escalables y receptivos, mejorando mi competencia en la creación de aplicaciones web centradas en el usuario.",
-      "images": [
-        "images/portfolio/montluxewatchstore/montluxehomep1.png",
-        "images/portfolio/montluxewatchstore/montluxehomep2.png",
-        "images/portfolio/montluxewatchstore/montluxehomep3.png",
-        "images/portfolio/montluxewatchstore/montluxeaboutp1.png",
-        "images/portfolio/montluxewatchstore/montluxeaddtocart.png",
-        "images/portfolio/montluxewatchstore/montluxeaddtocart2.png",
-        "images/portfolio/montluxewatchstore/montluxecheckout.png",
-        "images/portfolio/montluxewatchstore/montluxesignin.png"
+      "title": "repo-first-aid",
+      "startDate": "2026",
+      "description": "CLI en Python que audita repositorios publicos en busca de los problemas que la gente nota primero: texto de plantilla, archivos de confianza faltantes, promesas de despliegue rotas, basura rastreada y onboarding debil. Lo construí como un chequeo rapido antes de publicar o compartir un repo.",
+      "frontDescription": "Herramienta CLI pensada para detectar los detalles que hacen que un repo publico se sienta incompleto, desde residuos de plantilla hasta senales de confianza rotas.",
+      "backDescription": "CLI en Python que audita repositorios publicos en busca de residuos de plantilla, archivos de confianza faltantes, despliegues inconsistentes, basura rastreada y onboarding debil.",
+      "frontLabel": "Tooling para experiencia de desarrollador",
+      "backLabel": "Automatizacion de higiene de repositorios",
+      "impact": "Ayuda a que los repositorios se sientan mas limpios, seguros y faciles de confiar.",
+      "highlights": [
+        "CLI local rapido para maintainers",
+        "Chequeos opinionados sobre confianza y pulido",
+        "Disenado alrededor de la primera impresion de un repo"
       ],
-      "url": "https://github.com/RedBeret/MontLuxeWatch-ReactFlaskEcommerce",
+      "frontRank": 4,
+      "backRank": 1,
+      "images": [
+        "images/portfolio/repo-first-aid-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/repo-first-aid",
       "technologies": [
-        {
-          "class": "devicon-react-original",
-          "name": "React"
-        },
         {
           "class": "devicon-python-plain",
           "name": "Python"
         },
         {
-          "class": "devicon-flask-original",
-          "name": "Flask"
+          "class": "devicon-git-plain",
+          "name": "Git"
+        },
+        {
+          "class": "devicon-github-original",
+          "name": "GitHub"
         }
       ]
     },
     {
-      "title": "Python CLI Bodyweight Fitness",
-      "startDate": "2023",
-      "description": "Una aplicación de interfaz de línea de comandos para generar planes de entrenamiento personalizados, utilizando Python y SQLite3 para la gestión de datos y la lógica de la aplicación. Este proyecto destaca mi competencia en backend y mi interés en la tecnología de fitness.",
-      "images": [
-        "images/portfolio/pythonclibodyweightfitness/fitnessCoachPythonSQL-p1.png",
-        "images/portfolio/pythonclibodyweightfitness/fitnessCoachPythonSQL-p2.png",
-        "images/portfolio/pythonclibodyweightfitness/fitnessCoachPythonSQL-p3.png"
+      "title": "gh-sentinel",
+      "startDate": "2026",
+      "description": "Herramienta de monitoreo para GitHub que deduplica issues, pull requests, fallas de CI y alertas de seguridad, y luego envia solo lo accionable por Signal, Slack o correo. Usa gh CLI y SQLite para reducir ruido y evitar alertas repetidas.",
+      "frontDescription": "Concepto de monitoreo para GitHub que reduce ruido y envia solo las actualizaciones que una persona realmente necesita revisar.",
+      "backDescription": "Filtro de notificaciones para GitHub que deduplica issues, pull requests, fallas de CI y alertas de seguridad antes de enviar solo lo accionable por Signal, Slack o correo.",
+      "frontLabel": "Concepto de producto para notificaciones",
+      "backLabel": "Ruteo de alertas + deduplicacion",
+      "impact": "Reduce fatiga de alertas al tratar la calidad de las notificaciones como parte del producto.",
+      "highlights": [
+        "Deduplicacion entre multiples tipos de eventos",
+        "Estado persistente con SQLite para evitar ruido repetido",
+        "Ruta de entrega para chat y correo"
       ],
-      "url": "https://github.com/RedBeret/Fitness-Coach-Python-SQL-CLI",
+      "frontRank": 3,
+      "backRank": 4,
+      "images": [
+        "images/portfolio/gh-sentinel-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/gh-sentinel",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -91,30 +150,15 @@
         },
         {
           "class": "devicon-sqlite-plain",
-          "name": "SQLite3"
-        }
-      ]
-    },
-    {
-      "title": "Weather App",
-      "startDate": "2023",
-      "description": "Como esfuerzo colaborativo, mi equipo de dos desarrolló una aplicación web que aprovecha los datos meteorológicos en tiempo real a nivel global mediante una clave de API. Este proyecto, arraigado en metodologías ágiles, ofrece un diseño centrado en el usuario con funcionalidad de búsqueda de ciudades, la capacidad de alternar unidades de temperatura y un sistema para comentarios persistentes de usuarios. Nuestra solución enfatiza la interacción fluida del usuario y la predicción meteorológica precisa, convirtiéndola en una plataforma de referencia para información meteorológica.",
-      "images": [
-        "images/portfolio/weatherapp/weather-app-final.png"
-      ],
-      "url": "https://redberet.github.io/WeatherApp/",
-      "technologies": [
-        {
-          "class": "devicon-javascript-plain",
-          "name": "JavaScript"
+          "name": "SQLite"
         },
         {
-          "class": "devicon-html5-plain",
-          "name": "HTML5"
+          "class": "devicon-docker-plain",
+          "name": "Docker"
         },
         {
-          "class": "devicon-css3-plain",
-          "name": "CSS3"
+          "class": "devicon-github-original",
+          "name": "GitHub"
         }
       ]
     }
@@ -122,120 +166,150 @@
   "credentials": {
     "education": [
       {
-        "degree": "Licenciatura en Administración de Empresas",
-        "school": "Enfoque: Sistemas de Información Computacional, Universidad Estatal de California, Fresno",
+        "degree": "Licenciatura en Administracion de Empresas",
+        "school": "Sistemas de Informacion Computacional, California State University, Fresno",
         "year": "2013"
       },
       {
-        "degree": "Certificado en Ingeniería de Software, Escuela Flatiron",
+        "degree": "Certificado en Ingenieria de Software",
+        "school": "Flatiron School",
         "year": "2024"
       },
       {
-        "degree": "Especialista TI 25B Calificado, Centro de Excelencia Cibernética del Ejército de EE. UU.",
+        "degree": "Especialista en Tecnologia de la Informacion (25B MOS)",
+        "school": "U.S. Army Cyber Center of Excellence",
         "year": "2016"
       }
     ],
     "certifications": [
       {
-        "title": "Arquitecto de Soluciones Certificado AWS",
-        "issuer": "Servicios Web de Amazon",
-        "year": "2021"
-      },
-      {
-        "title": "CompTIA Security+ (Sec+)",
-        "issuer": "CompTIA",
-        "year": "2022"
-      },
-      {
-        "title": "ScrumMaster Certificado (CSM), Scrum Alliance D-A-CH e.V.",
-        "year": "2023"
-      },
-      {
-        "title": "Practicante de Nube Certificado AWS",
-        "issuer": "Servicios Web de Amazon",
+        "title": "Certified ScrumMaster (CSM)",
+        "issuer": "Scrum Alliance",
         "year": "2024"
       },
       {
-        "title": "CCNA, Cisco",
+        "title": "AWS Cloud Practitioner",
+        "issuer": "Amazon Web Services",
         "year": "2022"
       },
       {
-        "title": "Certificación CompTIA Security+ ce",
+        "title": "Cisco Certified Network Associate (CCNA)",
+        "issuer": "Cisco",
+        "year": "2022"
+      },
+      {
+        "title": "Disciplined Agile Scrum Master (DASM)",
+        "issuer": "Project Management Institute",
+        "year": "2022"
+      },
+      {
+        "title": "CompTIA Security+",
         "issuer": "CompTIA",
         "year": "2016"
       },
       {
-        "title": "Maestro Scrum Ágil Disciplinado (DASM), Instituto de Gestión de Proyectos",
-        "year": "2022"
+        "title": "DISA ACAS Operator & Supervisor",
+        "issuer": "Defense Information Systems Agency",
+        "year": "2023"
       }
     ]
   },
-
   "experience": [
     {
-      "company": "Noblis MSD",
-      "title": "Ingeniero de Sistemas Senior",
+      "company": "Noblis",
+      "title": "Technical Lead / Senior Systems Engineer",
       "years": "11.2022 - Presente",
-      "description": "Lideré proyectos de integración de sistemas clave para más de 50 buques de la Marina de EE.UU., optimizando el rendimiento a través de plataformas tecnológicas. Encabezé la creación de una base de conocimientos integral para la capacitación y el soporte, con un análisis de datos profundo que mejoró la eficiencia del flujo de trabajo.",
-      "mainTech": ["Integración de Sistemas", "Análisis de Datos"],
-      "technologies": ["Desarrollo de Software", "Metodologías Ágiles", "Gestión de Proyectos", "Ciberseguridad", "Arquitectura de Redes"]
+      "description": "Lidero trabajo de integracion y preparacion de sistemas complejos en un entorno de alta confiabilidad, al mismo tiempo que desarrollo herramientas internas que reducen trabajo manual y mejoran las transiciones entre equipos. Mi trabajo reciente combina automatizacion, simplificacion de procesos, mejoras de flujo del equipo e investigacion temprana de diagnostico asistido por IA.",
+      "frontDescription": "He liderado entregas dentro de un entorno tecnico a escala mientras construyo herramientas y flujos que hacen que el trabajo complicado sea mas claro y usable para otros ingenieros. Gran parte de esto consiste en traducir realidad operativa desordenada en handoffs limpios, procesos mas calmados y software en el que la gente pueda confiar.",
+      "backDescription": "He liderado integracion y preparacion en cientos de entornos empresariales aislados distribuidos en mas de 150 plataformas, moviendome entre sistemas construidos de forma independiente con su propia identidad, mensajeria e infraestructura base. El trabajo reciente mezcla automatizacion, simplificacion de procesos, diseno de flujos de equipo e investigacion temprana con diagnostico asistido por IA.",
+      "scope": "Trabajo sobre 150+ plataformas y cientos de entornos empresariales aislados",
+      "highlights": [
+        "Construí automatizaciones internas que redujeron revision manual y friccion en handoffs",
+        "Convirti procesos dependientes de expertos en flujos repetibles para ingenieros mas nuevos",
+        "Lidere integracion, preparacion y coordinacion entre equipos en un entorno de alta complejidad"
+      ],
+      "mainTech": ["Liderazgo Tecnico", "Automatizacion"],
+      "technologies": ["Python", "PowerShell", "Integracion de Sistemas", "Mejora de Procesos", "Mentoria"]
     },
     {
       "company": "KES, Inc.",
-      "title": "Ingeniero de Sistemas Senior",
+      "title": "Senior Systems Engineer",
       "years": "06.2017 - 11.2022",
-      "description": "Pionero en el desarrollo y seguimiento avanzado de sistemas, mejorando la eficiencia y la experiencia del usuario. Personalicé soluciones para los objetivos comerciales de los clientes, mejorando las asociaciones a largo plazo y el crecimiento de ingresos.",
-      "mainTech": ["Desarrollo de Sistemas", "Soluciones para Clientes"],
-      "technologies": ["Ingeniería Inversa", "Monitoreo de Proyectos", "Arquitectura de Sistemas", "Eficiencia Operativa"]
+      "description": "Mejore flujos de instalacion, documentacion y coordinacion entre equipos para despliegues de sistemas a gran escala. Una prioridad constante fue convertir conocimiento tribal en procesos repetibles para que ingenieros nuevos pudieran aportar mas rapido y con mayor confianza.",
+      "frontDescription": "Mejore la entrega convirtiendo conocimiento disperso en procesos mas claros, mejor documentacion y una coordinacion mas fluida. Fue el tipo de trabajo que hace mas facil integrar personas nuevas y sacar proyectos adelante.",
+      "backDescription": "Mejore flujos de instalacion, documentacion y coordinacion entre equipos para despliegues a gran escala en distintos entornos empresariales, con un enfoque constante en repetibilidad y ramp-up mas rapido.",
+      "scope": "Soporte a trabajo de despliegue e integracion en multiples entornos",
+      "highlights": [
+        "Reduje friccion en trabajo de instalacion de preproduccion",
+        "Estandarice documentacion y practicas de handoff",
+        "Ayude a que ingenieros mas nuevos fueran productivos mas rapido"
+      ],
+      "mainTech": ["Diseno de Procesos", "Integracion de Sistemas"],
+      "technologies": ["Documentacion", "Aseguramiento de Calidad", "Coordinacion de Proyectos", "Soporte Operativo"]
     },
     {
       "company": "Apex Systems",
-      "title": "Gerente de Proyecto de TI",
+      "title": "IT Project Manager",
       "years": "12.2016 - 06.2017",
-      "description": "Dirigí la consolidación de redes regionales, mejorando la infraestructura de TI del gobierno. Gestioné planes de trabajo de control de TI, integrando las mejores prácticas para la entrega eficiente de proyectos.",
-      "mainTech": ["Consolidación de Redes", "Planificación Estratégica"],
-      "technologies": ["Planes de Trabajo de Control de TI", "Servicios de TI Gubernamentales", "Compromiso con los Stakeholders"]
+      "description": "Coordine proyectos regionales de TI y esfuerzos de consolidacion de redes, manteniendo alineados cronogramas, interesados y detalles de implementacion en entregas rapidas.",
+      "frontDescription": "Gestione trabajo regional de TI con enfasis en mantener personas alineadas, el alcance entendible y la ejecucion avanzando.",
+      "backDescription": "Coordine proyectos regionales de TI y esfuerzos de consolidacion de redes, manteniendo alineados cronogramas, interesados y detalles de implementacion en entregas rapidas.",
+      "scope": "Coordinacion de proyectos regionales entre redes y equipos de implementacion",
+      "highlights": [
+        "Alinee cronogramas, stakeholders y detalles de implementacion",
+        "Mantube trabajo rapido visible y organizado",
+        "Conecte necesidades tecnicas con entrega de proyectos"
+      ],
+      "mainTech": ["Entrega de Proyectos", "Proyectos de Red"],
+      "technologies": ["Planeacion", "Comunicacion con Stakeholders", "Seguimiento de Ejecucion", "Documentacion"]
     },
     {
       "company": "Cisco",
-      "title": "Líder de Equipo de Proyecto, Ingeniero de Pruebas, Analista de Negocios",
+      "title": "Project Team Lead / Test Engineer / Business Analyst",
       "years": "08.2015 - 12.2016",
-      "description": "Lideré proyectos de ingeniería para mejorar la eficiencia del sistema. Realicé pruebas rigurosas para la calidad del producto. Impulsé actualizaciones de firmware y hardware, reduciendo los costos operativos.",
-      "mainTech": ["Liderazgo Técnico", "Aseguramiento de la Calidad"],
-      "technologies": ["Pruebas de Hardware/Software", "Análisis de Datos", "Mejora de Procesos", "Integración de Sistemas"]
+      "description": "Comence en funciones de pruebas y analisis, y despues asumi responsabilidades de liderazgo en trabajo de firmware, hardware y mejora de procesos. Esa mezcla de pruebas practicas y coordinacion de personas todavia moldea mi forma de abordar la ingenieria.",
+      "frontDescription": "Pase de pruebas y analisis a liderazgo al convertirme en la persona capaz de moverse entre detalles, personas y proceso.",
+      "backDescription": "Comence en funciones de pruebas y analisis, y despues asumi responsabilidades de liderazgo en trabajo de firmware, hardware y mejora de procesos.",
+      "scope": "Trabajo entre pruebas, hardware, firmware y coordinacion de equipos",
+      "highlights": [
+        "Base practica en pruebas y analisis",
+        "Primeras responsabilidades de liderazgo en entrega interfuncional",
+        "Forme habitos fuertes de mejora de procesos y comunicacion"
+      ],
+      "mainTech": ["Calidad y Liderazgo", "Pruebas de Sistemas"],
+      "technologies": ["Pruebas", "Analisis de Datos", "Mejora de Procesos", "Colaboracion Interfuncional"]
     }
   ],
   "recommendations": [
     {
       "author": "Karen H., Ingeniera de Software",
       "date": "29 de marzo de 2024",
-      "text": "Colaborar con Steven en la Escuela Flatiron fue una experiencia definitoria en mi búsqueda educativa. Como la fuerza impulsora detrás de nuestro equipo, Steven nos guió en la creación de un sitio web para clientes de front-end utilizando JavaScript y React. Su experiencia en principios de codificación y diseño fue evidente en el resultado pulido de nuestro proyecto. Sin embargo, lo que realmente distingue a Steven es su compromiso con el crecimiento del equipo. Asumió el papel de mentor, equipándonos con nuevas herramientas y metodologías mientras aseguraba que todos pudieran contribuir significativamente. La capacidad de Steven para armonizar la competencia técnica con una comunicación efectiva y soporte elevó nuestra colaboración a nuevas alturas de éxito y satisfacción."
-    },    
+      "text": "Colaborar con Steven en la Escuela Flatiron fue una experiencia definitoria en mi busqueda educativa. Como la fuerza impulsora detras de nuestro equipo, Steven nos guio en la creacion de un sitio web para clientes de front-end utilizando JavaScript y React. Su experiencia en principios de codificacion y diseno fue evidente en el resultado pulido de nuestro proyecto. Sin embargo, lo que realmente distingue a Steven es su compromiso con el crecimiento del equipo. Asumio el papel de mentor, equipandonos con nuevas herramientas y metodologias mientras aseguraba que todos pudieran contribuir significativamente. La capacidad de Steven para armonizar la competencia tecnica con una comunicacion efectiva y soporte elevo nuestra colaboracion a nuevas alturas de exito y satisfaccion."
+    },
     {
       "author": "David W., CTO en LP3",
       "date": "26 de noviembre de 2022",
-      "text": "En dos años transformadores trabajando junto a Steven, su liderazgo ejemplar como Gerente de Proyectos de TI y Ingeniero de Sistemas Sénior destacó. Steven posee un talento único para unificar equipos diversos, guiándolos hacia una visión común con facilidad y convicción. Su maestría en facilitar reuniones SCRUM productivas aseguró que cada miembro del equipo se sintiera escuchado y valorado, transformando posibles conflictos en soluciones creativas. El compromiso inquebrantable de Steven se extendió más allá de las horas regulares, siempre listo para enfrentar desafíos con una mentalidad enfocada en soluciones. Ya sea liderando desde el frente o apoyando como miembro del equipo, la contribución de Steven fue fundamental para el éxito de nuestros proyectos. Su excepcional combinación de acumen técnico, liderazgo y empatía lo convierte en un activo invaluable para cualquier equipo."
+      "text": "En dos anos transformadores trabajando junto a Steven, su liderazgo ejemplar como Gerente de Proyectos de TI y Ingeniero de Sistemas Senior destaco. Steven posee un talento unico para unificar equipos diversos, guiandolos hacia una vision comun con facilidad y conviccion. Su maestria en facilitar reuniones SCRUM productivas aseguro que cada miembro del equipo se sintiera escuchado y valorado, transformando posibles conflictos en soluciones creativas. El compromiso inquebrantable de Steven se extendio mas alla de las horas regulares, siempre listo para enfrentar desafios con una mentalidad enfocada en soluciones. Ya sea liderando desde el frente o apoyando como miembro del equipo, la contribucion de Steven fue fundamental para el exito de nuestros proyectos. Su excepcional combinacion de criterio tecnico, liderazgo y empatia lo convierte en un activo invaluable para cualquier equipo."
     },
     {
-      "author": "Polo M., Ingeniero de Sistemas de Información Sénior",
+      "author": "Polo M., Ingeniero de Sistemas Senior",
       "date": "19 de julio de 2018",
-      "text": "Steven se distingue por una ética de trabajo excepcional y una experiencia en ingeniería sobresaliente. Durante nuestra colaboración en proyectos críticos de desarrollo de sistemas en SPAWAR, su impulso implacable y habilidades organizativas superiores fueron fundamentales para nuestro éxito. Más allá del dominio técnico, la gestión estratégica de Steven aseguró que nuestros equipos permanecieran enfocados y cohesionados, navegando efectivamente por las complejidades para mantener el impulso del proyecto. Sus contribuciones no fueron solo valiosas; fueron transformadoras, estableciendo nuevos estándares de excelencia y sinergia de equipo."
+      "text": "Steven se distingue por una etica de trabajo excepcional y una experiencia en ingenieria sobresaliente. Durante nuestra colaboracion en proyectos criticos de desarrollo de sistemas en SPAWAR, su impulso implacable y habilidades organizativas superiores fueron fundamentales para nuestro exito. Mas alla del dominio tecnico, la gestion estrategica de Steven aseguro que nuestros equipos permanecieran enfocados y cohesionados, navegando efectivamente por las complejidades para mantener el impulso del proyecto. Sus contribuciones no fueron solo valiosas; fueron transformadoras, estableciendo nuevos estandares de excelencia y sinergia de equipo."
     },
     {
       "author": "Sneha N., Mientras estuvo en Cisco Systems",
       "date": "2 de marzo de 2016",
-      "text": "En Cisco, Steven no fue solo un gerente, sino un mentor que me ofreció un papel de liderazgo en un proyecto crucial como pasante. Su enfoque innovador y su disposición para compartir percepciones no solo impulsaron nuestro proyecto hacia adelante, sino que también influyeron significativamente en mi crecimiento profesional. La capacidad de Steven para mentorizar a pesar de un horario exigente demostró su dedicación a fomentar el talento emergente."
+      "text": "En Cisco, Steven no fue solo un gerente, sino un mentor que me ofrecio un papel de liderazgo en un proyecto crucial como pasante. Su enfoque innovador y su disposicion para compartir percepciones no solo impulso nuestro proyecto hacia adelante, sino que tambien influyo significativamente en mi crecimiento profesional. La capacidad de Steven para mentorizar a pesar de un horario exigente demostro su dedicacion a fomentar el talento emergente."
     },
     {
       "author": "Kavya P., Mientras estuvo en Cisco Systems",
       "date": "26 de febrero de 2016",
-      "text": "El enfoque único de Steven hacia el liderazgo, caracterizado por un interés genuino en el desarrollo del equipo y en aprovechar las fortalezas individuales, ha contribuido significativamente a la eficiencia del proyecto y la cohesión del equipo."
+      "text": "El enfoque unico de Steven hacia el liderazgo, caracterizado por un interes genuino en el desarrollo del equipo y en aprovechar las fortalezas individuales, ha contribuido significativamente a la eficiencia del proyecto y la cohesion del equipo."
     },
     {
       "author": "Anmmar A., MBA",
       "date": "19 de febrero de 2015",
-      "text": "Conocido por su confiabilidad y excepcionales habilidades de colaboración en equipo, el ingenio intelectual de Steven y su pasión por enseñar han contribuido enormemente al crecimiento de su equipo y al éxito del proyecto, marcándolo como un líder sobresaliente."
+      "text": "Conocido por su confiabilidad y excepcionales habilidades de colaboracion en equipo, el ingenio intelectual de Steven y su pasion por ensenar han contribuido enormemente al crecimiento de su equipo y al exito del proyecto, marcandolo como un lider sobresaliente."
     }
   ]
-  
 }

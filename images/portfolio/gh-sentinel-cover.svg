@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">gh-sentinel cover</title>
+  <desc id="desc">Abstract project cover for gh-sentinel.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#134e4a" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <circle cx="1260" cy="300" r="220" fill="#14b8a6" opacity="0.12" />
+  <circle cx="1360" cy="620" r="170" fill="#f59e0b" opacity="0.1" />
+  <text x="110" y="262" fill="#f8fafc" font-family="Trebuchet MS, Arial, sans-serif" font-size="96" font-weight="700">gh-</text>
+  <text x="110" y="358" fill="#f8fafc" font-family="Trebuchet MS, Arial, sans-serif" font-size="96" font-weight="700">sentinel</text>
+  <text x="116" y="444" fill="#ccfbf1" font-family="Trebuchet MS, Arial, sans-serif" font-size="34">Signal over noise for GitHub events</text>
+  <text x="116" y="500" fill="#fde68a" font-family="Trebuchet MS, Arial, sans-serif" font-size="30">Python / SQLite / Docker / GitHub</text>
+  <g fill="none" stroke="#f8fafc" stroke-opacity="0.72" stroke-width="12">
+    <path d="M930 610 C1010 500 1130 420 1280 390" />
+    <path d="M900 664 C1002 520 1156 424 1340 378" />
+    <path d="M872 718 C1000 540 1176 430 1406 364" />
+  </g>
+  <circle cx="840" cy="760" r="18" fill="#f8fafc" />
+  <rect x="1008" y="164" width="320" height="110" rx="24" fill="#f8fafc" opacity="0.92" />
+  <rect x="1042" y="202" width="154" height="18" rx="9" fill="#0f172a" opacity="0.22" />
+  <rect x="1042" y="234" width="220" height="14" rx="7" fill="#0f172a" opacity="0.12" />
+  <rect x="1150" y="350" width="240" height="110" rx="24" fill="#f8fafc" opacity="0.9" />
+  <rect x="1184" y="388" width="128" height="18" rx="9" fill="#0f172a" opacity="0.22" />
+  <rect x="1184" y="420" width="166" height="14" rx="7" fill="#0f172a" opacity="0.12" />
+  <rect x="980" y="538" width="360" height="126" rx="24" fill="#f8fafc" opacity="0.88" />
+  <rect x="1016" y="578" width="176" height="18" rx="9" fill="#0f172a" opacity="0.22" />
+  <rect x="1016" y="610" width="252" height="14" rx="7" fill="#0f172a" opacity="0.12" />
+</svg>

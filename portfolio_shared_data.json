@@ -2,16 +2,17 @@
   "basic_info": {
     "name": "Steven Espinoza",
     "titles-front": [
-      "Frontend Developer",
-      "JavaScript Engineer",
-      "React Engineer",
-      "UI/UX Designer"
+      "Technical Lead / Software Engineer",
+      "React + TypeScript Builder",
+      "Product-Minded Developer",
+      "Full-Stack Problem Solver"
     ],
     "titles-back": [
+      "Technical Lead / Systems Engineer",
+      "Python Automation Builder",
+      "Tooling & Workflow Designer",
       "Backend Developer",
-      "Python Programmer",
-      "Flask API Developer",
-      "Cloud Developer"
+      "Multi-Environment Integrator"
     ],
     "social": [
       {
@@ -21,7 +22,7 @@
       },
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/steven-espinoza",
+        "url": "https://www.linkedin.com/in/stevenespinoza",
         "class": "fab fa-linkedin"
       }
     ],
@@ -30,24 +31,24 @@
   "skills": {
     "frontend": [
       {
+        "name": "TypeScript",
+        "class": "devicon-typescript-plain",
+        "level": "82"
+      },
+      {
+        "name": "React",
+        "class": "devicon-react-original",
+        "level": "84"
+      },
+      {
         "name": "JavaScript",
         "class": "devicon-javascript-plain",
         "level": "90"
       },
       {
-        "name": "React",
-        "class": "devicon-react-original",
-        "level": "80"
-      },
-      {
-        "name": "HTML5",
-        "class": "devicon-html5-plain",
-        "level": "95"
-      },
-      {
-        "name": "CSS3",
-        "class": "devicon-css3-plain",
-        "level": "95"
+        "name": "Vite",
+        "class": "devicon-vitejs-plain",
+        "level": "76"
       },
       {
         "name": "Tailwind CSS",
@@ -55,66 +56,61 @@
         "level": "80"
       },
       {
-        "name": "Redux",
-        "class": "devicon-redux-original",
-        "level": "75"
+        "name": "HTML5",
+        "class": "devicon-html5-plain",
+        "level": "92"
       },
       {
-        "name": "Figma",
-        "class": "devicon-figma-plain",
-        "level": "65"
+        "name": "CSS3",
+        "class": "devicon-css3-plain",
+        "level": "90"
       },
       {
         "name": "Bootstrap",
         "class": "devicon-bootstrap-plain",
-        "level": "85"
+        "level": "80"
       }
     ],
     "backend": [
       {
         "name": "Python",
         "class": "devicon-python-plain",
-        "level": "85"
+        "level": "88"
+      },
+      {
+        "name": "FastAPI",
+        "class": "devicon-fastapi-plain",
+        "level": "78"
       },
       {
         "name": "Flask",
         "class": "devicon-flask-original",
-        "level": "75"
+        "level": "76"
       },
       {
         "name": "SQLite",
         "class": "devicon-sqlite-plain",
-        "level": "70"
+        "level": "82"
       },
       {
         "name": "PostgreSQL",
         "class": "devicon-postgresql-plain",
-        "level": "70"
-      },
-      {
-        "name": "Postman",
-        "class": "devicon-postman-plain",
-        "level": "75"
+        "level": "74"
       },
       {
         "name": "PowerShell",
         "class": "devicon-powershell-plain",
-        "level": "65"
+        "level": "76"
       },
       {
         "name": "Node.js",
         "class": "devicon-nodejs-plain",
-        "level": "80"
-      },
-      {
-        "name": "Linux",
-        "class": "devicon-linux-plain",
-        "level": "85"
+        "level": "72"
       },
       {
         "name": "Amazon Web Services",
         "class": "devicon-amazonwebservices-plain-wordmark",
-        "level": "75"
+        "level": "70"
       }
     ]
   }

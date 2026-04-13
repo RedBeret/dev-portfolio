@@ -1,89 +1,148 @@
 {
   "basic_info": {
     "description_header": "Hi, I'm Steven Espinoza",
-  "description": "👋 I'm a Software Engineer with a rich Systems Engineering background, adept in JavaScript, Python, React, and Agile methodologies. My professional journey is distinguished by leading over 50 US Navy ship IT system integrations, demonstrating my capability in managing complex projects and collaborative engineering efforts. Transitioning from systems to software engineering, I've focused on development, testing, and optimizing solutions, validated by industry-recognized certifications in SEC+, CCNA, DASM, and AWS. My eligibility to work on sensitive and classified projects has been assessed and approved, reflecting my commitment to integrity and high standards of security. Outside of my professional pursuits, I'm an avid world traveler and solo adventurer, drawing inspiration from diverse cultures and landscapes—from the historic streets of Berlin and Rome to the amazing views of Lake Como and the Swiss Alps. These experiences have not only broadened my perspective but also infused my software development approach with creativity, adaptability, and a global outlook. Currently, I'm channeling my passion for technology and exploration from my base in San Diego, California, eager to tackle new challenges and innovate within the dynamic field of software engineering.",
+    "description": "I'm a technical lead and software engineer with a systems background and a soft spot for practical tools that make people's jobs easier. A big part of my career has been working across hundreds of isolated enterprise environments spread across 150+ platforms, learning how each one is built, improving integrations, and making complex systems more repeatable. That hands-on depth now feeds the public work I enjoy most: AI-assisted products, developer tooling, and full-stack apps built with Python, React, and TypeScript. I like taking messy operational problems and shaping them into software that feels calm, useful, and maintainable. Outside of work, I'm a traveler, a lifelong learner, and someone who genuinely enjoys building things from scratch. Based in San Diego, I'm interested in thoughtful product, platform, and automation work with teams that care about both execution and trust.",
     "section_name": {
-      "about": "About Me",
-      "projects": "Projects",
+      "about": "About",
+      "projects": "Featured Projects",
       "skills": "Skills",
       "experience": "Experience"
     }
   },
   "projects": [
     {
-      "title": "AIChatPoweredEcommerce",
-      "startDate": "2024",
-      "description": "AIChatPoweredEcommerce mixes AI with e-commerce through a Flask and React-developed platform, embedding a custom AI chatbot for instant customer support. The project underscores my expertise in building secure, responsive, and user-centered online shopping environments. Key technologies include React for the frontend to ensure a dynamic user experience, Python for robust backend operations, and Flask for efficient web server and API management. Notable features include AI-driven chat support using OpenAI's GPT for engaging technical customer interactions, a commitment to secure and responsive design for an optimal shopping experience, and advanced database management with SQLite to guarantee data integrity and swift data access and Postgresql for deployment.",
-      "images": [
-        "images/portfolio/aichatpoweredstore/AiStoreHome.png",
-        "images/portfolio/aichatpoweredstore/AiStoreOpenai.png",
-        "images/portfolio/aichatpoweredstore/AiStoreProductdetail.png",
-        "images/portfolio/aichatpoweredstore/AiStoreCheckedOut.png"
+      "title": "AI Ops Runbook Generator",
+      "startDate": "2026",
+      "description": "Browser-based tool that turns raw alerts into structured incident runbooks in seconds. I focused on format detection, prompt orchestration, local key storage, and a clean operator workflow that keeps everything client-side for a fast demo and a low-friction user experience.",
+      "frontDescription": "Browser-based tool that turns raw alerts into structured incident runbooks in seconds. I focused on the operator flow, fast formatting, and a UI that stays calm when the input is messy.",
+      "backDescription": "Browser-based tool that turns raw alerts into structured incident runbooks in seconds. I focused on format detection, prompt orchestration, and local-only key handling so the workflow stays fast without depending on a backend.",
+      "frontLabel": "Product UX + AI workflow",
+      "backLabel": "Prompt orchestration + client-side architecture",
+      "impact": "Turns noisy alerts into something an operator can act on immediately.",
+      "highlights": [
+        "Client-side workflow with local key storage",
+        "Structured output from messy operational input",
+        "Polished incident-response demo with low setup friction"
       ],
-      "url": "https://aichatpowereddeployment.onrender.com/",
+      "frontRank": 1,
+      "backRank": 3,
+      "images": [
+        "images/portfolio/ai-ops-runbook-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/ai-ops-runbook",
       "technologies": [
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
         {
           "class": "devicon-react-original",
           "name": "React"
         },
         {
-          "class": "devicon-python-plain",
-          "name": "Python"
+          "class": "devicon-vitejs-plain",
+          "name": "Vite"
         },
         {
-          "class": "devicon-flask-original",
-          "name": "Flask"
-        },
-        {
-          "class": "devicon-sqlite-plain",
-          "name": "SQLite3"
-        },
-        {
-          "class": "devicon-postgresql-plain",
-          "name": "PostgreSQL"
-        }
-      ]
-    },
-        {
-      "title": "Mont Luxe Watch Company",
-      "startDate": "2024",
-      "description": "The Mont Luxe Watch Company project was an e-commerce platform dedicated to showcasing luxury timepieces. This endeavor was pivotal in my understanding of efficient database management techniques, particularly the significance of separating tables and employing SQL normalization to maintain data integrity, especially when collecting user information in different areas of the application. Utilizing Flask and React, the project served as a comprehensive exercise in full-stack development, where I applied my skills in front-end and back-end development, database management, and API integration. The experience underscored the critical role of structured database design in supporting secure, scalable, and responsive online shopping environments, enhancing my proficiency in creating user-centric web applications.",
-      "images": [
-        "images/portfolio/montluxewatchstore/montluxehomep1.png",
-        "images/portfolio/montluxewatchstore/montluxehomep2.png",
-        "images/portfolio/montluxewatchstore/montluxehomep3.png",
-        "images/portfolio/montluxewatchstore/montluxeaboutp1.png",
-        "images/portfolio/montluxewatchstore/montluxeaddtocart.png",
-        "images/portfolio/montluxewatchstore/montluxeaddtocart2.png",
-        "images/portfolio/montluxewatchstore/montluxecheckout.png",
-        "images/portfolio/montluxewatchstore/montluxesignin.png"
-      ],
-      "url": "https://github.com/RedBeret/MontLuxeWatch-ReactFlaskEcommerce",
-      "technologies": [
-        {
-          "class": "devicon-react-original",
-          "name": "React"
-        },
-        {
-          "class": "devicon-python-plain",
-          "name": "Python"
-        },
-        {
-          "class": "devicon-flask-original",
-          "name": "Flask"
+          "class": "devicon-tailwindcss-original",
+          "name": "Tailwind CSS"
         }
       ]
     },
     {
-      "title": "Python CLI Bodyweight Fitness",
-      "startDate": "2023",
-      "description": "A command-line interface application for generating personalized workout plans, utilizing Python and SQLite3 for data management and application logic. This project highlights my backend proficiency and my interest in fitness technology.",
-      "images": [
-        "images/portfolio/pythonclibodyweightfitness/fitnessCoachPythonSQL-p1.png",
-        "images/portfolio/pythonclibodyweightfitness/fitnessCoachPythonSQL-p2.png",
-        "images/portfolio/pythonclibodyweightfitness/fitnessCoachPythonSQL-p3.png"
+      "title": "Tiny Swarm Maze",
+      "startDate": "2026",
+      "description": "Retro-inspired simulation game exploring swarm coordination through short natural-language commands. I built a deterministic simulation core with async model parsing, telemetry, and a real-time WebSocket loop so experimentation stays responsive even when models are slow.",
+      "frontDescription": "Retro-inspired simulation game that makes swarm behavior feel understandable through fast visuals, short commands, and a playful interface.",
+      "backDescription": "Retro-inspired simulation game exploring swarm coordination through deterministic simulation, async model parsing, telemetry, and a real-time WebSocket loop.",
+      "frontLabel": "Interactive full-stack simulation",
+      "backLabel": "Realtime simulation + service design",
+      "impact": "Shows full-stack thinking, real-time state handling, and systems experimentation.",
+      "highlights": [
+        "Deterministic simulation core",
+        "WebSocket-driven realtime updates",
+        "Python + TypeScript full-stack architecture"
       ],
-      "url": "https://github.com/RedBeret/Fitness-Coach-Python-SQL-CLI",
+      "frontRank": 2,
+      "backRank": 2,
+      "images": [
+        "images/portfolio/tiny-swarm-maze-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/tiny-swarm-maze",
+      "technologies": [
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-fastapi-plain",
+          "name": "FastAPI"
+        },
+        {
+          "class": "devicon-sqlite-plain",
+          "name": "SQLite"
+        }
+      ]
+    },
+    {
+      "title": "repo-first-aid",
+      "startDate": "2026",
+      "description": "Python CLI that audits public repositories for the issues people notice first: template residue, missing trust files, broken deployment claims, tracked junk, and weak onboarding. I built it as a fast local check for maintainers who want a repo to feel polished before they share it.",
+      "frontDescription": "CLI audit tool built to catch the rough edges that make a public repo feel half-finished, from template residue to broken trust signals.",
+      "backDescription": "Python CLI that audits public repositories for template residue, missing trust files, deployment mismatches, tracked junk, and weak onboarding.",
+      "frontLabel": "Developer experience tooling",
+      "backLabel": "Repository hygiene automation",
+      "impact": "Helps repos feel cleaner, safer, and easier for other people to trust.",
+      "highlights": [
+        "Fast local CLI for maintainers",
+        "Opinionated checks around trust and polish",
+        "Designed around the first impression of a repo"
+      ],
+      "frontRank": 4,
+      "backRank": 1,
+      "images": [
+        "images/portfolio/repo-first-aid-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/repo-first-aid",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-git-plain",
+          "name": "Git"
+        },
+        {
+          "class": "devicon-github-original",
+          "name": "GitHub"
+        }
+      ]
+    },
+    {
+      "title": "gh-sentinel",
+      "startDate": "2026",
+      "description": "Notification filter for GitHub that deduplicates issues, pull requests, CI failures, and security alerts, then routes actionable updates through Signal, Slack, or email. It uses the gh CLI plus SQLite to cut down alert fatigue and avoid repeated noise.",
+      "frontDescription": "A focused monitoring concept for GitHub activity that cuts down noise and pushes only the updates a person actually needs to care about.",
+      "backDescription": "Notification filter for GitHub that deduplicates issues, pull requests, CI failures, and security alerts before routing actionable updates through Signal, Slack, or email.",
+      "frontLabel": "Notification product concept",
+      "backLabel": "Alert routing + deduplication",
+      "impact": "Reduces alert fatigue by treating notification quality as part of the product.",
+      "highlights": [
+        "Deduplication across multiple event types",
+        "SQLite-backed state to avoid repeated noise",
+        "Routing path for chat and email delivery"
+      ],
+      "frontRank": 3,
+      "backRank": 4,
+      "images": [
+        "images/portfolio/gh-sentinel-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/gh-sentinel",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -91,30 +150,15 @@
         },
         {
           "class": "devicon-sqlite-plain",
-          "name": "SQLite3"
-        }
-      ]
-    },
-    {
-      "title": "Weather App",
-      "startDate": "2023",
-      "description": "As a collaborative effort, my team of two developed a web application that harnesses real-time weather data globally via an API key. This project, rooted in Agile methodologies, offers a user-centric design featuring city search functionality, the ability to toggle temperature units, and a system for persistent user comments. Our solution emphasizes seamless user interaction and accurate weather forecasting, making it a go-to platform for weather information.",
-      "images": [
-        "images/portfolio/weatherapp/weather-app-final.png"
-      ],
-      "url": "https://redberet.github.io/WeatherApp/",
-      "technologies": [
-        {
-          "class": "devicon-javascript-plain",
-          "name": "JavaScript"
+          "name": "SQLite"
         },
         {
-          "class": "devicon-html5-plain",
-          "name": "HTML5"
+          "class": "devicon-docker-plain",
+          "name": "Docker"
         },
         {
-          "class": "devicon-css3-plain",
-          "name": "CSS3"
+          "class": "devicon-github-original",
+          "name": "GitHub"
         }
       ]
     }
@@ -123,88 +167,119 @@
     "education": [
       {
         "degree": "Bachelor of Science in Business Administration",
-        "school": "Focus: Computer Information Systems, California State University, Fresno",
+        "school": "Computer Information Systems, California State University, Fresno",
         "year": "2013"
       },
       {
-        "degree": "Software Engineering Certificate, Flatiron School",
+        "degree": "Software Engineering Certificate",
+        "school": "Flatiron School",
         "year": "2024"
       },
       {
-        "degree": "25B MOS Qualified, IT Specialist, U.S. Army Cyber Center of Excellence",
+        "degree": "Information Technology Specialist (25B MOS)",
+        "school": "U.S. Army Cyber Center of Excellence",
         "year": "2016"
       }
     ],
     "certifications": [
       {
-        "title": "AWS Certified Solutions Architect",
-        "issuer": "Amazon Web Services",
-        "year": "2021"
-      },
-      {
-        "title": "CompTIA Security+ (Sec+)",
-        "issuer": "CompTIA",
-        "year": "2022"
-      },
-      {
-        "title": "Certified ScrumMaster (CSM), Scrum Alliance D-A-CH e.V.",
-        "year": "2023"
-      },
-      {
-        "title": "AWS Certified Cloud Practitioner",
-        "issuer": "Amazon Web Services",
+        "title": "Certified ScrumMaster (CSM)",
+        "issuer": "Scrum Alliance",
         "year": "2024"
       },
       {
-        "title": "CCNA, Cisco",
+        "title": "AWS Cloud Practitioner",
+        "issuer": "Amazon Web Services",
         "year": "2022"
       },
       {
-        "title": "CompTIA Security+ ce Certification",
+        "title": "Cisco Certified Network Associate (CCNA)",
+        "issuer": "Cisco",
+        "year": "2022"
+      },
+      {
+        "title": "Disciplined Agile Scrum Master (DASM)",
+        "issuer": "Project Management Institute",
+        "year": "2022"
+      },
+      {
+        "title": "CompTIA Security+",
         "issuer": "CompTIA",
         "year": "2016"
       },
       {
-        "title": "Disciplined Agile Scrum Master (DASM), Project Management Institute",
-        "year": "2022"
+        "title": "DISA ACAS Operator & Supervisor",
+        "issuer": "Defense Information Systems Agency",
+        "year": "2023"
       }
     ]
   },
   "experience": [
     {
-      "company": "Noblis MSD",
-      "title": "Senior System Engineer",
+      "company": "Noblis",
+      "title": "Technical Lead / Senior Systems Engineer",
       "years": "11.2022 - Present",
-      "description": "Led pivotal system integration projects for over 50 US Navy ships, optimizing performance across technological platforms. Spearheaded a comprehensive knowledge base for training and support, with in-depth data analysis improving workflow efficiency.",
-      "mainTech": ["System Integration", "Data Analysis"],
-      "technologies": ["Software Development", "Agile Methodologies", "Project Management", "Cybersecurity", "Network Architecture"]
+      "description": "Lead integration and readiness work across a fleet-scale environment made up of hundreds of isolated enterprise systems spanning 150+ platforms, while building internal tools that reduce manual effort and make engineering handoffs smoother. Recent work combines automation, process simplification, team workflow improvements, and early-stage AI-assisted diagnostics research.",
+      "frontDescription": "Led delivery across a fleet-scale technical environment while building tools and workflows that made complicated work easier for other engineers to understand and use. A lot of that meant translating messy operational reality into clean handoffs, calmer processes, and software people could trust.",
+      "backDescription": "Led integration and readiness work across hundreds of isolated enterprise environments spanning 150+ platforms, moving between independently built systems with their own identity, messaging, and core infrastructure. Recent work blends automation, process simplification, team workflow design, and early AI-assisted diagnostics research.",
+      "scope": "Worked across 150+ platforms and hundreds of isolated enterprise environments",
+      "highlights": [
+        "Built internal automation that reduced manual review and handoff friction",
+        "Turned expert-only processes into repeatable workflows newer engineers could run",
+        "Led integration, readiness, and cross-team coordination in a high-complexity environment"
+      ],
+      "mainTech": ["Technical Leadership", "Automation"],
+      "technologies": ["Python", "PowerShell", "Systems Integration", "Process Improvement", "Team Mentoring"]
     },
     {
       "company": "KES, Inc.",
-      "title": "Senior System Engineer",
+      "title": "Senior Systems Engineer",
       "years": "06.2017 - 11.2022",
-      "description": "Pioneered advanced tracking and system development, improving efficiency and user experience. Customized client solutions for business goals, enhancing long-term partnerships and revenue growth.",
-      "mainTech": ["System Development", "Client Solutions"],
-      "technologies": ["Reverse Engineering", "Project Monitoring", "System Architecture", "Operational Efficiency"]
+      "description": "Improved installation workflows, documentation, and cross-team coordination for large-scale system rollouts across distinct enterprise environments. A consistent focus was turning tribal knowledge into repeatable processes so newer engineers could ramp faster and contribute with more confidence.",
+      "frontDescription": "Improved delivery by turning scattered knowledge into clearer processes, stronger documentation, and smoother coordination. It was the kind of work that makes teams easier to onboard and projects easier to ship.",
+      "backDescription": "Improved installation workflows, documentation, and cross-team coordination for large-scale rollouts across distinct enterprise environments, with a constant focus on repeatability and faster ramp-up.",
+      "scope": "Supported large-scale multi-environment rollout and integration work",
+      "highlights": [
+        "Reduced friction in preproduction installation work",
+        "Standardized documentation and handoff practices",
+        "Helped newer engineers become productive faster"
+      ],
+      "mainTech": ["Process Design", "Systems Integration"],
+      "technologies": ["Documentation", "Quality Assurance", "Project Coordination", "Operational Support"]
     },
     {
       "company": "Apex Systems",
       "title": "IT Project Manager",
       "years": "12.2016 - 06.2017",
-      "description": "Directed regional network consolidation, enhancing government IT infrastructure. Managed IT control workplans, integrating best practices for streamlined project delivery.",
-      "mainTech": ["Network Consolidation", "Strategic Planning"],
-      "technologies": ["IT Control Workplans", "Government IT Services", "Stakeholder Engagement"]
+      "description": "Coordinated regional IT projects and network consolidation efforts, keeping schedules, stakeholders, and implementation details aligned during fast-moving delivery work.",
+      "frontDescription": "Managed regional IT delivery work with an emphasis on keeping people aligned, scope understandable, and execution moving.",
+      "backDescription": "Coordinated regional IT projects and network consolidation efforts, keeping schedules, stakeholders, and implementation details aligned during fast-moving delivery work.",
+      "scope": "Coordinated regional projects across networks and implementation teams",
+      "highlights": [
+        "Aligned schedules, stakeholders, and implementation details",
+        "Kept fast-moving work visible and organized",
+        "Bridged technical tasks and project delivery needs"
+      ],
+      "mainTech": ["Project Delivery", "Network Projects"],
+      "technologies": ["Planning", "Stakeholder Communication", "Execution Tracking", "Documentation"]
     },
     {
       "company": "Cisco",
-      "title": "Project Team Lead, Test Engineer, Business Analyst",
+      "title": "Project Team Lead / Test Engineer / Business Analyst",
       "years": "08.2015 - 12.2016",
-      "description": "Led engineering projects to enhance system efficiency. Conducted rigorous testing for product quality. Spearheaded firmware and hardware upgrades, driving operational cost reductions.",
-      "mainTech": ["Technical Leadership", "Quality Assurance"],
-      "technologies": ["Hardware/Software Testing", "Data Analysis", "Process Improvement", "Systems Integration"]
+      "description": "Started in test and analysis roles, then stepped into team leadership responsibilities across firmware, hardware, and process improvement efforts. That mix of hands-on testing and people coordination still shapes how I approach engineering work today.",
+      "frontDescription": "Grew from testing and analysis into leadership by being the person who could move between details, people, and process.",
+      "backDescription": "Started in test and analysis roles, then stepped into leadership across firmware, hardware, and process improvement work.",
+      "scope": "Worked across testing, hardware, firmware, and team coordination",
+      "highlights": [
+        "Hands-on testing and analysis foundation",
+        "Early leadership in cross-functional delivery",
+        "Built habits around process improvement and communication"
+      ],
+      "mainTech": ["QA & Leadership", "Systems Testing"],
+      "technologies": ["Testing", "Data Analysis", "Process Improvement", "Cross-Functional Collaboration"]
     }
   ],
-
   "recommendations": [
     {
       "author": "Karen H., Software Engineer",
@@ -237,5 +312,4 @@
       "text": "Known for his trustworthiness and exceptional team collaboration skills, Steven's intellectual prowess and passion for teaching have greatly contributed to his team's growth and project success, marking him as an outstanding leader."
     }
   ]
-  
 }
