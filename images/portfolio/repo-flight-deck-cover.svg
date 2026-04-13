@@ -1,0 +1,27 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="96" y1="70" x2="1112" y2="622" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="40" fill="url(#bg)"/>
+  <circle cx="1046" cy="112" r="92" fill="#67E8F9" opacity="0.14"/>
+  <circle cx="144" cy="562" r="146" fill="#14B8A6" opacity="0.14"/>
+  <rect x="76" y="76" width="280" height="48" rx="18" fill="#E0F2FE" opacity="0.16"/>
+  <text x="100" y="107" fill="#E2E8F0" font-size="24" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">DEV PLATFORM / RELEASE OPS</text>
+  <text x="76" y="242" fill="white" font-size="72" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Repo Flight</text>
+  <text x="76" y="320" fill="white" font-size="72" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Deck</text>
+  <text x="76" y="388" fill="#CBD5E1" font-size="30" font-family="Segoe UI, Arial, sans-serif">A control center for CI health, PR risk, security alerts, and release readiness.</text>
+  <text x="76" y="446" fill="#FDE68A" font-size="28" font-weight="600" font-family="Segoe UI, Arial, sans-serif">React / TypeScript / FastAPI / Internal Tools</text>
+  <rect x="678" y="132" width="412" height="412" rx="32" fill="#F8FAFC" opacity="0.96"/>
+  <rect x="718" y="174" width="334" height="94" rx="22" fill="#DBEAFE"/>
+  <rect x="740" y="198" width="124" height="14" rx="7" fill="#2563EB"/>
+  <rect x="740" y="226" width="202" height="10" rx="5" fill="#60A5FA"/>
+  <rect x="718" y="296" width="156" height="204" rx="24" fill="#DCFCE7"/>
+  <rect x="894" y="296" width="158" height="94" rx="24" fill="#FDE68A"/>
+  <rect x="894" y="406" width="158" height="94" rx="24" fill="#FECACA"/>
+  <rect x="914" y="324" width="78" height="12" rx="6" fill="#CA8A04"/>
+  <rect x="914" y="432" width="92" height="12" rx="6" fill="#DC2626"/>
+  <rect x="718" y="530" width="334" height="10" rx="5" fill="#CBD5E1"/>
+</svg>

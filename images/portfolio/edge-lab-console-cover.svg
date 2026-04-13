@@ -1,0 +1,34 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="edge-bg" x1="92" y1="60" x2="1110" y2="618" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1F33"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="40" fill="url(#edge-bg)"/>
+  <circle cx="1028" cy="128" r="104" fill="#67E8F9" opacity="0.12"/>
+  <circle cx="206" cy="564" r="138" fill="#14B8A6" opacity="0.12"/>
+  <rect x="76" y="76" width="254" height="48" rx="18" fill="#E0F2FE" opacity="0.18"/>
+  <text x="100" y="107" fill="#E2E8F0" font-size="24" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">LAB OPS / EDGE SYSTEMS</text>
+  <text x="76" y="242" fill="white" font-size="72" font-weight="700" font-family="Segoe UI, Arial, sans-serif">EdgeLab</text>
+  <text x="76" y="320" fill="white" font-size="72" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Console</text>
+  <text x="76" y="390" fill="#D7E7F4" font-size="30" font-family="Segoe UI, Arial, sans-serif">Track runs, config drift, alerts, and operator notes in one place.</text>
+  <text x="76" y="448" fill="#FDE68A" font-size="28" font-weight="600" font-family="Segoe UI, Arial, sans-serif">React / TypeScript / FastAPI / SQLite</text>
+  <rect x="676" y="138" width="420" height="398" rx="32" fill="#F8FAFC" opacity="0.96"/>
+  <rect x="716" y="178" width="188" height="314" rx="24" fill="#DBEAFE"/>
+  <rect x="926" y="178" width="130" height="116" rx="24" fill="#DCFCE7"/>
+  <rect x="926" y="316" width="130" height="176" rx="24" fill="#FEF3C7"/>
+  <rect x="740" y="210" width="102" height="12" rx="6" fill="#2563EB"/>
+  <rect x="740" y="238" width="124" height="10" rx="5" fill="#60A5FA"/>
+  <rect x="740" y="278" width="124" height="10" rx="5" fill="#60A5FA"/>
+  <rect x="740" y="318" width="124" height="10" rx="5" fill="#60A5FA"/>
+  <rect x="740" y="358" width="124" height="10" rx="5" fill="#60A5FA"/>
+  <rect x="740" y="398" width="124" height="10" rx="5" fill="#60A5FA"/>
+  <rect x="740" y="438" width="124" height="10" rx="5" fill="#60A5FA"/>
+  <circle cx="1020" cy="226" r="18" fill="#22C55E"/>
+  <circle cx="1020" cy="364" r="18" fill="#F59E0B"/>
+  <circle cx="1020" cy="432" r="18" fill="#06B6D4"/>
+  <rect x="940" y="228" width="62" height="10" rx="5" fill="#16A34A"/>
+  <rect x="940" y="366" width="62" height="10" rx="5" fill="#B45309"/>
+  <rect x="940" y="434" width="62" height="10" rx="5" fill="#0891B2"/>
+</svg>

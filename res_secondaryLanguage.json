@@ -11,6 +11,162 @@
   },
   "projects": [
     {
+      "title": "EdgeLab Console",
+      "startDate": "2026",
+      "description": "Aplicacion full-stack estilo herramienta interna para seguir corridas de prueba, drift de configuracion, alertas, notas y artefactos dentro de un laboratorio ocupado. La construi para que se sintiera como algo que un equipo de plataforma o validacion usaria de verdad.",
+      "frontDescription": "Consola de operaciones de laboratorio con dashboard claro, vistas de detalle entendibles y una interfaz que hace que el trabajo tecnico ruidoso sea mas facil de revisar y usar.",
+      "backDescription": "Herramienta interna full-stack para seguir corridas, drift de configuracion, alertas, notas y artefactos, respaldada por FastAPI, SQLite y actualizaciones en vivo para un flujo de operador creible.",
+      "frontLabel": "UX de herramienta interna + entrega full-stack",
+      "backLabel": "Flujo operativo + sistemas backend",
+      "impact": "Demuestra como convierto complejidad operativa en software organizado y util.",
+      "highlights": [
+        "Cola de corridas con filtros por busqueda, estado, entorno y responsable",
+        "Drift de configuracion, artefactos, alertas y notas en una sola vista",
+        "Senal en vivo respaldada por un endpoint WebSocket"
+      ],
+      "frontRank": 2,
+      "backRank": 1,
+      "images": [
+        "images/portfolio/edge-lab-console-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/edge-lab-console",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-fastapi-plain",
+          "name": "FastAPI"
+        },
+        {
+          "class": "devicon-sqlite-plain",
+          "name": "SQLite"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry Replay Studio",
+      "startDate": "2026",
+      "description": "Espacio de replay y debrief para comparar corridas tecnicas, revisar drift contra un baseline y exportar un handoff mas limpio. Lo construi alrededor del momento posterior a una corrida, cuando un equipo necesita entender que cambio y que importa.",
+      "frontDescription": "Espacio de replay y debrief con timeline pulido, flujo de comparacion y reporte de handoff que hace que la revision despues de una corrida se sienta mas clara y menos caotica.",
+      "backDescription": "Herramienta full-stack de replay con endpoints de comparacion, generacion de debrief y manejo de estado orientado al tiempo para flujos de validacion, autonomia u observabilidad.",
+      "frontLabel": "UX de replay + flujo de debrief",
+      "backLabel": "APIs de comparacion + flujo de analisis",
+      "impact": "Demuestra criterio de producto para revision de series temporales en lugar de pantallas CRUD genericas.",
+      "highlights": [
+        "Scrubber de replay con snapshots de senal cuadro por cuadro",
+        "Flujo de comparacion contra baseline con score delta y focus areas",
+        "Debrief exportable con callouts, acciones y checklist de artefactos"
+      ],
+      "frontRank": 3,
+      "backRank": 2,
+      "images": [
+        "images/portfolio/telemetry-replay-studio-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/telemetry-replay-studio",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-fastapi-plain",
+          "name": "FastAPI"
+        },
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        }
+      ]
+    },
+    {
+      "title": "Repo Flight Deck",
+      "startDate": "2026",
+      "description": "Centro de control para plataformas de desarrollo que muestra salud del repositorio, estado de CI, alertas de seguridad, riesgo en pull requests y readiness de release. Quise que se sintiera como un dashboard interno creible para leads y maintainers.",
+      "frontDescription": "Dashboard interno para equipos de ingenieria que convierte senales ruidosas del repositorio en una historia de release entendible en lugar de un muro de badges.",
+      "backDescription": "Herramienta de developer platform que estructura salud del repo, release gating, riesgo de PR y datos de seguridad en endpoints y un flujo listo para tomar decisiones.",
+      "frontLabel": "Dashboard para experiencia de desarrollador",
+      "backLabel": "Release ops + modelado de salud del repo",
+      "impact": "Demuestra que puedo construir software para equipos de ingenieria, no solo para usuarios finales.",
+      "highlights": [
+        "Catalogo de repos con busqueda y filtrado por riesgo",
+        "Vista de release packet con items bloqueados, en revision y listos",
+        "Risk packet exportable para handoff o revision"
+      ],
+      "frontRank": 5,
+      "backRank": 3,
+      "images": [
+        "images/portfolio/repo-flight-deck-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/repo-flight-deck",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-fastapi-plain",
+          "name": "FastAPI"
+        },
+        {
+          "class": "devicon-github-original",
+          "name": "GitHub"
+        }
+      ]
+    },
+    {
+      "title": "Field Sync Notebook",
+      "startDate": "2026",
+      "description": "Workspace offline-first para notas y handoffs de equipos que operan con conectividad degradada, cambios de turno y tareas sensibles al tiempo. El enfoque fue hacer que el estado de sync y la cola local se sintieran entendibles en vez de fragiles.",
+      "frontDescription": "Aplicacion de workflow offline-first para notas, tareas y handoffs que sigue siendo approachable aun cuando la conectividad es complicada y la propiedad esta cambiando.",
+      "backDescription": "Workspace full-stack orientado a sync con manejo de cola local, flujo manual de sync, visibilidad de conflictos y exportacion de handoff para entornos con red degradada.",
+      "frontLabel": "Workflow de producto offline-first",
+      "backLabel": "Logica de sync + diseno de resiliencia",
+      "impact": "Demuestra como pienso la resiliencia y la usabilidad como parte del mismo problema.",
+      "highlights": [
+        "Notas y tareas en cola con caminos de remover y reintentar",
+        "Flujo manual de sync con resultados dependientes del modo de conexion",
+        "Resumen exportable para el siguiente turno o equipo"
+      ],
+      "frontRank": 1,
+      "backRank": 4,
+      "images": [
+        "images/portfolio/field-sync-notebook-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/field-sync-notebook",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-fastapi-plain",
+          "name": "FastAPI"
+        },
+        {
+          "class": "devicon-git-plain",
+          "name": "Offline Workflow"
+        }
+      ]
+    },
+    {
       "title": "AI Ops Runbook Generator",
       "startDate": "2026",
       "description": "Herramienta web que convierte alertas crudas en runbooks operativos estructurados en segundos. Me enfoque en la deteccion de formato, la orquestacion de prompts, el almacenamiento local de claves y una experiencia clara para responder incidentes sin depender de un backend.",
@@ -24,8 +180,8 @@
         "Salida estructurada a partir de entrada operativa desordenada",
         "Demo pulida de respuesta a incidentes con baja friccion"
       ],
-      "frontRank": 1,
-      "backRank": 3,
+      "frontRank": 4,
+      "backRank": 5,
       "images": [
         "images/portfolio/ai-ops-runbook-cover.svg"
       ],
@@ -52,7 +208,7 @@
     {
       "title": "Tiny Swarm Maze",
       "startDate": "2026",
-      "description": "Simulacion estilo retro que explora coordinacion de enjambres mediante comandos cortos en lenguaje natural. Construí un nucleo determinista, parsing de modelos asincrono, telemetria y un loop en tiempo real con WebSockets para que la experiencia siguiera siendo fluida.",
+      "description": "Simulacion estilo retro que explora coordinacion de enjambres mediante comandos cortos en lenguaje natural. Construi un nucleo determinista, parsing de modelos asincrono, telemetria y un loop en tiempo real con WebSockets para que la experiencia siguiera siendo fluida.",
       "frontDescription": "Simulacion estilo retro que hace entendible el comportamiento de un enjambre mediante visuales rapidos, comandos cortos y una interfaz mas juguetona.",
       "backDescription": "Simulacion estilo retro que explora coordinacion de enjambres mediante un nucleo determinista, parsing asincrono, telemetria y un loop en tiempo real con WebSockets.",
       "frontLabel": "Simulacion interactiva full-stack",
@@ -63,8 +219,8 @@
         "Actualizaciones en tiempo real con WebSockets",
         "Arquitectura full-stack con Python y TypeScript"
       ],
-      "frontRank": 2,
-      "backRank": 2,
+      "frontRank": 6,
+      "backRank": 6,
       "images": [
         "images/portfolio/tiny-swarm-maze-cover.svg"
       ],
@@ -85,80 +241,6 @@
         {
           "class": "devicon-sqlite-plain",
           "name": "SQLite"
-        }
-      ]
-    },
-    {
-      "title": "repo-first-aid",
-      "startDate": "2026",
-      "description": "CLI en Python que audita repositorios publicos en busca de los problemas que la gente nota primero: texto de plantilla, archivos de confianza faltantes, promesas de despliegue rotas, basura rastreada y onboarding debil. Lo construí como un chequeo rapido antes de publicar o compartir un repo.",
-      "frontDescription": "Herramienta CLI pensada para detectar los detalles que hacen que un repo publico se sienta incompleto, desde residuos de plantilla hasta senales de confianza rotas.",
-      "backDescription": "CLI en Python que audita repositorios publicos en busca de residuos de plantilla, archivos de confianza faltantes, despliegues inconsistentes, basura rastreada y onboarding debil.",
-      "frontLabel": "Tooling para experiencia de desarrollador",
-      "backLabel": "Automatizacion de higiene de repositorios",
-      "impact": "Ayuda a que los repositorios se sientan mas limpios, seguros y faciles de confiar.",
-      "highlights": [
-        "CLI local rapido para maintainers",
-        "Chequeos opinionados sobre confianza y pulido",
-        "Disenado alrededor de la primera impresion de un repo"
-      ],
-      "frontRank": 4,
-      "backRank": 1,
-      "images": [
-        "images/portfolio/repo-first-aid-cover.svg"
-      ],
-      "url": "https://github.com/RedBeret/repo-first-aid",
-      "technologies": [
-        {
-          "class": "devicon-python-plain",
-          "name": "Python"
-        },
-        {
-          "class": "devicon-git-plain",
-          "name": "Git"
-        },
-        {
-          "class": "devicon-github-original",
-          "name": "GitHub"
-        }
-      ]
-    },
-    {
-      "title": "gh-sentinel",
-      "startDate": "2026",
-      "description": "Herramienta de monitoreo para GitHub que deduplica issues, pull requests, fallas de CI y alertas de seguridad, y luego envia solo lo accionable por Signal, Slack o correo. Usa gh CLI y SQLite para reducir ruido y evitar alertas repetidas.",
-      "frontDescription": "Concepto de monitoreo para GitHub que reduce ruido y envia solo las actualizaciones que una persona realmente necesita revisar.",
-      "backDescription": "Filtro de notificaciones para GitHub que deduplica issues, pull requests, fallas de CI y alertas de seguridad antes de enviar solo lo accionable por Signal, Slack o correo.",
-      "frontLabel": "Concepto de producto para notificaciones",
-      "backLabel": "Ruteo de alertas + deduplicacion",
-      "impact": "Reduce fatiga de alertas al tratar la calidad de las notificaciones como parte del producto.",
-      "highlights": [
-        "Deduplicacion entre multiples tipos de eventos",
-        "Estado persistente con SQLite para evitar ruido repetido",
-        "Ruta de entrega para chat y correo"
-      ],
-      "frontRank": 3,
-      "backRank": 4,
-      "images": [
-        "images/portfolio/gh-sentinel-cover.svg"
-      ],
-      "url": "https://github.com/RedBeret/gh-sentinel",
-      "technologies": [
-        {
-          "class": "devicon-python-plain",
-          "name": "Python"
-        },
-        {
-          "class": "devicon-sqlite-plain",
-          "name": "SQLite"
-        },
-        {
-          "class": "devicon-docker-plain",
-          "name": "Docker"
-        },
-        {
-          "class": "devicon-github-original",
-          "name": "GitHub"
         }
       ]
     }
@@ -228,8 +310,17 @@
         "Convirti procesos dependientes de expertos en flujos repetibles para ingenieros mas nuevos",
         "Lidere integracion, preparacion y coordinacion entre equipos en un entorno de alta complejidad"
       ],
-      "mainTech": ["Liderazgo Tecnico", "Automatizacion"],
-      "technologies": ["Python", "PowerShell", "Integracion de Sistemas", "Mejora de Procesos", "Mentoria"]
+      "mainTech": [
+        "Liderazgo Tecnico",
+        "Automatizacion"
+      ],
+      "technologies": [
+        "Python",
+        "PowerShell",
+        "Integracion de Sistemas",
+        "Mejora de Procesos",
+        "Mentoria"
+      ]
     },
     {
       "company": "KES, Inc.",
@@ -244,8 +335,16 @@
         "Estandarice documentacion y practicas de handoff",
         "Ayude a que ingenieros mas nuevos fueran productivos mas rapido"
       ],
-      "mainTech": ["Diseno de Procesos", "Integracion de Sistemas"],
-      "technologies": ["Documentacion", "Aseguramiento de Calidad", "Coordinacion de Proyectos", "Soporte Operativo"]
+      "mainTech": [
+        "Diseno de Procesos",
+        "Integracion de Sistemas"
+      ],
+      "technologies": [
+        "Documentacion",
+        "Aseguramiento de Calidad",
+        "Coordinacion de Proyectos",
+        "Soporte Operativo"
+      ]
     },
     {
       "company": "Apex Systems",
@@ -260,8 +359,16 @@
         "Mantube trabajo rapido visible y organizado",
         "Conecte necesidades tecnicas con entrega de proyectos"
       ],
-      "mainTech": ["Entrega de Proyectos", "Proyectos de Red"],
-      "technologies": ["Planeacion", "Comunicacion con Stakeholders", "Seguimiento de Ejecucion", "Documentacion"]
+      "mainTech": [
+        "Entrega de Proyectos",
+        "Proyectos de Red"
+      ],
+      "technologies": [
+        "Planeacion",
+        "Comunicacion con Stakeholders",
+        "Seguimiento de Ejecucion",
+        "Documentacion"
+      ]
     },
     {
       "company": "Cisco",
@@ -276,8 +383,16 @@
         "Primeras responsabilidades de liderazgo en entrega interfuncional",
         "Forme habitos fuertes de mejora de procesos y comunicacion"
       ],
-      "mainTech": ["Calidad y Liderazgo", "Pruebas de Sistemas"],
-      "technologies": ["Pruebas", "Analisis de Datos", "Mejora de Procesos", "Colaboracion Interfuncional"]
+      "mainTech": [
+        "Calidad y Liderazgo",
+        "Pruebas de Sistemas"
+      ],
+      "technologies": [
+        "Pruebas",
+        "Analisis de Datos",
+        "Mejora de Procesos",
+        "Colaboracion Interfuncional"
+      ]
     }
   ],
   "recommendations": [
