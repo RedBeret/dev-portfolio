@@ -13,17 +13,10 @@ class ProjectDetailsModal extends Component {
             return null;
         }
 
-        const theme = this.props.theme || "light";
         const title = project.title;
-        const description =
-            theme === "light"
-                ? project.frontDescription || project.description
-                : project.backDescription || project.description;
+        const description = project.description;
         const url = project.url;
-        const label =
-            theme === "light"
-                ? project.frontLabel || "Selected project"
-                : project.backLabel || "Selected project";
+        const label = project.label || "Selected project";
         const imageSources = project.images || [];
         const images =
             imageSources.map((image, index) => (

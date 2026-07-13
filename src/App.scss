@@ -367,25 +367,6 @@ body[data-theme="dark"] .hero-button--primary {
     margin: 2rem 0 2.4rem;
 }
 
-.hero-panel__icon-wrap {
-    display: grid;
-    place-items: center;
-    width: 8.8rem;
-    height: 8.8rem;
-    border-radius: 2.4rem;
-    background: linear-gradient(
-        135deg,
-        var(--color-accent) 0%,
-        var(--color-highlight) 100%
-    );
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
-}
-
-.hero-panel__icon {
-    width: 4.6rem;
-    height: 4.6rem;
-}
-
 .hero-panel__switch {
     display: flex;
     align-items: center;
@@ -402,21 +383,20 @@ body[data-theme="dark"] .hero-button--primary {
 }
 
 .toggle-icon {
-    display: block;
-    font-size: 1.1rem;
-    font-weight: 700;
-    line-height: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.8rem;
+    font-size: 1.4rem;
     color: #fff;
 }
 
 .toggle-icon--left {
-    padding-left: 1rem;
-    text-align: left;
+    padding-left: 0.6rem;
 }
 
 .toggle-icon--right {
-    padding-right: 1rem;
-    text-align: right;
+    padding-right: 0.6rem;
 }
 
 .hero-social-links,
@@ -648,6 +628,21 @@ body[data-theme="dark"] .project-card__media {
     aspect-ratio: 16 / 9;
     border-radius: 2rem;
     object-fit: cover;
+    transition: transform 260ms ease;
+}
+
+.project-card:hover,
+.project-card:focus-visible,
+.blog-card--link:hover,
+.blog-card--link:focus-visible {
+    transform: translateY(-6px);
+    box-shadow: var(--color-shadow);
+    border-color: var(--color-border-strong);
+}
+
+.project-card:hover .project-card__media img,
+.project-card:focus-visible .project-card__media img {
+    transform: scale(1.045);
 }
 
 .project-card__badge {
@@ -743,6 +738,33 @@ body[data-theme="dark"] .project-card__media {
 .section-block--skills .section-title,
 .section-block--skills .section-intro {
     color: var(--color-footer-text);
+}
+
+.skills-group {
+    margin-top: 3.2rem;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
+
+.skills-group__title {
+    margin: 0 0 1.8rem;
+    color: var(--color-footer-text);
+    font-family: Sora, sans-serif;
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    &::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.12);
+    }
 }
 
 .skills-grid {
@@ -1045,6 +1067,38 @@ body[data-theme="dark"] .project-card__media {
     gap: 1.4rem;
 }
 
+.blog-card--link {
+    cursor: pointer;
+    color: inherit;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        border-color 180ms ease;
+
+    .blog-card__link {
+        margin-top: auto;
+    }
+}
+
+.blog-card__tag {
+    align-self: flex-start;
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+    background: var(--color-accent-soft, rgba(15, 139, 141, 0.14));
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+}
+
+.blog-card__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    align-items: center;
+}
+
 .blog-card h3 {
     margin: 0;
     font-family: Sora, sans-serif;
@@ -1061,12 +1115,6 @@ body[data-theme="dark"] .project-card__media {
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
-}
-
-.status-message {
-    margin: 0;
-    color: var(--color-text-muted);
-    font-size: 1.6rem;
 }
 
 .modal-inside .modal-content {
@@ -1332,5 +1380,37 @@ body[data-theme="dark"] .project-card__media {
     .experience-card__rail::before {
         left: 2.4rem;
         top: 5.2rem;
+    }
+}
+
+.section-block,
+.hero {
+    scroll-margin-top: 2.4rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .project-card:hover,
+    .project-card:focus-visible,
+    .blog-card--link:hover,
+    .blog-card--link:focus-visible {
+        transform: none;
+    }
+
+    .project-card:hover .project-card__media img,
+    .project-card:focus-visible .project-card__media img {
+        transform: none;
     }
 }

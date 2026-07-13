@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 
 class Skills extends Component {
-    getSkillLabel(level, theme) {
+    getSkillLabel(level) {
         const numericLevel = Number(level);
 
         if (numericLevel >= 86) {
-            return theme === "light" ? "Go-to for shipped UI work" : "Go-to for production work";
+            return "Go-to for production work";
         }
 
         if (numericLevel >= 78) {
-            return theme === "light" ? "Used often in frontend builds" : "Used often in backend and automation work";
+            return "Used often in shipped work";
         }
 
-        return theme === "light" ? "Part of my regular stack" : "Part of my regular engineering stack";
+        return "Part of my regular stack";
     }
 
     renderSkills(skillsArray) {
@@ -28,29 +28,22 @@ class Skills extends Component {
                     <span style={{ width: `${skill.level}%` }}></span>
                 </div>
                 <p className="skills-tile__meta">
-                    {this.getSkillLabel(skill.level, this.props.theme)}
+                    {this.getSkillLabel(skill.level)}
                 </p>
             </article>
         ));
     }
 
     render() {
-        const { theme, sharedSkills, resumeBasicInfo } = this.props;
+        const { sharedSkills, resumeBasicInfo } = this.props;
 
         const sectionName = resumeBasicInfo?.section_name.skills;
+        const frontendLabel =
+            resumeBasicInfo?.section_name.skills_frontend || "Frontend & Product";
+        const backendLabel =
+            resumeBasicInfo?.section_name.skills_backend || "Backend & Systems";
         const intro =
-            theme === "light"
-                ? "The tools I lean on when the work needs a strong interface, clear interaction design, and quick iteration."
-                : "The tools I reach for when the job is automation, backend logic, data handling, or operational reliability.";
-
-        let skills = null;
-        if (sharedSkills) {
-            if (theme === "light" && sharedSkills.frontend) {
-                skills = this.renderSkills(sharedSkills.frontend);
-            } else if (theme === "dark" && sharedSkills.backend) {
-                skills = this.renderSkills(sharedSkills.backend);
-            }
-        }
+            "The full toolbox: interface and product tools on one side, automation, data, and backend tools on the other. Most projects here use both.";
 
         return (
             <section id="skills" className="section-block section-block--skills">
@@ -60,7 +53,26 @@ class Skills extends Component {
                         <h2 className="section-title">{sectionName}</h2>
                         <p className="section-intro">{intro}</p>
                     </div>
-                    <div className="skills-grid">{skills}</div>
+                    {sharedSkills?.frontend ? (
+                        <div className="skills-group">
+                            <h3 className="skills-group__title">
+                                {frontendLabel}
+                            </h3>
+                            <div className="skills-grid">
+                                {this.renderSkills(sharedSkills.frontend)}
+                            </div>
+                        </div>
+                    ) : null}
+                    {sharedSkills?.backend ? (
+                        <div className="skills-group">
+                            <h3 className="skills-group__title">
+                                {backendLabel}
+                            </h3>
+                            <div className="skills-grid">
+                                {this.renderSkills(sharedSkills.backend)}
+                            </div>
+                        </div>
+                    ) : null}
                 </div>
             </section>
         );

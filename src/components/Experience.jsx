@@ -5,18 +5,13 @@ import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 class Experience extends Component {
     render() {
-        const { resumeBasicInfo, resumeExperience, theme } = this.props;
+        const { resumeBasicInfo, resumeExperience } = this.props;
         const sectionName = resumeBasicInfo?.section_name.experience;
         const intro =
-            theme === "light"
-                ? "Experience told through delivery, calmer workflows, and the part of engineering work that makes teams easier to support."
-                : "Experience told through integration depth, automation, and the ability to move quickly across complex technical environments.";
+            "Experience told through delivery: integration depth, calmer workflows, and the automation that makes complex environments easier for teams to support.";
 
         const work = resumeExperience?.map((role, index) => {
-            const description =
-                theme === "light"
-                    ? role.frontDescription || role.description
-                    : role.backDescription || role.description;
+            const description = role.description;
             const mainTech = role.mainTech.map((technology) => (
                 <Badge pill className="main-badge" key={`${role.company}-${technology}`}>
                     {technology}

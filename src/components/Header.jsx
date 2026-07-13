@@ -2,104 +2,51 @@ import React, { Component } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Switch from "react-switch";
 
+const FOCUS = {
+    kicker: "AI Tooling / Full-Stack Systems",
+    primaryTitle: "Technical Lead / Software Engineer",
+    focusLine: "AI agent tooling, developer workflows, and product-minded systems",
+    fit: "Product, platform, and developer-experience teams",
+    summary:
+        "One portfolio, both sides of the work: clear product interfaces and the automation, data, and systems underneath them.",
+    secondary:
+        "Equally at home in tooling, infrastructure, and workflow-heavy engineering when that is where the problem lives.",
+    panelTitle: "Now building: AI agent tooling and developer workflow tools",
+    panelText:
+        "Recent public work spans data quality pipelines, evaluation harnesses, agent guardrails, and full-stack operator consoles.",
+    proofPoints: [
+        {
+            value: "150+",
+            label: "platforms worked across",
+        },
+        {
+            value: "Hundreds",
+            label: "of isolated enterprise environments",
+        },
+        {
+            value: "AI + Full Stack",
+            label: "public work in Python, React, and TypeScript",
+        },
+    ],
+};
+
 class Header extends Component {
     constructor() {
         super();
         this.state = {
             checked: false,
-            theme: "light",
-            themeIcon: "images/icons/front.png",
         };
         this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
     }
 
     onThemeSwitchChange(checked) {
         this.setState({ checked }, () => {
-            this.setTheme();
+            document.body.setAttribute(
+                "data-theme",
+                checked ? "dark" : "light"
+            );
             this.props.toggleTheme();
         });
-    }
-
-    setTheme() {
-        const dataThemeAttribute = "data-theme";
-        const body = document.body;
-        const newTheme =
-            body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
-
-        body.setAttribute(dataThemeAttribute, newTheme);
-        this.setState({
-            theme: newTheme,
-            themeIcon:
-                newTheme === "light"
-                    ? "images/icons/front.png"
-                    : "images/icons/backend.png",
-        });
-    }
-
-    getFocusCopy() {
-        return this.state.theme === "light"
-            ? {
-                  kicker: "Frontend / Product Work",
-                  primaryTitle: "Technical Lead / Software Engineer",
-                  focusLine:
-                      "UI clarity, product instinct, and polished interactions",
-                  fit: "Strong fit for product, platform, and developer-experience teams",
-                  summary:
-                      "This view pushes the product, interface, and full-stack side of my work to the front.",
-                  secondary:
-                      "Switch views anytime to bring the systems, automation, and integration-heavy parts forward instead.",
-                  panelTitle: "Showing the product-facing side of my work",
-                  panelText:
-                      "Project notes, skills, and experience details lean toward frontend craft, UX fluency, and full-stack collaboration.",
-                  proofPoints: [
-                      {
-                          value: "150+",
-                          label: "platforms worked across",
-                      },
-                      {
-                          value: "Hundreds",
-                          label: "of isolated enterprise environments",
-                      },
-                      {
-                          value: "AI + Full Stack",
-                          label: "public work in Python, React, and TypeScript",
-                      },
-                  ],
-              }
-            : {
-                  kicker: "Backend / Systems Work",
-                  primaryTitle: "Technical Lead / Systems Engineer",
-                  focusLine:
-                      "Automation, operational tooling, and resilient systems thinking",
-                  fit: "Strong fit for tooling, infrastructure, and workflow-heavy engineering work",
-                  summary:
-                      "This view brings forward the work centered on automation, process design, and maintainable technical systems.",
-                  secondary:
-                      "The same portfolio is still here, just with the emphasis shifted toward backend, platform, and operational depth.",
-                  panelTitle: "Showing the systems-facing side of my work",
-                  panelText:
-                      "Project notes, skills, and experience details lean toward Python, automation, backend thinking, and operational design.",
-                  proofPoints: [
-                      {
-                          value: "150+",
-                          label: "platforms worked across",
-                      },
-                      {
-                          value: "Hundreds",
-                          label: "of isolated enterprise environments",
-                      },
-                      {
-                          value: "Automation",
-                          label: "workflow, tooling, and integration-heavy delivery",
-                      },
-                  ],
-              };
-    }
-
-    renderSwitchLabel() {
-        return this.state.theme === "light"
-            ? "Switch to the backend and systems view"
-            : "Switch to the frontend and product view";
     }
 
     render() {
@@ -110,13 +57,9 @@ class Header extends Component {
         if (this.props.sharedData) {
             name = this.props.sharedData.name;
             social = this.props.sharedData.social || [];
-            titles =
-                this.state.theme === "light"
-                    ? this.props.sharedData["titles-front"]
-                    : this.props.sharedData["titles-back"];
+            titles = this.props.sharedData.titles || [];
         }
 
-        const focus = this.getFocusCopy();
         const rotatingTitles = titles.slice(1).length ? titles.slice(1) : titles;
         const linkedin =
             social.find((network) => network.name === "linkedin")?.url || "#footer";
@@ -137,11 +80,11 @@ class Header extends Component {
             <header className="hero" id="home">
                 <div className="section-shell hero-shell">
                     <div className="hero-copy">
-                        <p className="hero-kicker">{focus.kicker}</p>
+                        <p className="hero-kicker">{FOCUS.kicker}</p>
                         <h1 className="hero-title mb-0">
                             <span className="hero-title__name">{name}</span>
                             <span className="hero-title__role-static">
-                                {focus.primaryTitle}
+                                {FOCUS.primaryTitle}
                             </span>
                             <span className="hero-title__role">
                                 <Typewriter
@@ -161,7 +104,7 @@ class Header extends Component {
                             useful, and easy for real teams to trust.
                         </p>
                         <div className="hero-proof-strip">
-                            {focus.proofPoints.map((point) => (
+                            {FOCUS.proofPoints.map((point) => (
                                 <div
                                     className="hero-proof-card"
                                     key={`${point.value}-${point.label}`}
@@ -192,15 +135,15 @@ class Header extends Component {
                                 <span className="hero-meta-card__label">
                                     Right now
                                 </span>
-                                <strong>{focus.focusLine}</strong>
-                                <p>{focus.summary}</p>
+                                <strong>{FOCUS.focusLine}</strong>
+                                <p>{FOCUS.summary}</p>
                             </div>
                             <div className="hero-meta-card">
                                 <span className="hero-meta-card__label">
                                     Best fit
                                 </span>
-                                <strong>{focus.fit}</strong>
-                                <p>{focus.secondary}</p>
+                                <strong>{FOCUS.fit}</strong>
+                                <p>{FOCUS.secondary}</p>
                             </div>
                         </div>
                     </div>
@@ -212,28 +155,23 @@ class Header extends Component {
                             <span className="window-dot window-dot--green"></span>
                         </div>
                         <div className="hero-panel__mode">
-                            <div className="hero-panel__icon-wrap">
-                                <img
-                                    alt=""
-                                    className="hero-panel__icon"
-                                    src={this.state.themeIcon}
-                                />
-                            </div>
                             <div>
                                 <p className="hero-panel__eyebrow">
-                                    Current view
+                                    Current focus
                                 </p>
-                                <h2>{focus.panelTitle}</h2>
-                                <p>{focus.panelText}</p>
+                                <h2>{FOCUS.panelTitle}</h2>
+                                <p>{FOCUS.panelText}</p>
                             </div>
                         </div>
                         <div className="hero-panel__switch">
                             <div>
                                 <p className="hero-panel__switch-label">
-                                    Switch views
+                                    Appearance
                                 </p>
                                 <p className="hero-panel__switch-copy">
-                                    {this.renderSwitchLabel()}
+                                    {this.state.checked
+                                        ? "Dark mode on - same story, easier on the eyes."
+                                        : "Light mode on - flip it if you prefer dark."}
                                 </p>
                             </div>
                             <Switch
@@ -242,16 +180,17 @@ class Header extends Component {
                                 offColor="#0f8b8d"
                                 onColor="#182635"
                                 className="react-switch"
+                                aria-label="Toggle dark mode"
                                 width={88}
                                 height={38}
                                 uncheckedIcon={
                                     <span className="toggle-icon toggle-icon--left">
-                                        FE
+                                        <i className="fas fa-sun"></i>
                                     </span>
                                 }
                                 checkedIcon={
                                     <span className="toggle-icon toggle-icon--right">
-                                        BE
+                                        <i className="fas fa-moon"></i>
                                     </span>
                                 }
                                 id="icon-switch"

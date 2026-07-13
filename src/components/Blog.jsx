@@ -1,97 +1,76 @@
-import React, { useState, useEffect } from "react";
+import React, { Component } from "react";
 import "../App.scss";
 
-const MEDIUM_FEED_URL = "https://medium.com/feed/@redberet";
-const API_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(MEDIUM_FEED_URL)}&count=6`;
+class Blog extends Component {
+    render() {
+        const posts = this.props.posts || [];
 
-const Blog = () => {
-    const [posts, setPosts] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState("");
+        if (!posts.length) {
+            return null;
+        }
 
-    useEffect(() => {
-        const fetchPosts = async () => {
-            setLoading(true);
+        return (
+            <section className="section-block section-block--blog" id="blog">
+                <div className="section-shell">
+                    <div className="section-heading">
+                        <p className="section-kicker">Writing</p>
+                        <h2 className="section-title">Latest Blog Posts</h2>
+                        <p className="section-intro">
+                            Notes and technical write-ups from the public side of
+                            my work: how the projects were built, what I learned,
+                            and the thinking behind them.
+                        </p>
+                    </div>
 
-            try {
-                const response = await fetch(API_URL);
-                const data = await response.json();
-                setPosts(
-                    data.items.map((item) => {
-                        const descriptionWithoutFigures =
-                            item.description.replace(
-                                /<figure[^>]*>.*?<\/figure>/g,
-                                ""
-                            );
-                        const descriptionText = descriptionWithoutFigures
-                            .replace(/<[^>]+>/g, " ")
-                            .replace(/\s+/g, " ")
-                            .trim();
-
-                        return {
-                            ...item,
-                            description: descriptionText,
-                        };
-                    })
-                );
-            } catch (fetchError) {
-                console.error("Error fetching blog posts:", fetchError);
-                setError("Failed to load blog posts. Please try again later.");
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchPosts();
-    }, []);
-
-    return (
-        <section className="section-block section-block--blog" id="blog">
-            <div className="section-shell">
-                <div className="section-heading">
-                    <p className="section-kicker">Writing</p>
-                    <h2 className="section-title">Latest Blog Posts</h2>
-                    <p className="section-intro">
-                        A few recent posts from the public side of my work:
-                        notes, ideas, and technical writing that add more
-                        context beyond the project cards.
-                    </p>
-                </div>
-
-                {loading ? (
-                    <p className="status-message">Loading blog posts...</p>
-                ) : null}
-                {error ? <p className="status-message">{error}</p> : null}
-
-                {!loading && !error ? (
                     <div className="blog-grid">
-                        {posts.map((post) => (
-                            <article className="blog-card" key={post.guid}>
-                                <div className="blog-card__meta">
-                                    <span>
-                                        {new Date(post.pubDate).toLocaleDateString()}
-                                    </span>
-                                </div>
-                                <h3>{post.title}</h3>
-                                <p className="blog-post-description">
-                                    {post.description.substring(0, 320)}...
-                                </p>
+                        {posts.map((post) => {
+                            const body = (
+                                <>
+                                    {post.tag ? (
+                                        <span className="blog-card__tag">
+                                            {post.tag}
+                                        </span>
+                                    ) : null}
+                                    <div className="blog-card__meta">
+                                        <span>{post.date}</span>
+                                        {post.readingTime ? (
+                                            <span>{post.readingTime}</span>
+                                        ) : null}
+                                    </div>
+                                    <h3>{post.title}</h3>
+                                    <p className="blog-post-description">
+                                        {post.description}
+                                    </p>
+                                    {post.link ? (
+                                        <span className="blog-card__link">
+                                            Read more
+                                            <i className="fas fa-arrow-right"></i>
+                                        </span>
+                                    ) : null}
+                                </>
+                            );
+
+                            return post.link ? (
                                 <a
-                                    className="blog-card__link"
+                                    className="blog-card blog-card--link"
                                     href={post.link}
+                                    key={post.title}
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
-                                    Read more
-                                    <i className="fas fa-arrow-right"></i>
+                                    {body}
                                 </a>
-                            </article>
-                        ))}
+                            ) : (
+                                <article className="blog-card" key={post.title}>
+                                    {body}
+                                </article>
+                            );
+                        })}
                     </div>
-                ) : null}
-            </div>
-        </section>
-    );
-};
+                </div>
+            </section>
+        );
+    }
+}
 
 export default Blog;

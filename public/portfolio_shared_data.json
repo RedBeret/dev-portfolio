@@ -1,18 +1,13 @@
 {
   "basic_info": {
     "name": "Steven Espinoza",
-    "titles-front": [
+    "titles": [
       "Technical Lead / Software Engineer",
-      "React + TypeScript Builder",
-      "Product-Minded Developer",
-      "Full-Stack Problem Solver"
-    ],
-    "titles-back": [
-      "Technical Lead / Systems Engineer",
+      "AI Tooling Builder",
+      "Full-Stack Problem Solver",
       "Python Automation Builder",
-      "Tooling & Workflow Designer",
-      "Backend Developer",
-      "Multi-Environment Integrator"
+      "Product-Minded Developer",
+      "Tooling & Workflow Designer"
     ],
     "social": [
       {
@@ -113,5 +108,31 @@
         "level": "70"
       }
     ]
-  }
+  },
+  "blog_posts": [
+    {
+      "title": "Measuring data cleanup instead of trusting it",
+      "date": "June 2026",
+      "tag": "Data Engineering",
+      "readingTime": "6 min read",
+      "description": "Most cleanup scripts fix messy exports with no way to know what they caught, missed, or silently broke. FDE Data Forge ends every run with a scorecard scored against row-level ground truth: 100% recall and 84.2% F1 on the bundled sample, with false positives shown rather than hidden. A walkthrough of the ingest-detect-normalize-validate-report pipeline and why measured accuracy matters.",
+      "link": "https://github.com/RedBeret/fde-data-forge"
+    },
+    {
+      "title": "Smaller chunks did not mean better retrieval",
+      "date": "June 2026",
+      "tag": "AI Evaluation",
+      "readingTime": "5 min read",
+      "description": "RAG Eval Bench measures a retrieval pipeline instead of eyeballing it: Hit@K, MRR, faithfulness, and correct-refusal rates from local Ollama models, every number copied from a committed artifact. The interesting result: shrinking chunks to 128 characters made retrieval worse, because most part descriptions are short and 128 fragments them. Evidence beats intuition.",
+      "link": "https://github.com/RedBeret/rag-eval-bench"
+    },
+    {
+      "title": "Guardrails for AI coding agents that run offline",
+      "date": "July 2026",
+      "tag": "AI Safety",
+      "readingTime": "7 min read",
+      "description": "Agent Security Kit is a set of reusable guardrails for AI-assisted coding: secret-leak blocking, dangerous-command hooks, publish-readiness gates, and encrypted agent memory. Pure Bash, no SaaS scanner, no telemetry. A look at the failure modes of agent-driven development and the small, composable defenses that address them.",
+      "link": "https://github.com/RedBeret/agent-security-kit"
+    }
+  ]
 }

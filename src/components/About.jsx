@@ -1,15 +1,12 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
 import reactIcon from "@iconify/icons-logos/react";
-import cssIcon from "@iconify/icons-logos/css-3";
 import pythonIcon from "@iconify/icons-logos/python";
-import flaskIcon from "@iconify/icons-logos/flask";
-import sqliteIcon from "@iconify/icons-logos/sqlite";
-import javascriptIcon from "@iconify/icons-logos/javascript";
+import typescriptIcon from "@iconify/icons-logos/typescript-icon";
 
 class About extends Component {
     render() {
-        const { theme, sharedBasicInfo, resumeBasicInfo } = this.props;
+        const { sharedBasicInfo, resumeBasicInfo } = this.props;
 
         const profilepic = sharedBasicInfo
             ? `images/${sharedBasicInfo.image}`
@@ -18,23 +15,13 @@ class About extends Component {
         const hello = resumeBasicInfo?.description_header;
         const about = resumeBasicInfo?.description;
 
-        const stack =
-            theme === "light"
-                ? [
-                      { icon: reactIcon, label: "React" },
-                      { icon: javascriptIcon, label: "JavaScript" },
-                      { icon: cssIcon, label: "CSS" },
-                  ]
-                : [
-                      { icon: flaskIcon, label: "Flask" },
-                      { icon: pythonIcon, label: "Python" },
-                      { icon: sqliteIcon, label: "SQLite" },
-                  ];
+        const stack = [
+            { icon: reactIcon, label: "React" },
+            { icon: typescriptIcon, label: "TypeScript" },
+            { icon: pythonIcon, label: "Python" },
+        ];
 
-        const focusLabel =
-            theme === "light"
-                ? "Product, UI, and full-stack work"
-                : "Automation, backend, and systems work";
+        const focusLabel = "Product, systems, and AI tooling work";
 
         return (
             <section className="section-block section-block--about" id="about">

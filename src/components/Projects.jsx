@@ -11,7 +11,7 @@ class Projects extends Component {
     }
 
     render() {
-        const { theme, resumeProjects, resumeBasicInfo } = this.props;
+        const { resumeProjects, resumeBasicInfo } = this.props;
         const openDetailsModal = (data) => {
             this.setState({ detailsModalShow: true, deps: data });
         };
@@ -21,24 +21,13 @@ class Projects extends Component {
 
         const sectionName = resumeBasicInfo?.section_name.projects;
         const intro =
-            theme === "light"
-                ? "Public projects that show the product-facing side of my work: thoughtful interfaces, clear operator flows, and full-stack builds that feel easy to trust."
-                : "Public projects that show the systems-facing side of my work: automation, state handling, integration logic, and tools built to reduce noise.";
-        const orderedProjects = [...(resumeProjects || [])].sort((left, right) => {
-            const leftRank = theme === "light" ? left.frontRank : left.backRank;
-            const rightRank = theme === "light" ? right.frontRank : right.backRank;
-
-            return (leftRank || 99) - (rightRank || 99);
-        });
+            "Public projects across both sides of the work: product interfaces, developer tooling, data pipelines, and the AI guardrails that keep all of it trustworthy.";
+        const orderedProjects = [...(resumeProjects || [])].sort(
+            (left, right) => (left.rank || 99) - (right.rank || 99)
+        );
         const projects = orderedProjects.map((project) => {
-            const eyebrow =
-                theme === "light"
-                    ? project.frontLabel || "Selected project"
-                    : project.backLabel || "Selected project";
-            const description =
-                theme === "light"
-                    ? project.frontDescription || project.description
-                    : project.backDescription || project.description;
+            const eyebrow = project.label || "Selected project";
+            const description = project.summary || project.description;
             const cardDescription =
                 description.length > 190
                     ? `${description.slice(0, 187).trimEnd()}...`
@@ -97,7 +86,6 @@ class Projects extends Component {
                         data={this.state.deps}
                         onHide={closeDetailsModal}
                         show={this.state.detailsModalShow}
-                        theme={theme}
                     />
                 </div>
             </section>

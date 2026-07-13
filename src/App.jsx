@@ -151,34 +151,28 @@ class App extends Component {
 
                 <main className="site-main">
                     <About
-                        theme={theme}
                         resumeBasicInfo={this.state.resumeData.basic_info}
                         sharedBasicInfo={this.state.sharedData.basic_info}
                     />
                     <Projects
-                        theme={theme}
                         resumeProjects={this.state.resumeData.projects}
                         resumeBasicInfo={this.state.resumeData.basic_info}
                     />
                     <Skills
-                        theme={theme}
                         sharedSkills={this.state.sharedData.skills}
                         resumeBasicInfo={this.state.resumeData.basic_info}
                     />
                     <Experience
-                        theme={theme}
                         resumeBasicInfo={this.state.resumeData.basic_info}
                         resumeExperience={this.state.resumeData.experience}
                     />
                     <Credentials
-                        theme={theme}
                         resumeCredentials={this.state.resumeData.credentials}
                     />
                     <Recommendations
-                        theme={theme}
                         resumeRecommendations={this.state.resumeData.recommendations}
                     />
-                    <Blog />
+                    <Blog posts={this.state.sharedData.blog_posts} />
                 </main>
 
                 <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
