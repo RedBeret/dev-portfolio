@@ -6,65 +6,25 @@
       "about": "About",
       "projects": "Featured Projects",
       "skills": "Skills",
+      "skills_frontend": "Frontend & Product",
+      "skills_backend": "Backend & Systems",
       "experience": "Experience"
     }
   },
   "projects": [
     {
-      "title": "EdgeLab Console",
-      "startDate": "2026",
-      "description": "Full-stack internal-tool style app for tracking test runs, config drift, alerts, notes, and artifacts across a busy lab environment. I built it to feel like something a platform or validation team could actually use day to day.",
-      "frontDescription": "Full-stack lab operations console with a clean dashboard, clear run detail views, and an interface designed to make noisy technical work feel easier to scan and act on.",
-      "backDescription": "Full-stack internal tool for tracking test runs, config drift, alerts, notes, and artifacts, backed by FastAPI, SQLite, and live signal updates for a realistic operator workflow.",
-      "frontLabel": "Internal tool UX + full-stack delivery",
-      "backLabel": "Operational workflow + backend systems",
-      "impact": "Shows how I turn operational complexity into software that feels organized and usable.",
-      "highlights": [
-        "Run queue with search, status, environment, and owner filtering",
-        "Config drift, artifacts, alerts, and notes in a single operator view",
-        "Live signal rail backed by a WebSocket endpoint"
-      ],
-      "frontRank": 2,
-      "backRank": 3,
-      "images": [
-        "images/portfolio/edge-lab-console-cover.svg"
-      ],
-      "url": "https://github.com/RedBeret/edge-lab-console",
-      "technologies": [
-        {
-          "class": "devicon-react-original",
-          "name": "React"
-        },
-        {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
-        },
-        {
-          "class": "devicon-fastapi-plain",
-          "name": "FastAPI"
-        },
-        {
-          "class": "devicon-sqlite-plain",
-          "name": "SQLite"
-        }
-      ]
-    },
-    {
       "title": "FDE Data Forge",
       "startDate": "2026",
+      "rank": 1,
+      "label": "Data quality engineering",
+      "summary": "Data cleanup tool that ends every run with an honest scorecard instead of silent fixes: 100% recall and 84.2% F1 on the bundled sample, with false positives shown rather than hidden.",
       "description": "Data engineering pipeline that turns a customer's dirty exports into clean, trustworthy data and proves it with a scorecard. It handles encoding-aware CSV/XLSX ingestion, fuzzy supplier deduplication, and part-number normalization, then validates every run against row-level ground truth from its companion synthetic sandbox.",
-      "frontDescription": "Data cleanup tool that ends every run with an honest scorecard instead of silent fixes: 100% recall and 84.2% F1 on the bundled sample, with false positives shown rather than hidden.",
-      "backDescription": "Ingest-detect-normalize-validate-report pipeline for messy industrial exports: Windows-1252 encodings, merged headers, fuzzy supplier dedup, and part-number era classification, all validated against a ground-truth manifest.",
-      "frontLabel": "Measured data quality workflow",
-      "backLabel": "Data pipeline + evaluation engineering",
       "impact": "Shows I treat data cleanup as an engineering problem with measurable accuracy, not a one-off script.",
       "highlights": [
         "Defect detection scored against row-level ground truth: 100% recall, 84.2% F1 on the bundled sample",
         "Encoding-aware ingestion, fuzzy supplier dedup, and part-number normalization",
         "Runs offline in one command, with a companion synthetic sandbox (acme-parts-cloud) for reproducible evaluation"
       ],
-      "frontRank": 3,
-      "backRank": 1,
       "images": [
         "images/portfolio/fde-data-forge-cover.svg"
       ],
@@ -89,21 +49,126 @@
       ]
     },
     {
+      "title": "EdgeLab Console",
+      "startDate": "2026",
+      "rank": 2,
+      "label": "Full-stack internal tooling",
+      "summary": "Full-stack lab operations console with a clean dashboard, clear run detail views, and an interface designed to make noisy technical work feel easier to scan and act on.",
+      "description": "Full-stack internal-tool style app for tracking test runs, config drift, alerts, notes, and artifacts across a busy lab environment. I built it to feel like something a platform or validation team could actually use day to day.",
+      "impact": "Shows how I turn operational complexity into software that feels organized and usable.",
+      "highlights": [
+        "Run queue with search, status, environment, and owner filtering",
+        "Config drift, artifacts, alerts, and notes in a single operator view",
+        "Live signal rail backed by a WebSocket endpoint"
+      ],
+      "images": [
+        "images/portfolio/edge-lab-console-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/edge-lab-console",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-fastapi-plain",
+          "name": "FastAPI"
+        },
+        {
+          "class": "devicon-sqlite-plain",
+          "name": "SQLite"
+        }
+      ]
+    },
+    {
+      "title": "Agent Security Kit",
+      "startDate": "2026",
+      "rank": 3,
+      "label": "AI agent guardrails",
+      "summary": "Safety toolkit for teams using coding agents: pick the guardrail components you need, review the setup script, and install only what you trust. Nothing phones home.",
+      "description": "Reusable guardrails for AI-assisted coding agents: secret leak blocking, dangerous command hooks, publish-readiness checks, workspace scanning, OS keystore loading, and encrypted agent memory. Organized as a kit rather than a framework, in pure Bash with no dependencies beyond jq, openssl, and git. Runs entirely offline with no telemetry.",
+      "impact": "Shows I think about the failure modes of AI-assisted development and ship working defenses, not just opinions.",
+      "highlights": [
+        "Blocks API key, credential, and PII leaks before they leave the workspace",
+        "Dangerous-command hooks, publish-readiness gates, and workspace scanning",
+        "Pure Bash, fully offline, no telemetry, supports multiple agent runtimes including Claude Code"
+      ],
+      "images": [
+        "images/portfolio/agent-security-kit-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/agent-security-kit",
+      "technologies": [
+        {
+          "class": "devicon-bash-plain",
+          "name": "Bash"
+        },
+        {
+          "class": "devicon-git-plain",
+          "name": "Git Hooks"
+        },
+        {
+          "class": "devicon-ssh-original",
+          "name": "Secret Hygiene"
+        },
+        {
+          "class": "devicon-linux-plain",
+          "name": "Agent Runtimes"
+        }
+      ]
+    },
+    {
+      "title": "Field Sync Notebook",
+      "startDate": "2026",
+      "rank": 4,
+      "label": "Offline-first product workflow",
+      "summary": "Offline-first workflow app for notes, tasks, and handoffs that stays approachable even when connectivity is messy and ownership is changing.",
+      "description": "Offline-first handoff and notes workspace for teams operating with degraded connectivity, shifting ownership, and time-sensitive tasks. The focus was making sync state and local queue behavior feel understandable instead of fragile.",
+      "impact": "Shows how I think about resilience and usability together instead of treating them as separate problems.",
+      "highlights": [
+        "Queued notes and tasks with remove and retry paths",
+        "Manual sync flow with mode-aware results and conflict visibility",
+        "Exportable handoff summary for the next shift or team"
+      ],
+      "images": [
+        "images/portfolio/field-sync-notebook-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/field-sync-notebook",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-fastapi-plain",
+          "name": "FastAPI"
+        },
+        {
+          "class": "devicon-git-plain",
+          "name": "Offline Workflow"
+        }
+      ]
+    },
+    {
       "title": "RAG Eval Bench",
       "startDate": "2026",
+      "rank": 5,
+      "label": "AI evaluation harness",
+      "summary": "Evaluation workbench that replaces 'the RAG answers look fine' with real numbers: retrieval accuracy, faithfulness, and correct-refusal rates, every figure copied from a committed artifact.",
       "description": "Local-first harness for measuring a RAG pipeline instead of eyeballing it. Point it at a corpus, generate a ground-truth question set, and get retrieval numbers (Hit@K, MRR) plus answer faithfulness and refusal scoring from local Ollama models. No API keys, no hosted services, runs offline.",
-      "frontDescription": "Evaluation workbench that replaces 'the RAG answers look fine' with real numbers: retrieval accuracy, faithfulness, and correct-refusal rates, every figure copied from a committed artifact.",
-      "backDescription": "RAG evaluation harness with ground-truth question generation, chunk-size sweeps, Hit@K and MRR scoring, and a separate-model judge, built on ChromaDB and local Ollama models with zero hosted dependencies.",
-      "frontLabel": "AI evaluation product thinking",
-      "backLabel": "Retrieval metrics + eval harness design",
       "impact": "Shows I measure AI systems with evidence instead of vibes, including the result that smaller chunks made retrieval worse.",
       "highlights": [
         "Hit@1, Hit@5, and MRR across chunk-size sweeps with committed machine-readable results",
         "Generation scoring with faithfulness, correct-refusal, and false-refusal rates on unanswerable questions",
         "Fully local and offline: ChromaDB retrieval plus Ollama generation and judging"
       ],
-      "frontRank": 5,
-      "backRank": 5,
       "images": [
         "images/portfolio/rag-eval-bench-cover.svg"
       ],
@@ -130,19 +195,16 @@
     {
       "title": "Repo Flight Deck",
       "startDate": "2026",
+      "rank": 6,
+      "label": "Developer experience dashboard",
+      "summary": "Internal dashboard for engineering teams that turns noisy repo signals into a readable release story instead of a wall of status badges.",
       "description": "Developer-platform control center for repository health, CI status, security alerts, pull request risk, and release readiness. I wanted it to feel like a believable internal dashboard for engineering leads and maintainers.",
-      "frontDescription": "Internal dashboard for engineering teams that turns noisy repo signals into a readable release story instead of a wall of status badges.",
-      "backDescription": "Developer-platform tool that structures repo health, release gating, PR risk, and security data into API endpoints and a decision-ready workflow.",
-      "frontLabel": "Developer experience dashboard",
-      "backLabel": "Release ops + repo health modeling",
       "impact": "Shows I can build software for engineering teams, not just end users.",
       "highlights": [
         "Repo catalog with search and risk filtering",
         "Release packet view with blocked, review, and done items",
         "Exportable risk packet for handoff or decision review"
       ],
-      "frontRank": 6,
-      "backRank": 6,
       "images": [
         "images/portfolio/repo-flight-deck-cover.svg"
       ],
@@ -167,60 +229,18 @@
       ]
     },
     {
-      "title": "Field Sync Notebook",
-      "startDate": "2026",
-      "description": "Offline-first handoff and notes workspace for teams operating with degraded connectivity, shifting ownership, and time-sensitive tasks. The focus was making sync state and local queue behavior feel understandable instead of fragile.",
-      "frontDescription": "Offline-first workflow app for notes, tasks, and handoffs that stays approachable even when connectivity is messy and ownership is changing.",
-      "backDescription": "Full-stack sync-oriented workspace with local queue handling, manual sync flows, conflict visibility, and handoff export for degraded-network environments.",
-      "frontLabel": "Offline-first product workflow",
-      "backLabel": "Sync logic + resilient workflow design",
-      "impact": "Shows how I think about resilience and usability together instead of treating them as separate problems.",
-      "highlights": [
-        "Queued notes and tasks with remove and retry paths",
-        "Manual sync flow with mode-aware results and conflict visibility",
-        "Exportable handoff summary for the next shift or team"
-      ],
-      "frontRank": 1,
-      "backRank": 7,
-      "images": [
-        "images/portfolio/field-sync-notebook-cover.svg"
-      ],
-      "url": "https://github.com/RedBeret/field-sync-notebook",
-      "technologies": [
-        {
-          "class": "devicon-react-original",
-          "name": "React"
-        },
-        {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
-        },
-        {
-          "class": "devicon-fastapi-plain",
-          "name": "FastAPI"
-        },
-        {
-          "class": "devicon-git-plain",
-          "name": "Offline Workflow"
-        }
-      ]
-    },
-    {
       "title": "AI Ops Runbook Generator",
       "startDate": "2026",
+      "rank": 7,
+      "label": "AI incident tooling",
+      "summary": "Browser-based tool that turns raw alerts into structured incident runbooks in seconds. I focused on the operator flow, fast formatting, and a UI that stays calm when the input is messy.",
       "description": "Browser-based tool that turns raw alerts into structured incident runbooks in seconds. I focused on format detection, prompt orchestration, local key storage, and a clean operator workflow that keeps everything client-side for a fast demo and a low-friction user experience.",
-      "frontDescription": "Browser-based tool that turns raw alerts into structured incident runbooks in seconds. I focused on the operator flow, fast formatting, and a UI that stays calm when the input is messy.",
-      "backDescription": "Browser-based tool that turns raw alerts into structured incident runbooks in seconds. I focused on format detection, prompt orchestration, and local-only key handling so the workflow stays fast without depending on a backend.",
-      "frontLabel": "Product UX + AI workflow",
-      "backLabel": "Prompt orchestration + client-side architecture",
       "impact": "Turns noisy alerts into something an operator can act on immediately.",
       "highlights": [
         "Client-side workflow with local key storage",
         "Structured output from messy operational input",
         "Polished incident-response demo with low setup friction"
       ],
-      "frontRank": 4,
-      "backRank": 8,
       "images": [
         "images/portfolio/ai-ops-runbook-cover.svg"
       ],
@@ -245,60 +265,18 @@
       ]
     },
     {
-      "title": "Agent Security Kit",
-      "startDate": "2026",
-      "description": "Reusable guardrails for AI-assisted coding agents: secret leak blocking, dangerous command hooks, publish-readiness checks, workspace scanning, OS keystore loading, and encrypted agent memory. Organized as a kit rather than a framework, in pure Bash with no dependencies beyond jq, openssl, and git. Runs entirely offline with no telemetry.",
-      "frontDescription": "Safety toolkit for teams using coding agents: pick the guardrail components you need, review the setup script, and install only what you trust. Nothing phones home.",
-      "backDescription": "Component library of agent guardrails: egress guards that block credential leaks, hooks that stop destructive commands, publish gates, workspace scanners, keystore-backed secrets, and encrypted memory at rest, with parallel implementations across agent runtimes including Claude Code.",
-      "frontLabel": "Practical AI safety tooling",
-      "backLabel": "Guardrail engineering + shell hardening",
-      "impact": "Shows I think about the failure modes of AI-assisted development and ship working defenses, not just opinions.",
-      "highlights": [
-        "Blocks API key, credential, and PII leaks before they leave the workspace",
-        "Dangerous-command hooks, publish-readiness gates, and workspace scanning",
-        "Pure Bash, fully offline, no telemetry, supports multiple agent runtimes including Claude Code"
-      ],
-      "frontRank": 7,
-      "backRank": 2,
-      "images": [
-        "images/portfolio/agent-security-kit-cover.svg"
-      ],
-      "url": "https://github.com/RedBeret/agent-security-kit",
-      "technologies": [
-        {
-          "class": "devicon-bash-plain",
-          "name": "Bash"
-        },
-        {
-          "class": "devicon-git-plain",
-          "name": "Git Hooks"
-        },
-        {
-          "class": "devicon-ssh-original",
-          "name": "Secret Hygiene"
-        },
-        {
-          "class": "devicon-linux-plain",
-          "name": "Agent Runtimes"
-        }
-      ]
-    },
-    {
       "title": "pgdrift",
       "startDate": "2026",
+      "rank": 8,
+      "label": "Postgres schema drift detection",
+      "summary": "Schema safety net that answers 'what actually changed between these two points in time' with categorized, color-coded results instead of a raw SQL dump.",
       "description": "CLI that captures point-in-time snapshots of a Postgres schema and diffs any two of them, classifying every change as BREAKING, ADDITIVE, INFORMATIONAL, or SCHEMA-LEVEL. Built for the moments a schema changes outside the migration chain: hotfix renames, an index dropped mid-incident, or a migration that ran in one environment but not another.",
-      "frontDescription": "Schema safety net that answers 'what actually changed between these two points in time' with categorized, color-coded results instead of a raw SQL dump.",
-      "backDescription": "Postgres schema snapshot and drift detector with deterministic, git-diffable JSON snapshots, an opinionated breaking-change classifier, and a watch mode that exits nonzero on breaking drift for CI gating.",
-      "frontLabel": "Developer tooling with clear UX",
-      "backLabel": "Schema introspection + drift classification",
       "impact": "Shows I build small, sharp tools for real operational failure modes instead of waiting for them to happen twice.",
       "highlights": [
         "Every change classified: BREAKING, ADDITIVE, INFORMATIONAL, or SCHEMA-LEVEL",
         "Deterministic JSON snapshots that are human-readable and safe to commit",
         "Watch mode exits 1 on breaking drift, ready for CI or cron gating"
       ],
-      "frontRank": 8,
-      "backRank": 4,
       "images": [
         "images/portfolio/pgdrift-cover.svg"
       ],
@@ -380,8 +358,6 @@
       "title": "Technical Lead / Senior Systems Engineer",
       "years": "11.2022 - Present",
       "description": "Lead integration and readiness work across a fleet-scale environment made up of hundreds of isolated enterprise systems spanning 150+ platforms, while building internal tools that reduce manual effort and make engineering handoffs smoother. Recent work combines automation, process simplification, team workflow improvements, and early-stage AI-assisted diagnostics research.",
-      "frontDescription": "Led delivery across a fleet-scale technical environment while building tools and workflows that made complicated work easier for other engineers to understand and use. A lot of that meant translating messy operational reality into clean handoffs, calmer processes, and software people could trust.",
-      "backDescription": "Led integration and readiness work across hundreds of isolated enterprise environments spanning 150+ platforms, moving between independently built systems with their own identity, messaging, and core infrastructure. Recent work blends automation, process simplification, team workflow design, and early AI-assisted diagnostics research.",
       "scope": "Worked across 150+ platforms and hundreds of isolated enterprise environments",
       "highlights": [
         "Built internal automation that reduced manual review and handoff friction",
@@ -405,8 +381,6 @@
       "title": "Senior Systems Engineer",
       "years": "06.2017 - 11.2022",
       "description": "Improved installation workflows, documentation, and cross-team coordination for large-scale system rollouts across distinct enterprise environments. A consistent focus was turning tribal knowledge into repeatable processes so newer engineers could ramp faster and contribute with more confidence.",
-      "frontDescription": "Improved delivery by turning scattered knowledge into clearer processes, stronger documentation, and smoother coordination. It was the kind of work that makes teams easier to onboard and projects easier to ship.",
-      "backDescription": "Improved installation workflows, documentation, and cross-team coordination for large-scale rollouts across distinct enterprise environments, with a constant focus on repeatability and faster ramp-up.",
       "scope": "Supported large-scale multi-environment rollout and integration work",
       "highlights": [
         "Reduced friction in preproduction installation work",
@@ -429,8 +403,6 @@
       "title": "IT Project Manager",
       "years": "12.2016 - 06.2017",
       "description": "Coordinated regional IT projects and network consolidation efforts, keeping schedules, stakeholders, and implementation details aligned during fast-moving delivery work.",
-      "frontDescription": "Managed regional IT delivery work with an emphasis on keeping people aligned, scope understandable, and execution moving.",
-      "backDescription": "Coordinated regional IT projects and network consolidation efforts, keeping schedules, stakeholders, and implementation details aligned during fast-moving delivery work.",
       "scope": "Coordinated regional projects across networks and implementation teams",
       "highlights": [
         "Aligned schedules, stakeholders, and implementation details",
@@ -453,8 +425,6 @@
       "title": "Project Team Lead / Test Engineer / Business Analyst",
       "years": "08.2015 - 12.2016",
       "description": "Started in test and analysis roles, then stepped into team leadership responsibilities across firmware, hardware, and process improvement efforts. That mix of hands-on testing and people coordination still shapes how I approach engineering work today.",
-      "frontDescription": "Grew from testing and analysis into leadership by being the person who could move between details, people, and process.",
-      "backDescription": "Started in test and analysis roles, then stepped into leadership across firmware, hardware, and process improvement work.",
       "scope": "Worked across testing, hardware, firmware, and team coordination",
       "highlights": [
         "Hands-on testing and analysis foundation",
