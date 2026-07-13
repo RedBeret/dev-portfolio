@@ -25,7 +25,7 @@
         "Live signal rail backed by a WebSocket endpoint"
       ],
       "frontRank": 2,
-      "backRank": 1,
+      "backRank": 3,
       "images": [
         "images/portfolio/edge-lab-console-cover.svg"
       ],
@@ -50,41 +50,80 @@
       ]
     },
     {
-      "title": "Telemetry Replay Studio",
+      "title": "FDE Data Forge",
       "startDate": "2026",
-      "description": "Replay and debrief workspace for comparing technical runs, reviewing drift against a baseline, and exporting a cleaner handoff summary. I built it around the moment after a run ends, when a team needs to understand what changed and what matters.",
-      "frontDescription": "Replay and debrief workspace with a polished timeline, comparison flow, and handoff report that makes post-run review feel clearer and less chaotic.",
-      "backDescription": "Full-stack replay tool with session comparison endpoints, debrief generation, and timeline-oriented state handling built for validation, autonomy, or observability-style workflows.",
-      "frontLabel": "Replay UX + debrief workflow",
-      "backLabel": "Comparison APIs + analysis workflow",
-      "impact": "Shows product thinking for time-series review instead of generic CRUD screens.",
+      "description": "Data engineering pipeline that turns a customer's dirty exports into clean, trustworthy data and proves it with a scorecard. It handles encoding-aware CSV/XLSX ingestion, fuzzy supplier deduplication, and part-number normalization, then validates every run against row-level ground truth from its companion synthetic sandbox.",
+      "frontDescription": "Data cleanup tool that ends every run with an honest scorecard instead of silent fixes: 100% recall and 84.2% F1 on the bundled sample, with false positives shown rather than hidden.",
+      "backDescription": "Ingest-detect-normalize-validate-report pipeline for messy industrial exports: Windows-1252 encodings, merged headers, fuzzy supplier dedup, and part-number era classification, all validated against a ground-truth manifest.",
+      "frontLabel": "Measured data quality workflow",
+      "backLabel": "Data pipeline + evaluation engineering",
+      "impact": "Shows I treat data cleanup as an engineering problem with measurable accuracy, not a one-off script.",
       "highlights": [
-        "Replay scrubber with frame-by-frame signal snapshots",
-        "Baseline comparison flow with score deltas and focus areas",
-        "Exportable debrief with callouts, actions, and artifact checklist"
+        "Defect detection scored against row-level ground truth: 100% recall, 84.2% F1 on the bundled sample",
+        "Encoding-aware ingestion, fuzzy supplier dedup, and part-number normalization",
+        "Runs offline in one command, with a companion synthetic sandbox (acme-parts-cloud) for reproducible evaluation"
       ],
       "frontRank": 3,
-      "backRank": 2,
+      "backRank": 1,
       "images": [
-        "images/portfolio/telemetry-replay-studio-cover.svg"
+        "images/portfolio/fde-data-forge-cover.svg"
       ],
-      "url": "https://github.com/RedBeret/telemetry-replay-studio",
+      "url": "https://github.com/RedBeret/fde-data-forge",
       "technologies": [
-        {
-          "class": "devicon-react-original",
-          "name": "React"
-        },
-        {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
-        },
-        {
-          "class": "devicon-fastapi-plain",
-          "name": "FastAPI"
-        },
         {
           "class": "devicon-python-plain",
           "name": "Python"
+        },
+        {
+          "class": "devicon-bash-plain",
+          "name": "CLI Tooling"
+        },
+        {
+          "class": "devicon-pandas-original",
+          "name": "Data Quality"
+        },
+        {
+          "class": "devicon-githubactions-plain",
+          "name": "CI Scorecards"
+        }
+      ]
+    },
+    {
+      "title": "RAG Eval Bench",
+      "startDate": "2026",
+      "description": "Local-first harness for measuring a RAG pipeline instead of eyeballing it. Point it at a corpus, generate a ground-truth question set, and get retrieval numbers (Hit@K, MRR) plus answer faithfulness and refusal scoring from local Ollama models. No API keys, no hosted services, runs offline.",
+      "frontDescription": "Evaluation workbench that replaces 'the RAG answers look fine' with real numbers: retrieval accuracy, faithfulness, and correct-refusal rates, every figure copied from a committed artifact.",
+      "backDescription": "RAG evaluation harness with ground-truth question generation, chunk-size sweeps, Hit@K and MRR scoring, and a separate-model judge, built on ChromaDB and local Ollama models with zero hosted dependencies.",
+      "frontLabel": "AI evaluation product thinking",
+      "backLabel": "Retrieval metrics + eval harness design",
+      "impact": "Shows I measure AI systems with evidence instead of vibes, including the result that smaller chunks made retrieval worse.",
+      "highlights": [
+        "Hit@1, Hit@5, and MRR across chunk-size sweeps with committed machine-readable results",
+        "Generation scoring with faithfulness, correct-refusal, and false-refusal rates on unanswerable questions",
+        "Fully local and offline: ChromaDB retrieval plus Ollama generation and judging"
+      ],
+      "frontRank": 5,
+      "backRank": 5,
+      "images": [
+        "images/portfolio/rag-eval-bench-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/rag-eval-bench",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-sqlite-plain",
+          "name": "ChromaDB"
+        },
+        {
+          "class": "devicon-linux-plain",
+          "name": "Ollama"
+        },
+        {
+          "class": "devicon-pytest-plain",
+          "name": "Eval Metrics"
         }
       ]
     },
@@ -102,8 +141,8 @@
         "Release packet view with blocked, review, and done items",
         "Exportable risk packet for handoff or decision review"
       ],
-      "frontRank": 5,
-      "backRank": 3,
+      "frontRank": 6,
+      "backRank": 6,
       "images": [
         "images/portfolio/repo-flight-deck-cover.svg"
       ],
@@ -142,7 +181,7 @@
         "Exportable handoff summary for the next shift or team"
       ],
       "frontRank": 1,
-      "backRank": 4,
+      "backRank": 7,
       "images": [
         "images/portfolio/field-sync-notebook-cover.svg"
       ],
@@ -181,7 +220,7 @@
         "Polished incident-response demo with low setup friction"
       ],
       "frontRank": 4,
-      "backRank": 5,
+      "backRank": 8,
       "images": [
         "images/portfolio/ai-ops-runbook-cover.svg"
       ],
@@ -206,41 +245,80 @@
       ]
     },
     {
-      "title": "Tiny Swarm Maze",
+      "title": "Agent Security Kit",
       "startDate": "2026",
-      "description": "Retro-inspired simulation game exploring swarm coordination through short natural-language commands. I built a deterministic simulation core with async model parsing, telemetry, and a real-time WebSocket loop so experimentation stays responsive even when models are slow.",
-      "frontDescription": "Retro-inspired simulation game that makes swarm behavior feel understandable through fast visuals, short commands, and a playful interface.",
-      "backDescription": "Retro-inspired simulation game exploring swarm coordination through deterministic simulation, async model parsing, telemetry, and a real-time WebSocket loop.",
-      "frontLabel": "Interactive full-stack simulation",
-      "backLabel": "Realtime simulation + service design",
-      "impact": "Shows full-stack thinking, real-time state handling, and systems experimentation.",
+      "description": "Reusable guardrails for AI-assisted coding agents: secret leak blocking, dangerous command hooks, publish-readiness checks, workspace scanning, OS keystore loading, and encrypted agent memory. Organized as a kit rather than a framework, in pure Bash with no dependencies beyond jq, openssl, and git. Runs entirely offline with no telemetry.",
+      "frontDescription": "Safety toolkit for teams using coding agents: pick the guardrail components you need, review the setup script, and install only what you trust. Nothing phones home.",
+      "backDescription": "Component library of agent guardrails: egress guards that block credential leaks, hooks that stop destructive commands, publish gates, workspace scanners, keystore-backed secrets, and encrypted memory at rest, with parallel implementations across agent runtimes including Claude Code.",
+      "frontLabel": "Practical AI safety tooling",
+      "backLabel": "Guardrail engineering + shell hardening",
+      "impact": "Shows I think about the failure modes of AI-assisted development and ship working defenses, not just opinions.",
       "highlights": [
-        "Deterministic simulation core",
-        "WebSocket-driven realtime updates",
-        "Python + TypeScript full-stack architecture"
+        "Blocks API key, credential, and PII leaks before they leave the workspace",
+        "Dangerous-command hooks, publish-readiness gates, and workspace scanning",
+        "Pure Bash, fully offline, no telemetry, supports multiple agent runtimes including Claude Code"
       ],
-      "frontRank": 6,
-      "backRank": 6,
+      "frontRank": 7,
+      "backRank": 2,
       "images": [
-        "images/portfolio/tiny-swarm-maze-cover.svg"
+        "images/portfolio/agent-security-kit-cover.svg"
       ],
-      "url": "https://github.com/RedBeret/tiny-swarm-maze",
+      "url": "https://github.com/RedBeret/agent-security-kit",
       "technologies": [
         {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
+          "class": "devicon-bash-plain",
+          "name": "Bash"
         },
+        {
+          "class": "devicon-git-plain",
+          "name": "Git Hooks"
+        },
+        {
+          "class": "devicon-ssh-original",
+          "name": "Secret Hygiene"
+        },
+        {
+          "class": "devicon-linux-plain",
+          "name": "Agent Runtimes"
+        }
+      ]
+    },
+    {
+      "title": "pgdrift",
+      "startDate": "2026",
+      "description": "CLI that captures point-in-time snapshots of a Postgres schema and diffs any two of them, classifying every change as BREAKING, ADDITIVE, INFORMATIONAL, or SCHEMA-LEVEL. Built for the moments a schema changes outside the migration chain: hotfix renames, an index dropped mid-incident, or a migration that ran in one environment but not another.",
+      "frontDescription": "Schema safety net that answers 'what actually changed between these two points in time' with categorized, color-coded results instead of a raw SQL dump.",
+      "backDescription": "Postgres schema snapshot and drift detector with deterministic, git-diffable JSON snapshots, an opinionated breaking-change classifier, and a watch mode that exits nonzero on breaking drift for CI gating.",
+      "frontLabel": "Developer tooling with clear UX",
+      "backLabel": "Schema introspection + drift classification",
+      "impact": "Shows I build small, sharp tools for real operational failure modes instead of waiting for them to happen twice.",
+      "highlights": [
+        "Every change classified: BREAKING, ADDITIVE, INFORMATIONAL, or SCHEMA-LEVEL",
+        "Deterministic JSON snapshots that are human-readable and safe to commit",
+        "Watch mode exits 1 on breaking drift, ready for CI or cron gating"
+      ],
+      "frontRank": 8,
+      "backRank": 4,
+      "images": [
+        "images/portfolio/pgdrift-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/pgdrift",
+      "technologies": [
         {
           "class": "devicon-python-plain",
           "name": "Python"
         },
         {
-          "class": "devicon-fastapi-plain",
-          "name": "FastAPI"
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
         },
         {
-          "class": "devicon-sqlite-plain",
-          "name": "SQLite"
+          "class": "devicon-bash-plain",
+          "name": "CLI Tooling"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker Demo"
         }
       ]
     }

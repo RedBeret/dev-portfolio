@@ -1,0 +1,37 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="forge-bg" x1="92" y1="60" x2="1110" y2="618" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C1917"/>
+      <stop offset="1" stop-color="#B45309"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="40" fill="url(#forge-bg)"/>
+  <circle cx="1028" cy="128" r="104" fill="#FBBF24" opacity="0.12"/>
+  <circle cx="206" cy="564" r="138" fill="#F97316" opacity="0.12"/>
+  <rect x="76" y="76" width="330" height="48" rx="18" fill="#FEF3C7" opacity="0.18"/>
+  <text x="100" y="107" fill="#FDE68A" font-size="24" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">DATA ENGINEERING / FDE</text>
+  <text x="76" y="242" fill="white" font-size="72" font-weight="700" font-family="Segoe UI, Arial, sans-serif">FDE Data</text>
+  <text x="76" y="320" fill="white" font-size="72" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Forge</text>
+  <text x="76" y="390" fill="#FDE9D0" font-size="30" font-family="Segoe UI, Arial, sans-serif">Turn dirty exports into clean data with a measured scorecard.</text>
+  <text x="76" y="448" fill="#FDE68A" font-size="28" font-weight="600" font-family="Segoe UI, Arial, sans-serif">Python / CLI / Fuzzy Dedup / Ground-Truth Eval</text>
+  <rect x="676" y="138" width="420" height="398" rx="32" fill="#F8FAFC" opacity="0.96"/>
+  <rect x="716" y="178" width="340" height="52" rx="16" fill="#FEF3C7"/>
+  <text x="736" y="212" fill="#92400E" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">RECALL 100%  ·  F1 84.2%</text>
+  <rect x="716" y="254" width="340" height="34" rx="10" fill="#FEE2E2"/>
+  <circle cx="736" cy="271" r="9" fill="#DC2626"/>
+  <rect x="758" y="266" width="200" height="10" rx="5" fill="#B91C1C"/>
+  <rect x="716" y="300" width="340" height="34" rx="10" fill="#DCFCE7"/>
+  <circle cx="736" cy="317" r="9" fill="#16A34A"/>
+  <rect x="758" y="312" width="240" height="10" rx="5" fill="#15803D"/>
+  <rect x="716" y="346" width="340" height="34" rx="10" fill="#FEE2E2"/>
+  <circle cx="736" cy="363" r="9" fill="#DC2626"/>
+  <rect x="758" y="358" width="160" height="10" rx="5" fill="#B91C1C"/>
+  <rect x="716" y="392" width="340" height="34" rx="10" fill="#DCFCE7"/>
+  <circle cx="736" cy="409" r="9" fill="#16A34A"/>
+  <rect x="758" y="404" width="220" height="10" rx="5" fill="#15803D"/>
+  <rect x="716" y="438" width="340" height="34" rx="10" fill="#DCFCE7"/>
+  <circle cx="736" cy="455" r="9" fill="#16A34A"/>
+  <rect x="758" y="450" width="180" height="10" rx="5" fill="#15803D"/>
+  <rect x="716" y="484" width="164" height="28" rx="14" fill="#F59E0B"/>
+  <text x="736" y="504" fill="#451A03" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">fde report</text>
+</svg>

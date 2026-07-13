@@ -1,0 +1,32 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pgd-bg" x1="92" y1="60" x2="1110" y2="618" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1B33"/>
+      <stop offset="1" stop-color="#336791"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="40" fill="url(#pgd-bg)"/>
+  <circle cx="1028" cy="128" r="104" fill="#93C5FD" opacity="0.12"/>
+  <circle cx="206" cy="564" r="138" fill="#3B82F6" opacity="0.12"/>
+  <rect x="76" y="76" width="380" height="48" rx="18" fill="#DBEAFE" opacity="0.18"/>
+  <text x="100" y="107" fill="#BFDBFE" font-size="24" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">POSTGRES / SCHEMA DRIFT</text>
+  <text x="76" y="242" fill="white" font-size="72" font-weight="700" font-family="Segoe UI, Arial, sans-serif">pgdrift</text>
+  <text x="76" y="390" fill="#D6E6F5" font-size="30" font-family="Segoe UI, Arial, sans-serif">Snapshot your schema. Diff any two points. Catch what changed.</text>
+  <text x="76" y="448" fill="#FDE68A" font-size="28" font-weight="600" font-family="Segoe UI, Arial, sans-serif">Python / PostgreSQL / CLI / CI Drift Gate</text>
+  <rect x="676" y="138" width="420" height="398" rx="32" fill="#F8FAFC" opacity="0.96"/>
+  <text x="716" y="196" fill="#1E3A8A" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">snapshot A  →  snapshot B</text>
+  <rect x="716" y="222" width="340" height="34" rx="10" fill="#FEE2E2"/>
+  <text x="736" y="246" fill="#991B1B" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">BREAKING  · column dropped</text>
+  <rect x="716" y="268" width="340" height="34" rx="10" fill="#FEE2E2"/>
+  <text x="736" y="292" fill="#991B1B" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">BREAKING  · nullable → NOT NULL</text>
+  <rect x="716" y="314" width="340" height="34" rx="10" fill="#DCFCE7"/>
+  <text x="736" y="338" fill="#166534" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">ADDITIVE  · new index</text>
+  <rect x="716" y="360" width="340" height="34" rx="10" fill="#DCFCE7"/>
+  <text x="736" y="384" fill="#166534" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">ADDITIVE  · new nullable column</text>
+  <rect x="716" y="406" width="340" height="34" rx="10" fill="#FEF3C7"/>
+  <text x="736" y="430" fill="#92400E" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">INFO  · default value changed</text>
+  <rect x="716" y="452" width="340" height="34" rx="10" fill="#DBEAFE"/>
+  <text x="736" y="476" fill="#1E40AF" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">SCHEMA  · new enum type</text>
+  <rect x="716" y="498" width="200" height="28" rx="14" fill="#2563EB"/>
+  <text x="736" y="518" fill="#EFF6FF" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">exit 1 on BREAKING</text>
+</svg>
