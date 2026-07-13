@@ -1,0 +1,26 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ask-bg" x1="92" y1="60" x2="1110" y2="618" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C0A09"/>
+      <stop offset="1" stop-color="#166534"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="40" fill="url(#ask-bg)"/>
+  <circle cx="1028" cy="128" r="104" fill="#86EFAC" opacity="0.12"/>
+  <circle cx="206" cy="564" r="138" fill="#22C55E" opacity="0.12"/>
+  <rect x="76" y="76" width="380" height="48" rx="18" fill="#DCFCE7" opacity="0.18"/>
+  <text x="100" y="107" fill="#BBF7D0" font-size="24" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">AGENT GUARDRAILS / SECURITY</text>
+  <text x="76" y="242" fill="white" font-size="72" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Agent</text>
+  <text x="76" y="320" fill="white" font-size="72" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Security Kit</text>
+  <text x="76" y="390" fill="#D9EFDD" font-size="30" font-family="Segoe UI, Arial, sans-serif">Reusable guardrails for AI coding agents. Offline, no telemetry.</text>
+  <text x="76" y="448" fill="#FDE68A" font-size="28" font-weight="600" font-family="Segoe UI, Arial, sans-serif">Bash / Hooks / Secret Egress / Publish Checks</text>
+  <rect x="676" y="138" width="420" height="398" rx="32" fill="#F8FAFC" opacity="0.96"/>
+  <path d="M886 176 L960 204 V286 C960 344 928 384 886 400 C844 384 812 344 812 286 V204 Z" fill="#DCFCE7" stroke="#16A34A" stroke-width="6"/>
+  <path d="M852 292 L878 318 L926 258" stroke="#16A34A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="716" y="428" width="340" height="34" rx="10" fill="#FEE2E2"/>
+  <circle cx="736" cy="445" r="9" fill="#DC2626"/>
+  <text x="756" y="452" fill="#991B1B" font-size="18" font-weight="600" font-family="Segoe UI, Arial, sans-serif">BLOCKED: credential in outbound diff</text>
+  <rect x="716" y="474" width="340" height="34" rx="10" fill="#DCFCE7"/>
+  <circle cx="736" cy="491" r="9" fill="#16A34A"/>
+  <text x="756" y="498" fill="#166534" font-size="18" font-weight="600" font-family="Segoe UI, Arial, sans-serif">PASS: clean payload · publish check ok</text>
+</svg>

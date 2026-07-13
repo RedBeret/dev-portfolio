@@ -25,7 +25,7 @@
         "Senal en vivo respaldada por un endpoint WebSocket"
       ],
       "frontRank": 2,
-      "backRank": 1,
+      "backRank": 3,
       "images": [
         "images/portfolio/edge-lab-console-cover.svg"
       ],
@@ -50,41 +50,80 @@
       ]
     },
     {
-      "title": "Telemetry Replay Studio",
+      "title": "FDE Data Forge",
       "startDate": "2026",
-      "description": "Espacio de replay y debrief para comparar corridas tecnicas, revisar drift contra un baseline y exportar un handoff mas limpio. Lo construi alrededor del momento posterior a una corrida, cuando un equipo necesita entender que cambio y que importa.",
-      "frontDescription": "Espacio de replay y debrief con timeline pulido, flujo de comparacion y reporte de handoff que hace que la revision despues de una corrida se sienta mas clara y menos caotica.",
-      "backDescription": "Herramienta full-stack de replay con endpoints de comparacion, generacion de debrief y manejo de estado orientado al tiempo para flujos de validacion, autonomia u observabilidad.",
-      "frontLabel": "UX de replay + flujo de debrief",
-      "backLabel": "APIs de comparacion + flujo de analisis",
-      "impact": "Demuestra criterio de producto para revision de series temporales en lugar de pantallas CRUD genericas.",
+      "description": "Pipeline de ingenieria de datos que convierte exportaciones sucias de un cliente en datos limpios y confiables, y lo demuestra con un scorecard. Maneja ingesta de CSV/XLSX con codificaciones dificiles, deduplicacion difusa de proveedores y normalizacion de numeros de parte, validando cada corrida contra ground truth a nivel de fila de su sandbox sintetico companero.",
+      "frontDescription": "Herramienta de limpieza de datos que termina cada corrida con un scorecard honesto en lugar de arreglos silenciosos: 100% de recall y 84.2% de F1 en la muestra incluida, mostrando los falsos positivos en vez de ocultarlos.",
+      "backDescription": "Pipeline de ingesta-deteccion-normalizacion-validacion-reporte para exportaciones industriales desordenadas: codificaciones Windows-1252, headers combinados, dedup difusa de proveedores y clasificacion de eras de numeros de parte, todo validado contra un manifiesto de ground truth.",
+      "frontLabel": "Flujo de calidad de datos medible",
+      "backLabel": "Pipeline de datos + ingenieria de evaluacion",
+      "impact": "Demuestra que trato la limpieza de datos como un problema de ingenieria con precision medible, no como un script improvisado.",
       "highlights": [
-        "Scrubber de replay con snapshots de senal cuadro por cuadro",
-        "Flujo de comparacion contra baseline con score delta y focus areas",
-        "Debrief exportable con callouts, acciones y checklist de artefactos"
+        "Deteccion de defectos evaluada contra ground truth a nivel de fila: 100% recall, 84.2% F1 en la muestra incluida",
+        "Ingesta consciente de codificacion, dedup difusa de proveedores y normalizacion de numeros de parte",
+        "Corre offline con un solo comando, con un sandbox sintetico companero (acme-parts-cloud) para evaluacion reproducible"
       ],
       "frontRank": 3,
-      "backRank": 2,
+      "backRank": 1,
       "images": [
-        "images/portfolio/telemetry-replay-studio-cover.svg"
+        "images/portfolio/fde-data-forge-cover.svg"
       ],
-      "url": "https://github.com/RedBeret/telemetry-replay-studio",
+      "url": "https://github.com/RedBeret/fde-data-forge",
       "technologies": [
-        {
-          "class": "devicon-react-original",
-          "name": "React"
-        },
-        {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
-        },
-        {
-          "class": "devicon-fastapi-plain",
-          "name": "FastAPI"
-        },
         {
           "class": "devicon-python-plain",
           "name": "Python"
+        },
+        {
+          "class": "devicon-bash-plain",
+          "name": "CLI Tooling"
+        },
+        {
+          "class": "devicon-pandas-original",
+          "name": "Calidad de Datos"
+        },
+        {
+          "class": "devicon-githubactions-plain",
+          "name": "Scorecards en CI"
+        }
+      ]
+    },
+    {
+      "title": "RAG Eval Bench",
+      "startDate": "2026",
+      "description": "Harness local-first para medir un pipeline RAG en lugar de evaluarlo a ojo. Apuntalo a un corpus, genera un set de preguntas con ground truth y obtiene numeros de retrieval (Hit@K, MRR) mas scoring de fidelidad y rechazo de respuestas con modelos locales de Ollama. Sin API keys, sin servicios hospedados, corre offline.",
+      "frontDescription": "Banco de evaluacion que reemplaza 'las respuestas del RAG se ven bien' con numeros reales: precision de retrieval, fidelidad y tasas de rechazo correcto, cada cifra copiada de un artefacto versionado.",
+      "backDescription": "Harness de evaluacion RAG con generacion de preguntas ground truth, barridos de tamano de chunk, scoring Hit@K y MRR, y un juez de modelo separado, construido sobre ChromaDB y modelos locales de Ollama sin dependencias hospedadas.",
+      "frontLabel": "Criterio de producto para evaluacion de IA",
+      "backLabel": "Metricas de retrieval + diseno de harness",
+      "impact": "Demuestra que mido sistemas de IA con evidencia en lugar de intuicion, incluyendo el hallazgo de que chunks mas chicos empeoraron el retrieval.",
+      "highlights": [
+        "Hit@1, Hit@5 y MRR en barridos de tamano de chunk con resultados versionados y legibles por maquina",
+        "Scoring de generacion con fidelidad, rechazo correcto y rechazo falso sobre preguntas sin respuesta",
+        "Totalmente local y offline: retrieval con ChromaDB mas generacion y juicio con Ollama"
+      ],
+      "frontRank": 5,
+      "backRank": 5,
+      "images": [
+        "images/portfolio/rag-eval-bench-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/rag-eval-bench",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-sqlite-plain",
+          "name": "ChromaDB"
+        },
+        {
+          "class": "devicon-linux-plain",
+          "name": "Ollama"
+        },
+        {
+          "class": "devicon-pytest-plain",
+          "name": "Metricas de Eval"
         }
       ]
     },
@@ -102,8 +141,8 @@
         "Vista de release packet con items bloqueados, en revision y listos",
         "Risk packet exportable para handoff o revision"
       ],
-      "frontRank": 5,
-      "backRank": 3,
+      "frontRank": 6,
+      "backRank": 6,
       "images": [
         "images/portfolio/repo-flight-deck-cover.svg"
       ],
@@ -142,7 +181,7 @@
         "Resumen exportable para el siguiente turno o equipo"
       ],
       "frontRank": 1,
-      "backRank": 4,
+      "backRank": 7,
       "images": [
         "images/portfolio/field-sync-notebook-cover.svg"
       ],
@@ -181,7 +220,7 @@
         "Demo pulida de respuesta a incidentes con baja friccion"
       ],
       "frontRank": 4,
-      "backRank": 5,
+      "backRank": 8,
       "images": [
         "images/portfolio/ai-ops-runbook-cover.svg"
       ],
@@ -206,41 +245,80 @@
       ]
     },
     {
-      "title": "Tiny Swarm Maze",
+      "title": "Agent Security Kit",
       "startDate": "2026",
-      "description": "Simulacion estilo retro que explora coordinacion de enjambres mediante comandos cortos en lenguaje natural. Construi un nucleo determinista, parsing de modelos asincrono, telemetria y un loop en tiempo real con WebSockets para que la experiencia siguiera siendo fluida.",
-      "frontDescription": "Simulacion estilo retro que hace entendible el comportamiento de un enjambre mediante visuales rapidos, comandos cortos y una interfaz mas juguetona.",
-      "backDescription": "Simulacion estilo retro que explora coordinacion de enjambres mediante un nucleo determinista, parsing asincrono, telemetria y un loop en tiempo real con WebSockets.",
-      "frontLabel": "Simulacion interactiva full-stack",
-      "backLabel": "Simulacion en tiempo real + diseno de servicios",
-      "impact": "Demuestra criterio full-stack, manejo de estado en tiempo real y experimentacion con sistemas.",
+      "description": "Guardrails reutilizables para agentes de codigo asistidos por IA: bloqueo de fugas de secretos, hooks contra comandos peligrosos, checks de publicacion, escaneo de workspace, carga desde keystore del sistema y memoria de agente cifrada. Organizado como kit y no como framework, en Bash puro sin dependencias mas alla de jq, openssl y git. Corre completamente offline y sin telemetria.",
+      "frontDescription": "Toolkit de seguridad para equipos que usan agentes de codigo: elige los componentes de guardrail que necesitas, revisa el script de instalacion e instala solo lo que confias. Nada llama a casa.",
+      "backDescription": "Libreria de componentes de guardrails para agentes: egress guards que bloquean fugas de credenciales, hooks que detienen comandos destructivos, gates de publicacion, escaneres de workspace, secretos respaldados por keystore y memoria cifrada en reposo, con implementaciones paralelas para varios runtimes incluyendo Claude Code.",
+      "frontLabel": "Tooling practico de seguridad para IA",
+      "backLabel": "Ingenieria de guardrails + hardening de shell",
+      "impact": "Demuestra que pienso en los modos de falla del desarrollo asistido por IA y construyo defensas funcionales, no solo opiniones.",
       "highlights": [
-        "Nucleo de simulacion determinista",
-        "Actualizaciones en tiempo real con WebSockets",
-        "Arquitectura full-stack con Python y TypeScript"
+        "Bloquea fugas de API keys, credenciales y PII antes de que salgan del workspace",
+        "Hooks contra comandos peligrosos, gates de publicacion y escaneo de workspace",
+        "Bash puro, totalmente offline, sin telemetria, con soporte para varios runtimes incluyendo Claude Code"
       ],
-      "frontRank": 6,
-      "backRank": 6,
+      "frontRank": 7,
+      "backRank": 2,
       "images": [
-        "images/portfolio/tiny-swarm-maze-cover.svg"
+        "images/portfolio/agent-security-kit-cover.svg"
       ],
-      "url": "https://github.com/RedBeret/tiny-swarm-maze",
+      "url": "https://github.com/RedBeret/agent-security-kit",
       "technologies": [
         {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
+          "class": "devicon-bash-plain",
+          "name": "Bash"
         },
+        {
+          "class": "devicon-git-plain",
+          "name": "Git Hooks"
+        },
+        {
+          "class": "devicon-ssh-original",
+          "name": "Higiene de Secretos"
+        },
+        {
+          "class": "devicon-linux-plain",
+          "name": "Runtimes de Agente"
+        }
+      ]
+    },
+    {
+      "title": "pgdrift",
+      "startDate": "2026",
+      "description": "CLI que captura snapshots puntuales de un esquema de Postgres y compara cualquier par de ellos, clasificando cada cambio como BREAKING, ADDITIVE, INFORMATIONAL o SCHEMA-LEVEL. Construido para los momentos en que un esquema cambia fuera de la cadena de migraciones: renombres de hotfix, un indice eliminado durante un incidente o una migracion que corrio en un entorno pero no en otro.",
+      "frontDescription": "Red de seguridad para esquemas que responde 'que cambio realmente entre estos dos puntos en el tiempo' con resultados categorizados y con colores, en lugar de un volcado crudo de SQL.",
+      "backDescription": "Detector de drift y snapshots de esquema Postgres con snapshots JSON deterministas y comparables con git, un clasificador de cambios breaking con criterio propio y un modo watch que sale con codigo distinto de cero ante drift breaking para gating en CI.",
+      "frontLabel": "Developer tooling con UX clara",
+      "backLabel": "Introspeccion de esquema + clasificacion de drift",
+      "impact": "Demuestra que construyo herramientas pequenas y afiladas para modos de falla operativos reales, en vez de esperar a que ocurran dos veces.",
+      "highlights": [
+        "Cada cambio clasificado: BREAKING, ADDITIVE, INFORMATIONAL o SCHEMA-LEVEL",
+        "Snapshots JSON deterministas, legibles y seguros para commitear",
+        "Modo watch que sale con codigo 1 ante drift breaking, listo para CI o cron"
+      ],
+      "frontRank": 8,
+      "backRank": 4,
+      "images": [
+        "images/portfolio/pgdrift-cover.svg"
+      ],
+      "url": "https://github.com/RedBeret/pgdrift",
+      "technologies": [
         {
           "class": "devicon-python-plain",
           "name": "Python"
         },
         {
-          "class": "devicon-fastapi-plain",
-          "name": "FastAPI"
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
         },
         {
-          "class": "devicon-sqlite-plain",
-          "name": "SQLite"
+          "class": "devicon-bash-plain",
+          "name": "CLI Tooling"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Demo con Docker"
         }
       ]
     }

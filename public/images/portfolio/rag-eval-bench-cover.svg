@@ -1,0 +1,29 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rag-bg" x1="92" y1="60" x2="1110" y2="618" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E1B4B"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="40" fill="url(#rag-bg)"/>
+  <circle cx="1028" cy="128" r="104" fill="#C4B5FD" opacity="0.12"/>
+  <circle cx="206" cy="564" r="138" fill="#8B5CF6" opacity="0.12"/>
+  <rect x="76" y="76" width="330" height="48" rx="18" fill="#EDE9FE" opacity="0.18"/>
+  <text x="100" y="107" fill="#DDD6FE" font-size="24" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">AI EVALUATION / RAG</text>
+  <text x="76" y="242" fill="white" font-size="72" font-weight="700" font-family="Segoe UI, Arial, sans-serif">RAG Eval</text>
+  <text x="76" y="320" fill="white" font-size="72" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Bench</text>
+  <text x="76" y="390" fill="#E4DDF7" font-size="30" font-family="Segoe UI, Arial, sans-serif">Measure retrieval and faithfulness instead of eyeballing it.</text>
+  <text x="76" y="448" fill="#FDE68A" font-size="28" font-weight="600" font-family="Segoe UI, Arial, sans-serif">Python / ChromaDB / Ollama / Hit@K + MRR</text>
+  <rect x="676" y="138" width="420" height="398" rx="32" fill="#F8FAFC" opacity="0.96"/>
+  <text x="716" y="196" fill="#4C1D95" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Hit@5 by chunk size</text>
+  <rect x="716" y="230" width="80" height="220" rx="12" fill="#DDD6FE"/>
+  <rect x="716" y="300" width="80" height="150" rx="12" fill="#8B5CF6"/>
+  <rect x="836" y="230" width="80" height="220" rx="12" fill="#DDD6FE"/>
+  <rect x="836" y="270" width="80" height="180" rx="12" fill="#7C3AED"/>
+  <rect x="956" y="230" width="80" height="220" rx="12" fill="#DDD6FE"/>
+  <rect x="956" y="270" width="80" height="180" rx="12" fill="#7C3AED"/>
+  <text x="734" y="486" fill="#6D28D9" font-size="20" font-weight="600" font-family="Segoe UI, Arial, sans-serif">128</text>
+  <text x="854" y="486" fill="#6D28D9" font-size="20" font-weight="600" font-family="Segoe UI, Arial, sans-serif">256</text>
+  <text x="974" y="486" fill="#6D28D9" font-size="20" font-weight="600" font-family="Segoe UI, Arial, sans-serif">512</text>
+  <rect x="716" y="500" width="220" height="14" rx="7" fill="#C4B5FD"/>
+</svg>
