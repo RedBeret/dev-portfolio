@@ -356,25 +356,30 @@
   "experience": [
     {
       "company": "Noblis",
-      "title": "Engineering Manager / Technical Lead",
+      "title": "Technical Lead / Engineering Manager",
       "years": "11.2022 - Presente",
-      "description": "Lidero un equipo de ingenieros mientras me mantengo hands-on con trabajo forward-deployed de IA y datos en un entorno a escala de flota, con cientos de sistemas empresariales aislados que abarcan mas de 150 plataformas. Equilibro liderazgo de personas y entrega: defino la direccion tecnica, hago mentoria a mis reportes directos y construyo yo mismo el tooling asistido por IA y la automatizacion, en entornos regulados, air-gapped y de alta confianza donde la fiabilidad y proteger datos sensibles van primero.",
-      "scope": "Lidera un equipo sobre 150+ plataformas y cientos de entornos empresariales aislados y seguros",
+      "description": "Actuo como technical lead de cara al cliente en un entorno a escala de flota, con cientos de sistemas empresariales aislados que abarcan mas de 150 plataformas, coordinando 15+ ingenieros en programas de software, infraestructura y operaciones. Traduzco necesidades operativas en roadmaps de ingenieria mientras me mantengo hands-on, construyendo yo mismo la automatizacion, el tooling asistido por IA y las plataformas internas, en entornos regulados, air-gapped y de alta confianza donde la fiabilidad y proteger datos sensibles van primero.",
+      "scope": "Coordina 15+ ingenieros en programas de software, infraestructura y operaciones sobre 150+ plataformas",
       "highlights": [
-        "Pase de technical lead a gestionar ingenieros sin dejar de estar hands-on con la entrega",
-        "Lidero trabajo forward-deployed de IA y tooling de datos en entornos regulados y air-gapped",
-        "Convirti procesos dependientes de expertos en flujos repetibles y guie a mis reportes directos para ejecutarlos"
+        "Construi una herramienta de provisioning de carpetas de instalacion que genera estructuras, scripts, plantillas y planes de IP a partir de unas pocas entradas, ahorrando ~8 horas por carga de sistema y ~480 horas por lote de 10 sistemas",
+        "Reduje la revision manual de logs un 80% con tooling de analisis en Python y PowerShell, recuperando 16+ horas por mes de capacidad de ingenieria senior",
+        "Reingenieria de los flujos de despliegue de servidores, reduciendo pasos un 40-45% para que ingenieros junior desplieguen de forma independiente, con cero incidentes de despliegue en la ultima baseline",
+        "Disene un flujo de agentes de IA hub-and-spoke para triage de incidencias: intake de contexto, recuperacion de resoluciones previas y resumenes listos para Jira que reducen escalaciones repetidas",
+        "Contribui a un grant de investigacion de operational-healing asistido por IA, disenando distillation teacher-student para deteccion de anomalias en tiempo real en hardware limitado",
+        "Construi automatizacion en PowerShell y Ansible para backups, health checks, recoleccion de logs y recuperacion, mejorando la fiabilidad en operaciones sensibles al tiempo"
       ],
       "mainTech": [
         "Liderazgo de Ingenieria",
-        "IA Forward-Deployed"
+        "Automatizacion Asistida por IA"
       ],
       "technologies": [
         "Liderazgo de Equipo",
         "Python",
-        "Tooling Asistido por IA",
-        "Integracion de Sistemas",
-        "Mentoria y Reportes Directos"
+        "PowerShell",
+        "Ansible",
+        "Flujos de Agentes IA",
+        "Automatizacion CI/CD",
+        "Integracion de Sistemas"
       ]
     },
     {

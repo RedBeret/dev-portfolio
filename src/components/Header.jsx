@@ -4,7 +4,7 @@ import Switch from "react-switch";
 
 const FOCUS = {
     kicker: "Engineering Leadership / Forward-Deployed AI",
-    primaryTitle: "Engineering Manager & Technical Lead",
+    primaryTitle: "Technical Lead / Engineering Manager",
     focusLine: "Leading AI-forward engineering teams while still shipping the hard parts myself",
     fit: "Engineering leadership, AI delivery, and forward-deployed teams",
     summary:
@@ -25,7 +25,7 @@ const FOCUS = {
         },
         {
             value: "Lead + Build",
-            label: "manages a team and still ships production code",
+            label: "coordinates 15+ engineers and still ships code",
         },
     ],
 };

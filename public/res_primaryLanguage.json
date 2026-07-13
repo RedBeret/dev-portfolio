@@ -356,25 +356,30 @@
   "experience": [
     {
       "company": "Noblis",
-      "title": "Engineering Manager / Technical Lead",
+      "title": "Technical Lead / Engineering Manager",
       "years": "11.2022 - Present",
-      "description": "Lead a team of engineers while staying hands-on with forward-deployed AI and data work across a fleet-scale environment of hundreds of isolated enterprise systems spanning 150+ platforms. Balance people leadership and delivery: setting technical direction, mentoring direct reports, and building the AI-assisted tooling and automation myself in regulated, air-gapped, high-trust environments where reliability and protecting sensitive data come first.",
-      "scope": "Leads a team across 150+ platforms and hundreds of isolated, secure enterprise environments",
+      "description": "Serve as customer-facing technical lead across a fleet-scale environment of hundreds of isolated enterprise systems spanning 150+ platforms, coordinating 15+ engineers across software, infrastructure, and operations programs. Translate operational needs into engineering roadmaps while staying hands-on, building the automation, AI-assisted tooling, and internal platforms myself in regulated, air-gapped, high-trust environments where reliability and protecting sensitive data come first.",
+      "scope": "Coordinates 15+ engineers across software, infrastructure, and operations programs on 150+ platforms",
       "highlights": [
-        "Grew from technical lead into managing engineers while staying hands-on with delivery",
-        "Leads forward-deployed AI and data-tooling work in regulated, air-gapped environments",
-        "Turned expert-only processes into repeatable workflows and mentored direct reports to run them"
+        "Built an install-folder provisioning tool that generates folder structures, scripts, templates, and IP plans from a few inputs, saving ~8 hours per system load and ~480 hours per 10-system batch",
+        "Cut manual log review 80% with Python and PowerShell analysis tooling, reclaiming 16+ hours per month of senior engineering capacity",
+        "Re-engineered server deployment workflows, reducing steps 40-45% so junior engineers deploy independently, with zero deployment issues on the latest baseline",
+        "Designed a hub-and-spoke AI agent workflow for issue triage: context intake, retrieval of prior resolutions, and Jira-ready summaries that reduce repeat escalations",
+        "Contributed to an AI-assisted operational-healing research grant, designing teacher-student distillation for real-time anomaly detection on constrained hardware",
+        "Built PowerShell and Ansible automation for backups, health checks, log collection, and recovery, improving reliability during time-sensitive operations"
       ],
       "mainTech": [
         "Engineering Leadership",
-        "Forward-Deployed AI"
+        "AI-Assisted Automation"
       ],
       "technologies": [
         "Team Leadership",
         "Python",
-        "AI-Assisted Tooling",
-        "Systems Integration",
-        "Mentoring & Direct Reports"
+        "PowerShell",
+        "Ansible",
+        "AI Agent Workflows",
+        "CI/CD Automation",
+        "Systems Integration"
       ]
     },
     {
