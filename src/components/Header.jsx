@@ -87,15 +87,17 @@ class Header extends Component {
                                 {FOCUS.primaryTitle}
                             </span>
                             <span className="hero-title__role">
-                                <Typewriter
-                                    cursor
-                                    cursorStyle="|"
-                                    delaySpeed={1150}
-                                    deleteSpeed={100}
-                                    loop={Infinity}
-                                    typeSpeed={230}
-                                    words={rotatingTitles}
-                                />
+                                {rotatingTitles.length ? (
+                                    <Typewriter
+                                        cursor
+                                        cursorStyle="|"
+                                        delaySpeed={1150}
+                                        deleteSpeed={100}
+                                        loop={Infinity}
+                                        typeSpeed={230}
+                                        words={rotatingTitles}
+                                    />
+                                ) : null}
                             </span>
                         </h1>
                         <p className="hero-description">
