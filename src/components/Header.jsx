@@ -3,17 +3,17 @@ import { Typewriter } from "react-simple-typewriter";
 import Switch from "react-switch";
 
 const FOCUS = {
-    kicker: "AI Tooling / Full-Stack Systems",
-    primaryTitle: "Technical Lead / Software Engineer",
-    focusLine: "AI agent tooling, developer workflows, and product-minded systems",
-    fit: "Product, platform, and developer-experience teams",
+    kicker: "Engineering Leadership / Forward-Deployed AI",
+    primaryTitle: "Engineering Manager & Technical Lead",
+    focusLine: "Leading AI-forward engineering teams while still shipping the hard parts myself",
+    fit: "Engineering leadership, AI delivery, and forward-deployed teams",
     summary:
-        "One portfolio, both sides of the work: clear product interfaces and the automation, data, and systems underneath them.",
+        "I lead a team of engineers building AI and data tooling for regulated, air-gapped, high-trust environments, and I stay hands-on with the hardest parts of the work.",
     secondary:
-        "Equally at home in tooling, infrastructure, and workflow-heavy engineering when that is where the problem lives.",
-    panelTitle: "Now building: AI agent tooling and developer workflow tools",
+        "Equally comfortable setting direction for a team and going forward-deployed myself when the work is messy, high-stakes, and needs to be trustworthy.",
+    panelTitle: "Now: leading AI and developer tooling for secure environments",
     panelText:
-        "Recent public work spans data quality pipelines, evaluation harnesses, agent guardrails, and full-stack operator consoles.",
+        "Recent work spans forward-deployed AI delivery, data quality pipelines, evaluation harnesses, and agent guardrails, built where reliability and protecting sensitive data matter most.",
     proofPoints: [
         {
             value: "150+",
@@ -21,11 +21,11 @@ const FOCUS = {
         },
         {
             value: "Hundreds",
-            label: "of isolated enterprise environments",
+            label: "of isolated, secure enterprise environments",
         },
         {
-            value: "AI + Full Stack",
-            label: "public work in Python, React, and TypeScript",
+            value: "Lead + Build",
+            label: "manages a team and still ships production code",
         },
     ],
 };
@@ -99,9 +99,10 @@ class Header extends Component {
                             </span>
                         </h1>
                         <p className="hero-description">
-                            Public portfolio for practical software, automation,
-                            and systems-minded product work that feels calm,
-                            useful, and easy for real teams to trust.
+                            Public portfolio for AI-forward engineering,
+                            forward-deployed delivery, and the kind of team
+                            leadership that helps real teams ship software they
+                            can trust.
                         </p>
                         <div className="hero-proof-strip">
                             {FOCUS.proofPoints.map((point) => (

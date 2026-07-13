@@ -1,9 +1,10 @@
 {
   "basic_info": {
     "description_header": "Hi, I'm Steven Espinoza",
-    "description": "I'm a technical lead and software engineer with a systems background and a soft spot for practical tools that make people's jobs easier. A big part of my career has been working across hundreds of isolated enterprise environments spread across 150+ platforms, learning how each one is built, improving integrations, and making complex systems more repeatable. That hands-on depth now feeds the public work I enjoy most: AI-assisted products, developer tooling, and full-stack apps built with Python, React, and TypeScript. I like taking messy operational problems and shaping them into software that feels calm, useful, and maintainable. Outside of work, I'm a traveler, a lifelong learner, and someone who genuinely enjoys building things from scratch. Based in San Diego, I'm interested in thoughtful product, platform, and automation work with teams that care about both execution and trust.",
+    "description": "I'm an engineering manager and technical lead who still builds. I lead a team of engineers while staying hands-on with the hardest parts myself, doing forward-deployed AI and data work in regulated, air-gapped, high-trust environments where reliability and protecting sensitive data matter more than moving fast. A big part of my career has been working across hundreds of isolated enterprise environments spanning 150+ platforms, learning how each one is built and making complex systems more repeatable. That depth now feeds what I enjoy most: standing up AI-assisted products, developer tooling, and full-stack apps in Python, React, and TypeScript, and helping a team ship them with confidence. I like taking messy operational problems and shaping them into software that feels calm, useful, and trustworthy. Based in San Diego, I'm interested in engineering leadership and forward-deployed AI work with teams that care about both execution and trust.",
     "section_name": {
       "about": "About",
+      "about_focus": "Engineering leadership & forward-deployed AI",
       "projects": "Featured Projects",
       "skills": "Skills",
       "skills_frontend": "Frontend & Product",
@@ -355,25 +356,25 @@
   "experience": [
     {
       "company": "Noblis",
-      "title": "Technical Lead / Senior Systems Engineer",
+      "title": "Engineering Manager / Technical Lead",
       "years": "11.2022 - Present",
-      "description": "Lead integration and readiness work across a fleet-scale environment made up of hundreds of isolated enterprise systems spanning 150+ platforms, while building internal tools that reduce manual effort and make engineering handoffs smoother. Recent work combines automation, process simplification, team workflow improvements, and early-stage AI-assisted diagnostics research.",
-      "scope": "Worked across 150+ platforms and hundreds of isolated enterprise environments",
+      "description": "Lead a team of engineers while staying hands-on with forward-deployed AI and data work across a fleet-scale environment of hundreds of isolated enterprise systems spanning 150+ platforms. Balance people leadership and delivery: setting technical direction, mentoring direct reports, and building the AI-assisted tooling and automation myself in regulated, air-gapped, high-trust environments where reliability and protecting sensitive data come first.",
+      "scope": "Leads a team across 150+ platforms and hundreds of isolated, secure enterprise environments",
       "highlights": [
-        "Built internal automation that reduced manual review and handoff friction",
-        "Turned expert-only processes into repeatable workflows newer engineers could run",
-        "Led integration, readiness, and cross-team coordination in a high-complexity environment"
+        "Grew from technical lead into managing engineers while staying hands-on with delivery",
+        "Leads forward-deployed AI and data-tooling work in regulated, air-gapped environments",
+        "Turned expert-only processes into repeatable workflows and mentored direct reports to run them"
       ],
       "mainTech": [
-        "Technical Leadership",
-        "Automation"
+        "Engineering Leadership",
+        "Forward-Deployed AI"
       ],
       "technologies": [
+        "Team Leadership",
         "Python",
-        "PowerShell",
+        "AI-Assisted Tooling",
         "Systems Integration",
-        "Process Improvement",
-        "Team Mentoring"
+        "Mentoring & Direct Reports"
       ]
     },
     {

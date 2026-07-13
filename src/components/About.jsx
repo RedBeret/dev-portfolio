@@ -21,7 +21,9 @@ class About extends Component {
             { icon: pythonIcon, label: "Python" },
         ];
 
-        const focusLabel = "Product, systems, and AI tooling work";
+        const focusLabel =
+            resumeBasicInfo?.section_name.about_focus ||
+            "Engineering leadership & forward-deployed AI";
 
         return (
             <section className="section-block section-block--about" id="about">
