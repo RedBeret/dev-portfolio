@@ -1,9 +1,10 @@
 {
   "basic_info": {
     "description_header": "Hola, soy Steven Espinoza",
-    "description": "Soy un technical lead e ingeniero de software con base en sistemas y afinidad por crear herramientas practicas que realmente le ahorren tiempo a la gente. Una gran parte de mi carrera ha sido trabajar en cientos de entornos empresariales aislados distribuidos en mas de 150 plataformas, entendiendo como esta construido cada uno, mejorando integraciones y haciendo que sistemas complejos sean mas repetibles. Esa experiencia practica ahora alimenta el trabajo publico que mas disfruto: productos con IA, herramientas para desarrolladores y aplicaciones full-stack con Python, React y TypeScript. Me gusta tomar problemas operativos desordenados y convertirlos en software claro, util y mantenible. Fuera del trabajo disfruto viajar, aprender cosas nuevas y construir proyectos por curiosidad. Vivo en San Diego y me interesan equipos que valoren tanto la ejecucion como la confianza.",
+    "description": "Soy un engineering manager y technical lead que sigue construyendo. Lidero un equipo de ingenieros mientras me mantengo hands-on en las partes mas dificiles, con trabajo forward-deployed de IA y datos en entornos regulados, air-gapped y de alta confianza, donde la fiabilidad y proteger datos sensibles importan mas que ir rapido. Una gran parte de mi carrera ha sido trabajar en cientos de entornos empresariales aislados que abarcan mas de 150 plataformas, entendiendo como esta construido cada uno y haciendo que sistemas complejos sean mas repetibles. Esa profundidad ahora alimenta lo que mas disfruto: levantar productos con IA, herramientas para desarrolladores y aplicaciones full-stack con Python, React y TypeScript, y ayudar a un equipo a entregarlas con confianza. Me gusta tomar problemas operativos desordenados y convertirlos en software claro, util y confiable. Vivo en San Diego y me interesan roles de liderazgo en ingenieria y trabajo forward-deployed de IA con equipos que valoren tanto la ejecucion como la confianza.",
     "section_name": {
       "about": "Sobre Mi",
+      "about_focus": "Liderazgo de ingenieria e IA forward-deployed",
       "projects": "Proyectos Destacados",
       "skills": "Habilidades",
       "skills_frontend": "Frontend y Producto",
@@ -355,25 +356,25 @@
   "experience": [
     {
       "company": "Noblis",
-      "title": "Technical Lead / Senior Systems Engineer",
+      "title": "Engineering Manager / Technical Lead",
       "years": "11.2022 - Presente",
-      "description": "Lidero trabajo de integracion y preparacion de sistemas complejos en un entorno de alta confiabilidad, al mismo tiempo que desarrollo herramientas internas que reducen trabajo manual y mejoran las transiciones entre equipos. Mi trabajo reciente combina automatizacion, simplificacion de procesos, mejoras de flujo del equipo e investigacion temprana de diagnostico asistido por IA.",
-      "scope": "Trabajo sobre 150+ plataformas y cientos de entornos empresariales aislados",
+      "description": "Lidero un equipo de ingenieros mientras me mantengo hands-on con trabajo forward-deployed de IA y datos en un entorno a escala de flota, con cientos de sistemas empresariales aislados que abarcan mas de 150 plataformas. Equilibro liderazgo de personas y entrega: defino la direccion tecnica, hago mentoria a mis reportes directos y construyo yo mismo el tooling asistido por IA y la automatizacion, en entornos regulados, air-gapped y de alta confianza donde la fiabilidad y proteger datos sensibles van primero.",
+      "scope": "Lidera un equipo sobre 150+ plataformas y cientos de entornos empresariales aislados y seguros",
       "highlights": [
-        "Construí automatizaciones internas que redujeron revision manual y friccion en handoffs",
-        "Convirti procesos dependientes de expertos en flujos repetibles para ingenieros mas nuevos",
-        "Lidere integracion, preparacion y coordinacion entre equipos en un entorno de alta complejidad"
+        "Pase de technical lead a gestionar ingenieros sin dejar de estar hands-on con la entrega",
+        "Lidero trabajo forward-deployed de IA y tooling de datos en entornos regulados y air-gapped",
+        "Convirti procesos dependientes de expertos en flujos repetibles y guie a mis reportes directos para ejecutarlos"
       ],
       "mainTech": [
-        "Liderazgo Tecnico",
-        "Automatizacion"
+        "Liderazgo de Ingenieria",
+        "IA Forward-Deployed"
       ],
       "technologies": [
+        "Liderazgo de Equipo",
         "Python",
-        "PowerShell",
+        "Tooling Asistido por IA",
         "Integracion de Sistemas",
-        "Mejora de Procesos",
-        "Mentoria"
+        "Mentoria y Reportes Directos"
       ]
     },
     {
